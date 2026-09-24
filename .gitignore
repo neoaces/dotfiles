@@ -1,0 +1,40 @@
+
+# Starter .gitignore for a git repo that tracks the whole ~/.config directory.
+# Place this at the root of the repo (e.g. ~/dotfiles/config/.gitignore).
+# Review and extend it for your own setup before your first commit.
+
+# --- Caches, logs, sockets ---
+*/Cache/
+*/CachedData/
+*/GPUCache/
+*/logs/
+*/log/
+*.sock
+*/Crashpad/
+*/blob_storage/
+
+# --- Large / regenerable app state ---
+google-chrome/
+chromium/
+BraveSoftware/
+discord/
+Slack/
+spotify/
+obs-studio/
+
+# --- Secrets and credentials (never commit these) ---
+gh/hosts.yml
+git/credentials
+*token*
+*credentials*
+*.pem
+*.key
+
+# --- System/session-specific ---
+pulse/
+dconf/
+ibus/
+session/
+
+# --- lockfiles you may or may not want synced ---
+# nvim/lazy-lock.json    # uncomment to stop tracking plugin versions

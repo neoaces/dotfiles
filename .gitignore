@@ -12,7 +12,7 @@
 *.sock
 */Crashpad/
 */blob_storage/
-*/Claude
+Claude/
 # --- Large / regenerable app state ---
 google-chrome/
 chromium/

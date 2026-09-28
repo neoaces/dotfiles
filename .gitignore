@@ -13,6 +13,36 @@
 */Crashpad/
 */blob_storage/
 Claude/
+
+# --- Electron app cache/state (VS Code, Obsidian, etc.) ---
+*/CachedExtensionVSIXs/
+*/CachedProfilesData/
+*/CachedConfigurations/
+*/Code Cache/
+*/DawnGraphiteCache/
+*/DawnWebGPUCache/
+*/Dictionaries/
+*/Local Storage/
+*/Session Storage/
+*/Service Worker/
+*/Shared Dictionary/
+*/SharedStorage/
+*/WebStorage/
+*/IndexedDB/
+*/User/globalStorage/
+*/User/History/
+*/User/workspaceStorage/
+*/DIPS
+*/DIPS-wal
+*/TransportSecurity
+*/Trust Tokens
+*/Trust Tokens-journal
+*/Cookies
+*/Cookies-journal
+*/Network Persistent State
+*/Local State
+*/Preferences
+*.lock
 # --- Large / regenerable app state ---
 google-chrome/
 chromium/

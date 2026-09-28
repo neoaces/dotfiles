@@ -3,5 +3,6 @@
     "editor.smoothScrolling": true,
     "terminal.integrated.smoothScrolling": true,
     "editor.cursorSmoothCaretAnimation": "on",
-    "claudeCode.useTerminal": true
+    "claudeCode.useTerminal": true,
+    "git.autofetch": true
 }

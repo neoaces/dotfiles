@@ -16,6 +16,9 @@
 # Config (override via env vars if you want a different layout):
 #   DOTFILES_DIR   Where the git repo lives locally   (default: ~/dotfiles/config)
 #   CONFIG_DIR     Where apps expect their configs      (default: ~/.config)
+#
+# Zsh: init/link also write ~/.zshenv with `export ZDOTDIR=$CONFIG_DIR/zsh`
+# so zsh reads its .zshrc from the synced config/zsh folder.
 
 set -euo pipefail
 
@@ -47,6 +50,18 @@ cmd_link() {
   c_green "Linked $CONFIG_DIR -> $DOTFILES_DIR"
 }
 
+cmd_zsh() {
+  local zshenv="$HOME/.zshenv"
+  local line='export ZDOTDIR="$HOME/.config/zsh"'
+  mkdir -p "$DOTFILES_DIR/zsh"
+  if grep -qsF "$line" "$zshenv"; then
+    c_yellow "ZDOTDIR already set in $zshenv"
+  else
+    printf '%s\n' "$line" >> "$zshenv"
+    c_green "Set ZDOTDIR in $zshenv -> \$HOME/.config/zsh"
+  fi
+}
+
 cmd_init() {
   local remote="${1:-}"
   if [[ -z "$remote" ]]; then
@@ -62,6 +77,7 @@ cmd_init() {
   fi
 
   cmd_link
+  cmd_zsh
   c_green "Init complete."
 }
 
@@ -101,7 +117,7 @@ cmd_status() {
 
 case "${1:-}" in
   init)   shift; cmd_init "$@" ;;
-  link)   cmd_link ;;
+  link)   cmd_link; cmd_zsh ;;
   pull)   cmd_pull ;;
   push)   shift; cmd_push "$@" ;;
   sync)   shift; cmd_sync "$@" ;;

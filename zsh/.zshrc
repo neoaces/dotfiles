@@ -21,7 +21,7 @@ export PATH="$HOME/.local/bin:$PATH"
 
 alias acsh="ssh anzlechavez@sdl0-robot-serpens"
 alias zrc="source $ZDOTDIR/.zshrc"
-alias sink="~/dotfiles.sh"
+alias sink="~/.config/dotfiles-sync.sh sync"
 alias sors="source $ZDOTDIR/.zshrc"
 alias czsh="nvim $ZDOTDIR/.zshrc"
 alias cdot="nvim ~/dotfiles/config"

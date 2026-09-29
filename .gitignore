@@ -68,3 +68,6 @@ session/
 
 # --- lockfiles you may or may not want synced ---
 # nvim/lazy-lock.json    # uncomment to stop tracking plugin versions
+
+# --- macOS ---
+.DS_Store

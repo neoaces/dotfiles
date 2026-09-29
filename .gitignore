@@ -71,3 +71,9 @@ session/
 
 # --- macOS ---
 .DS_Store
+
+# --- VS Code agent-host (contains live connection tokens) ---
+Code/agent-host/
+
+# --- Excluded apps ---
+StereoLabs/

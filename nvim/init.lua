@@ -12,3 +12,7 @@ vim.opt.wrap = true
 vim.opt.linebreak = true              -- Wrap at word boundaries, not mid-word
 vim.opt.breakindent = true            -- Indent wrapped lines to match the line start
 vim.opt.breakindentopt = "list:-1"    -- Hang wrapped list items under their text
+
+-- FOLDING
+vim.g.markdown_folding = 1      -- Fold markdown by heading (built-in ftplugin)
+vim.opt.foldlevelstart = 99     -- Open files with everything unfolded

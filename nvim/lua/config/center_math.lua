@@ -8,9 +8,9 @@ local ns = vim.api.nvim_create_namespace("center_math")
 local preview_modes = { n = true, no = true, c = true }
 local timer = assert(vim.uv.new_timer())
 
--- Lines made of a single `$...$` span and nothing else
+-- Lines made of a single `$...$` or `$$...$$` span and nothing else
 local function is_math_line(line)
-    return line:match("^%s*%$[^$]+%$%s*$") ~= nil
+    return line:match("^%s*%$[^$]+%$%s*$") ~= nil or line:match("^%s*%$%$[^$]+%$%$%s*$") ~= nil
 end
 
 -- Width of `line` as markview renders it

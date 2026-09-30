@@ -1,0 +1,7 @@
+{
+  "Star subscript": {
+    "prefix": ["\\st", "st"],
+    "body": "_{∗}",
+    "description": "Subscript asterisk (e.g. q_{∗})"
+  }
+}

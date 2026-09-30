@@ -46,6 +46,25 @@ return {
             -- Needed so `latex` rendering is applied inside markdown buffers
             filetypes = { "markdown", "latex", "tex" },
         },
+        latex = {
+            -- Unicode sub/superscripts can't represent `i=1` or `t-1`, so the limits
+            -- of a `\sum_{..}^{..}` show their real text. Everything else keeps the
+            -- Unicode look.
+            subscripts = function(buffer, item)
+                local r = item.range
+                local line = vim.api.nvim_buf_get_lines(buffer, r.row_start, r.row_start + 1, false)[1] or ""
+                local after_sum = line:sub(1, r.col_start):match("\\sum$") ~= nil
+                return { enable = true, hl = "MarkviewSubscript", fake_preview = not after_sum }
+            end,
+            superscripts = function(buffer, item)
+                local r = item.range
+                local line = vim.api.nvim_buf_get_lines(buffer, r.row_start, r.row_start + 1, false)[1] or ""
+                local before = line:sub(1, r.col_start)
+                local after_sum = before:match("\\sum_%b{}$") ~= nil or before:match("\\sum_[^{]$") ~= nil
+                    or before:match("\\sum$") ~= nil
+                return { enable = true, hl = "MarkviewSuperscript", fake_preview = not after_sum }
+            end,
+        },
         markdown = {
             -- Native wrapping handles wrapped list lines; markview's virtual-text
             -- indent misplaces itself on lines with concealed text

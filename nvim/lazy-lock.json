@@ -2,7 +2,7 @@
   "blink.cmp": { "branch": "main", "commit": "8219b58f1c11a2fb1644d3c7116c509fa8348ec0" },
   "blink.lib": { "branch": "main", "commit": "fd9a48ebbe6ec30d5dfcc5b42c243941ccdca1aa" },
   "friendly-snippets": { "branch": "main", "commit": "b4d01b0fdf3c9a549961c2f9ffe8dc09be166219" },
-  "lazy.nvim": { "branch": "main", "commit": "306a05526ada86a7b30af95c5cc81ffba93fef97" },
+  "lazy.nvim": { "branch": "main", "commit": "85c7ff3711b730b4030d03144f6db6375044ae82" },
   "lualine.nvim": { "branch": "master", "commit": "221ce6b2d999187044529f49da6554a92f740a96" },
   "markview.nvim": { "branch": "main", "commit": "190bb227c9d3eb4451b81fa16ea3d2efde2d67c5" },
   "mason.nvim": { "branch": "main", "commit": "2a6940af80375532e5e9e7c1f2fc6319a1b7a69d" },

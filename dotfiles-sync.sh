@@ -19,6 +19,8 @@
 #
 # Zsh: init/link also write ~/.zshenv with `export ZDOTDIR=$CONFIG_DIR/zsh`
 # so zsh reads its .zshrc from the synced config/zsh folder.
+# Bash: init/link also append a line to ~/.bashrc that sources
+# $CONFIG_DIR/bash/.bashrc (the synced file).
 
 set -euo pipefail
 
@@ -62,6 +64,18 @@ cmd_zsh() {
   fi
 }
 
+cmd_bash() {
+  local bashrc="$HOME/.bashrc"
+  local line='[ -f "$HOME/.config/bash/.bashrc" ] && . "$HOME/.config/bash/.bashrc"'
+  mkdir -p "$DOTFILES_DIR/bash"
+  if grep -qsF "$line" "$bashrc"; then
+    c_yellow "Synced bashrc already sourced from $bashrc"
+  else
+    printf '\n# Synced bashrc (dotfiles-sync.sh)\n%s\n' "$line" >> "$bashrc"
+    c_green "Added source line to $bashrc -> \$HOME/.config/bash/.bashrc"
+  fi
+}
+
 cmd_init() {
   local remote="${1:-}"
   if [[ -z "$remote" ]]; then
@@ -78,6 +92,7 @@ cmd_init() {
 
   cmd_link
   cmd_zsh
+  cmd_bash
   c_green "Init complete."
 }
 
@@ -117,7 +132,7 @@ cmd_status() {
 
 case "${1:-}" in
   init)   shift; cmd_init "$@" ;;
-  link)   cmd_link; cmd_zsh ;;
+  link)   cmd_link; cmd_zsh; cmd_bash ;;
   pull)   cmd_pull ;;
   push)   shift; cmd_push "$@" ;;
   sync)   shift; cmd_sync "$@" ;;

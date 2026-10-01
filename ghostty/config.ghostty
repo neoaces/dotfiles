@@ -1,6 +1,7 @@
 background-opacity = 0.97
 theme = Miasma
 font-family = "InputSub Nerd Font Mono"
+font-family = "Input Nerd Font Mono"
 font-size = 14
 window-padding-x = 10
 window-padding-y = 10

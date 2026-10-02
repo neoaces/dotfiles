@@ -45,6 +45,9 @@ return {
         preview = {
             -- Needed so `latex` rendering is applied inside markdown buffers
             filetypes = { "markdown", "latex", "tex" },
+            -- Show the line under the cursor as raw text in normal mode
+            hybrid_modes = { "n" },
+            edit_range = { 0, 0 },
         },
         latex = {
             -- Unicode sub/superscripts can't represent `i=1` or `t-1`, so the limits

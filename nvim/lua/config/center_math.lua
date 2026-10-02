@@ -43,7 +43,9 @@ local function rendered_width(buf, row, line)
         end
         byte = byte + #ch
     end
-    return width
+    -- Neovim lays out (and wraps) concealed text as if it were still there, so
+    -- the raw width plus the inline virtual text is what must fit on a row
+    return width, vim.fn.strdisplaywidth(line) + extra
 end
 
 local function refresh_win(win)
@@ -66,7 +68,9 @@ local function refresh_win(win)
         row = row - 1
         -- The cursor line is shown raw (hybrid mode), so leave it alone
         if row ~= cursor_row and is_math_line(line) then
-            local pad = math.floor((avail - rendered_width(buf, row, line)) / 2)
+            local width, layout = rendered_width(buf, row, line)
+            -- Padding must not be what pushes the line onto a second row
+            local pad = math.min(math.floor((avail - width) / 2), avail - layout - 3)
             if pad > 0 then
                 vim.api.nvim_buf_set_extmark(buf, ns, row, 0, {
                     virt_text = { { string.rep(" ", pad) } },

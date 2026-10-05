@@ -77,6 +77,7 @@ export PATH="$HOME/.local/bin:$PATH"
 
 # --- Aliases (mirrors zshrc) -------------------------------------------------
 alias acsh="ssh anzlechavez@sdl0-robot-serpens"
+alias cdrr="cd ~/Development/chemdroid/real-robot"
 alias zrc="source $BASHRC_FILE"         # in bash, reloads this bashrc
 alias srs="source $BASHRC_FILE"
 alias brc="source $BASHRC_FILE"

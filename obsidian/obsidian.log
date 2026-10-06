@@ -328,3 +328,124 @@
 2026-10-02 20:12:05 Latest version is 1.13.7
 2026-10-02 20:12:05 App is up to date.
 >>>>>>> Stashed changes
+2026-10-05 15:54:45 Loaded main app package /snap/obsidian/68/app/resources/obsidian.asar
+2026-10-05 15:54:45 Checking for update using Github
+2026-10-05 15:54:45 Success.
+2026-10-05 15:54:45 Latest version is 1.13.7
+2026-10-05 15:54:45 App is up to date.
+2026-10-05 17:32:56 Loaded main app package /snap/obsidian/68/app/resources/obsidian.asar
+2026-10-05 17:32:57 Checking for update using Github
+2026-10-05 17:32:59 Loaded main app package /snap/obsidian/68/app/resources/obsidian.asar
+2026-10-05 17:32:59 Success.
+2026-10-05 17:32:59 Latest version is 1.14.4
+2026-10-05 17:32:59 Downloading update from https://github.com/obsidianmd/obsidian-releases/releases/download/v1.14.4/obsidian-1.14.4.asar.gz
+2026-10-05 17:33:00 Verifying hash & signature. Size= 9200670
+2026-10-05 17:33:01 Saving file
+2026-10-05 17:33:04 Update complete.
+2026-10-05 18:29:04 Loaded updated app /home/anzlechavez/.config/obsidian/obsidian-1.14.4.asar
+2026-10-05 18:29:05 Checking for update using Github
+2026-10-05 18:29:06 Success.
+2026-10-05 18:29:06 Latest version is 1.14.4
+2026-10-05 18:29:06 App is up to date.
+2026-10-05 19:44:09 Loaded updated app /home/anzlechavez/.config/obsidian/obsidian-1.14.4.asar
+2026-10-05 19:44:09 Checking for update using Github
+2026-10-05 19:44:09 Success.
+2026-10-05 19:44:09 Latest version is 1.14.4
+2026-10-05 19:44:09 App is up to date.
+2026-10-05 20:44:09 Checking for update using Github
+2026-10-05 20:44:09 Success.
+2026-10-05 20:44:09 Latest version is 1.14.4
+2026-10-05 20:44:09 App is up to date.
+2026-10-05 21:44:09 Checking for update using Github
+2026-10-05 21:44:09 Success.
+2026-10-05 21:44:09 Latest version is 1.14.4
+2026-10-05 21:44:09 App is up to date.
+2026-10-05 22:44:09 Checking for update using Github
+2026-10-05 22:44:09 Success.
+2026-10-05 22:44:09 Latest version is 1.14.4
+2026-10-05 22:44:09 App is up to date.
+2026-10-05 23:44:09 Checking for update using Github
+2026-10-05 23:44:09 Success.
+2026-10-05 23:44:09 Latest version is 1.14.4
+2026-10-05 23:44:09 App is up to date.
+2026-10-06 00:44:09 Checking for update using Github
+2026-10-06 00:44:09 Success.
+2026-10-06 00:44:09 Latest version is 1.14.4
+2026-10-06 00:44:09 App is up to date.
+2026-10-06 01:44:09 Checking for update using Github
+2026-10-06 01:44:09 Success.
+2026-10-06 01:44:09 Latest version is 1.14.4
+2026-10-06 01:44:09 App is up to date.
+2026-10-06 02:44:09 Checking for update using Github
+2026-10-06 02:44:09 Success.
+2026-10-06 02:44:09 Latest version is 1.14.4
+2026-10-06 02:44:09 App is up to date.
+2026-10-06 03:44:09 Checking for update using Github
+2026-10-06 03:44:09 Success.
+2026-10-06 03:44:09 Latest version is 1.14.4
+2026-10-06 03:44:09 App is up to date.
+2026-10-06 04:44:09 Checking for update using Github
+2026-10-06 04:44:09 Success.
+2026-10-06 04:44:09 Latest version is 1.14.4
+2026-10-06 04:44:09 App is up to date.
+2026-10-06 05:44:09 Checking for update using Github
+2026-10-06 05:44:10 Success.
+2026-10-06 05:44:10 Latest version is 1.14.4
+2026-10-06 05:44:10 App is up to date.
+2026-10-06 06:44:09 Checking for update using Github
+2026-10-06 06:44:10 Success.
+2026-10-06 06:44:10 Latest version is 1.14.4
+2026-10-06 06:44:10 App is up to date.
+2026-10-06 07:44:10 Checking for update using Github
+2026-10-06 07:44:10 Success.
+2026-10-06 07:44:10 Latest version is 1.14.4
+2026-10-06 07:44:10 App is up to date.
+2026-10-06 08:44:10 Checking for update using Github
+2026-10-06 08:44:15 Success.
+2026-10-06 08:44:15 Latest version is 1.14.4
+2026-10-06 08:44:15 App is up to date.
+2026-10-06 09:44:10 Checking for update using Github
+2026-10-06 09:44:10 Success.
+2026-10-06 09:44:10 Latest version is 1.14.4
+2026-10-06 09:44:10 App is up to date.
+2026-10-06 10:44:10 Checking for update using Github
+2026-10-06 10:44:10 Success.
+2026-10-06 10:44:10 Latest version is 1.14.4
+2026-10-06 10:44:10 App is up to date.
+2026-10-06 11:44:10 Checking for update using Github
+2026-10-06 11:44:10 Success.
+2026-10-06 11:44:10 Latest version is 1.14.4
+2026-10-06 11:44:10 App is up to date.
+2026-10-06 12:44:10 Checking for update using Github
+2026-10-06 12:44:10 Success.
+2026-10-06 12:44:10 Latest version is 1.14.4
+2026-10-06 12:44:10 App is up to date.
+2026-10-06 13:44:10 Checking for update using Github
+2026-10-06 13:44:10 Success.
+2026-10-06 13:44:10 Latest version is 1.14.4
+2026-10-06 13:44:10 App is up to date.
+2026-10-06 14:44:10 Checking for update using Github
+2026-10-06 14:44:10 Success.
+2026-10-06 14:44:10 Latest version is 1.14.4
+2026-10-06 14:44:10 App is up to date.
+2026-10-06 15:14:46 Loaded updated app /home/anzlechavez/.config/obsidian/obsidian-1.14.4.asar
+2026-10-06 15:14:46 Checking for update using Github
+2026-10-06 15:14:46 Success.
+2026-10-06 15:14:46 Latest version is 1.14.4
+2026-10-06 15:14:46 App is up to date.
+2026-10-06 16:14:46 Checking for update using Github
+2026-10-06 16:14:46 Success.
+2026-10-06 16:14:46 Latest version is 1.14.4
+2026-10-06 16:14:46 App is up to date.
+2026-10-06 17:14:46 Checking for update using Github
+2026-10-06 17:14:46 Success.
+2026-10-06 17:14:46 Latest version is 1.14.4
+2026-10-06 17:14:46 App is up to date.
+2026-10-06 18:14:46 Checking for update using Github
+2026-10-06 18:14:46 Success.
+2026-10-06 18:14:46 Latest version is 1.14.4
+2026-10-06 18:14:46 App is up to date.
+2026-10-06 19:14:46 Checking for update using Github
+2026-10-06 19:14:46 Success.
+2026-10-06 19:14:46 Latest version is 1.14.4
+2026-10-06 19:14:46 App is up to date.

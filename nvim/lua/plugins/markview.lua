@@ -39,6 +39,37 @@ return {
             callback = function() update(vim.api.nvim_get_current_win()) end,
         })
 
+        -- Normal is transparent, so markview derives its backgrounds from a
+        -- Catppuccin fallback (#1E1E2E) and tints everything purple. Rebuild its
+        -- groups against miasma's real bg; markview never overwrites a set group,
+        -- so clear them first. Then swap inline code text for miasma's pale sand.
+        local function inline_code_hl()
+            local normal = vim.api.nvim_get_hl(0, { name = "Normal" })
+            vim.api.nvim_set_hl(0, "Normal", vim.tbl_extend("force", normal, { bg = "#1e1c19" }))
+            for _, group in ipairs(vim.fn.getcompletion("Markview", "highlight")) do
+                vim.api.nvim_set_hl(0, group, {})
+            end
+            require("markview.highlights").setup()
+            vim.api.nvim_set_hl(0, "Normal", normal)
+
+            local hl = vim.api.nvim_get_hl(0, { name = "MarkviewInlineCode", link = false })
+            vim.api.nvim_set_hl(0, "MarkviewInlineCode", { fg = "#d6cfa8", bg = hl.bg })
+            -- Light grey backdrop behind task text (open and done)
+            vim.api.nvim_set_hl(0, "MarkviewTask", { bg = "#3a3a3a" })
+            vim.api.nvim_set_hl(0, "MarkviewTaskDone", { bg = "#3a3a3a", strikethrough = true, fg = "#7a7a7a" })
+        end
+        vim.api.nvim_create_autocmd("ColorScheme", {
+            callback = function() vim.schedule(inline_code_hl) end,
+        })
+        -- At startup markview builds its highlights after the colorscheme loads
+        vim.api.nvim_create_autocmd("User", {
+            pattern = { "LazyDone", "MarkviewAttach", "MarkviewEnable" },
+            callback = function() vim.schedule(inline_code_hl) end,
+        })
+        vim.api.nvim_create_autocmd("VimEnter", {
+            callback = function() vim.defer_fn(inline_code_hl, 50) end,
+        })
+
         require("config.center_math").setup()
     end,
     opts = {
@@ -72,9 +103,18 @@ return {
             -- Native wrapping handles wrapped list lines; markview's virtual-text
             -- indent misplaces itself on lines with concealed text
             list_items = { wrap = false, shift_width = 0 },
+            -- Leave the ``` fence lines unhighlighted; only the code lines get
+            -- the block background
+            code_blocks = { border_hl = "Normal" },
         },
         markdown_inline = {
-            inline_codes = { enable = true },
+            checkboxes = {
+                checked = { scope_hl = "MarkviewTaskDone" },
+                unchecked = { scope_hl = "MarkviewTask" },
+            },
+            -- No padding, so the highlight covers just the code (not where the
+            -- hidden backticks were)
+            inline_codes = { enable = true, padding_left = "", padding_right = "" },
         },
     },
 };

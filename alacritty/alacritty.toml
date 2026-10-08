@@ -1,0 +1,18 @@
+[font]
+size = 14
+
+[font.normal]
+family = "Input Nerd Font Mono"
+style = "Regular"
+
+[font.bold]
+family = "Input Nerd Font Mono"
+style = "Bold"
+
+[font.italic]
+family = "Input Nerd Font Mono"
+style = "Italic"
+
+[font.bold_italic]
+family = "Input Nerd Font Mono"
+style = "Bold Italic"

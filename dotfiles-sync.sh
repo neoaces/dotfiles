@@ -7,6 +7,8 @@
 # Usage:
 #   ./dotfiles-sync.sh init <git-remote-url>    First-time setup on a machine
 #                                                 (clones the repo + creates the symlink)
+#   ./dotfiles-sync.sh deps                      Install nvim build deps (C compiler,
+#                                                 tree-sitter CLI, Rust for blink.cmp)
 #   ./dotfiles-sync.sh link                      (Re)create the ~/.config symlink
 #   ./dotfiles-sync.sh pull                      Pull remote changes only
 #   ./dotfiles-sync.sh push ["commit message"]   Commit + push local changes only
@@ -76,6 +78,46 @@ cmd_bash() {
   fi
 }
 
+TREE_SITTER_VERSION="${TREE_SITTER_VERSION:-0.25.10}"
+
+# Neovim build deps: nvim-treesitter (main) compiles parsers with the
+# `tree-sitter` CLI + a C compiler; blink.cmp (main) builds its Rust fuzzy
+# matcher with cargo.
+cmd_deps() {
+  local os arch bin="$HOME/.local/bin"
+  os="$(uname -s)"; arch="$(uname -m)"
+  mkdir -p "$bin"
+
+  if ! command -v cc >/dev/null; then
+    if [[ "$os" == Darwin ]]; then
+      xcode-select --install || true
+    elif command -v apt-get >/dev/null; then
+      sudo apt-get update && sudo apt-get install -y build-essential
+    else
+      c_red "No C compiler found — install one (gcc/clang) manually."
+    fi
+  fi
+
+  if ! command -v tree-sitter >/dev/null; then
+    case "$os-$arch" in
+      Linux-x86_64)  ts=linux-x64 ;;
+      Linux-aarch64) ts=linux-arm64 ;;
+      Darwin-arm64)  ts=macos-arm64 ;;
+      Darwin-x86_64) ts=macos-x64 ;;
+      *) c_red "Unsupported platform for tree-sitter CLI: $os-$arch"; return 1 ;;
+    esac
+    curl -fsSL "https://github.com/tree-sitter/tree-sitter/releases/download/v$TREE_SITTER_VERSION/tree-sitter-$ts.gz" \
+      | gunzip > "$bin/tree-sitter"
+    chmod +x "$bin/tree-sitter"
+    c_green "Installed tree-sitter $TREE_SITTER_VERSION -> $bin/tree-sitter"
+  fi
+
+  if ! command -v cargo >/dev/null && [[ ! -x "$HOME/.cargo/bin/cargo" ]]; then
+    curl -fsSL https://sh.rustup.rs | sh -s -- -y --profile minimal --no-modify-path
+    c_green "Installed Rust toolchain -> ~/.cargo/bin"
+  fi
+}
+
 cmd_init() {
   local remote="${1:-}"
   if [[ -z "$remote" ]]; then
@@ -93,6 +135,7 @@ cmd_init() {
   cmd_link
   cmd_zsh
   cmd_bash
+  cmd_deps
   c_green "Init complete."
 }
 
@@ -132,6 +175,7 @@ cmd_status() {
 
 case "${1:-}" in
   init)   shift; cmd_init "$@" ;;
+  deps)   cmd_deps ;;
   link)   cmd_link; cmd_zsh; cmd_bash ;;
   pull)   cmd_pull ;;
   push)   shift; cmd_push "$@" ;;
@@ -143,6 +187,7 @@ Usage: $0 <command> [args]
 
 Commands:
   init <remote-url>     First-time setup: clone repo + create symlink
+  deps                  Install nvim build deps (cc, tree-sitter, Rust)
   link                  (Re)create the ~/.config symlink
   pull                  Pull remote changes (rebase, autostash)
   push [message]        Commit local changes and push

@@ -18,6 +18,7 @@ conda() {
 }
 
 export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
 alias acsh="ssh anzlechavez@sdl0-robot-serpens"
 alias cdrr="cd ~/Development/chemdroid/real-robot"
 alias zrc="source $ZDOTDIR/.zshrc"

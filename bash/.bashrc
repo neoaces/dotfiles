@@ -73,6 +73,7 @@ unset __conda_base
 
 # --- PATH --------------------------------------------------------------------
 export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
 [ -f "$HOME/.local/bin/env" ] && . "$HOME/.local/bin/env"
 
 # --- Aliases (mirrors zshrc) -------------------------------------------------

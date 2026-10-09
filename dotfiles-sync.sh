@@ -78,7 +78,7 @@ cmd_bash() {
   fi
 }
 
-TREE_SITTER_VERSION="${TREE_SITTER_VERSION:-0.25.10}"
+TREE_SITTER_VERSION="${TREE_SITTER_VERSION:-0.26.1}"
 
 # Neovim build deps: nvim-treesitter (main) compiles parsers with the
 # `tree-sitter` CLI + a C compiler; blink.cmp (main) builds its Rust fuzzy

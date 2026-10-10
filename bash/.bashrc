@@ -88,6 +88,7 @@ alias sink="~/.config/dotfiles-sync.sh sync"
 alias cdot="nvim ~/dotfiles/config"
 alias cvim="nvim ~/dotfiles/config/nvim"
 alias nv="nvim ."
+alias aider-oss="/home/neoaces/Development/ai/aider.sh"   # aider + local gpt-oss:20b via Ollama
 
 # pbpaste / open are macOS-only; fall back to Linux equivalents
 if command -v pbpaste >/dev/null 2>&1; then

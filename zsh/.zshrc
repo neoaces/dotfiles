@@ -29,6 +29,7 @@ alias cdot="nvim ~/dotfiles/config"
 alias cvim="nvim ~/dotfiles/config/nvim"
 alias psst="pbpaste"
 alias nv="nvim ."
+alias aider-oss="/home/neoaces/Development/ai/aider.sh"   # aider + local gpt-oss:20b via Ollama
 google() {
   local query="${*// /+}"
   open "https://www.google.com/search?q=${query}"

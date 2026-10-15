@@ -36,9 +36,9 @@ $line_break$character"""
 palette = 'miasma'
 
 [palettes.miasma]
-color_fg0 = '#222222'
+color_fg0 = '#1e1c19'
 color_fg1 = '#c2c2b0'
-color_bg1 = '#1c1c1c'
+color_bg1 = '#151412'
 color_bg3 = '#444444'
 color_blue = '#78824b'
 color_aqua = '#5f875f'

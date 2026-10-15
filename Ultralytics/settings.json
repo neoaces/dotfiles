@@ -1,0 +1,19 @@
+{
+  "settings_version": "0.0.8",
+  "datasets_dir": "/home/anzlechavez/Development/chemdroid/datasets",
+  "weights_dir": "/home/anzlechavez/Development/chemdroid/real-robot/weights",
+  "runs_dir": "/home/anzlechavez/Development/chemdroid/real-robot/runs",
+  "uuid": "28dc62320621b812a165b81c07ae1d3fab70e23d4fcdd74c9102099efba70e64",
+  "sync": true,
+  "api_key": "",
+  "openai_api_key": "",
+  "clearml": true,
+  "comet": true,
+  "dvc": true,
+  "mlflow": true,
+  "raytune": true,
+  "tensorboard": false,
+  "wandb": false,
+  "vscode_msg": true,
+  "openvino_msg": true
+}

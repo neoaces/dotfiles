@@ -79,14 +79,17 @@ export PATH="$HOME/.cargo/bin:$PATH"
 # --- Aliases (mirrors zshrc) -------------------------------------------------
 alias acsh="ssh anzlechavez@sdl0-robot-serpens"
 alias cdrr="cd ~/Development/chemdroid/real-robot"
+alias nrr="nvim ~/Development/chemdroid/real-robot"
 alias zrc="source $BASHRC_FILE"         # in bash, reloads this bashrc
 alias srs="source $BASHRC_FILE"
 alias brc="source $BASHRC_FILE"
-alias czsh="nvim ~/.config/zsh/.zshrc"
-alias cbash="nvim $BASHRC_FILE"
+alias nzsh="nvim ~/.config/zsh/.zshrc"
+alias nbash="nvim $BASHRC_FILE"
 alias sink="~/.config/dotfiles-sync.sh sync"
-alias cdot="nvim ~/dotfiles/config"
-alias cvim="nvim ~/dotfiles/config/nvim"
+alias cdot="cd ~/dotfiles/config"
+alias ndot="nvim ~/dotfiles/config"
+alias cdvim="cd ~/dotfiles/config/nvim"
+alias nnvim="nvim ~/dotfiles/config/nvim"
 alias nv="nvim ."
 alias aider-oss="/home/neoaces/Development/ai/aider.sh"   # aider + local gpt-oss:20b via Ollama
 

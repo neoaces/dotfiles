@@ -1,6 +1,7 @@
 background-opacity = 0.97
-theme = Miasma
-background = #1e1c19
+# theme = Miasma
+theme = Powder
+# background = #1e1c19
 font-family = "InputSub Nerd Font Mono"
 font-family = "Input Nerd Font Mono"
 font-size = 14

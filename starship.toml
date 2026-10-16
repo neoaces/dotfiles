@@ -33,7 +33,20 @@ $time\
 [ ](fg:color_bg1)\
 $line_break$character"""
 
-palette = 'miasma'
+palette = 'powder'
+
+[palettes.powder]
+color_fg0 = '#0c1010'
+color_fg1 = '#b6bac8'
+color_bg1 = '#0e1312'
+color_bg3 = '#1a2221'
+color_blue = '#5eead4'
+color_aqua = '#2dd4bf'
+color_green = '#2dd4bf'
+color_orange = '#6b97f2'
+color_purple = '#c4b5fd'
+color_red = '#fb7185'
+color_yellow = '#9dbbf7'
 
 [palettes.miasma]
 color_fg0 = '#1e1c19'

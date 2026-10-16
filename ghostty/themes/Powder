@@ -1,0 +1,24 @@
+# Powder — dark terminal theme from the Powder Dashboard design system.
+# Zinc surfaces tinted toward the cobalt accent; state hues map to ANSI.
+palette = 0=#1a1b21
+palette = 1=#fb7185
+palette = 2=#2dd4bf
+palette = 3=#fbbf24
+palette = 4=#6b97f2
+palette = 5=#a78bfa
+palette = 6=#38bdf8
+palette = 7=#b6bac8
+palette = 8=#5d6070
+palette = 9=#fda4af
+palette = 10=#5eead4
+palette = 11=#fcd34d
+palette = 12=#9dbbf7
+palette = 13=#c4b5fd
+palette = 14=#7dd3fc
+palette = 15=#dde1ea
+background = #0c1010
+foreground = #cfd3dd
+cursor-color = #6b97f2
+cursor-text = #0c1010
+selection-background = #1a302d
+selection-foreground = #dde1ea

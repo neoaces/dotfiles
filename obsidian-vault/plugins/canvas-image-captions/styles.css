@@ -86,3 +86,24 @@
 .canvas-node.neo-caption .canvas-node-content .markdown-preview-sizer > div > :is(p, ul, ol, h1, h2, h3, h4, h5, h6) {
   margin-block: 0 !important;
 }
+/* Editing: the scroller must add nothing (no file margins, scrollbar gutter or
+   fold/line gutters), so a line that fits in reading view fits while editing */
+body .canvas-node.neo-caption.neo-caption .canvas-node-content :is(
+  .cm-scroller, .cm-sizer, .cm-contentContainer
+) {
+  padding: 0 !important;
+  padding-inline: 0 !important;
+  margin-inline: 0 !important;
+  width: 100% !important;
+  max-width: none !important;
+  overflow: hidden !important;
+  scrollbar-gutter: auto !important;
+}
+body .canvas-node.neo-caption.neo-caption .canvas-node-content .cm-gutters {
+  display: none !important;
+}
+body .canvas-node.neo-caption.neo-caption .canvas-node-content .cm-content {
+  width: 100% !important;
+  max-width: none !important;
+  box-sizing: border-box !important;
+}

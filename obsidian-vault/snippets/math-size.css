@@ -1,0 +1,4 @@
+/* Larger rendered math (inline and block) in notes */
+mjx-container.MathJax {
+	font-size: 1.1em !important;
+}

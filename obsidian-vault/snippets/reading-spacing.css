@@ -1,0 +1,16 @@
+/* Reading mode: heading spacing matches live editing (see hspace.css: 14px above, 10px below, h1-h3).
+   Headings inside list items (- ### Heading) keep the theme's spacing so the bullet stays attached. */
+.markdown-reading-view .markdown-rendered :is(h1, h2, h3):not(li *),
+.markdown-reading-view .markdown-rendered div:is(.el-h1, .el-h2, .el-h3) > :is(h1, h2, h3):not(li *) {
+  margin-block: 0 !important;
+  padding: 14px 0 10px 0 !important;
+}
+/* ...and the theme's extra gap between a heading and what follows it */
+.markdown-reading-view .markdown-rendered :is(h1, h2, h3):not(li *) + :not(hr),
+.markdown-reading-view .markdown-rendered div:is(.el-h1, .el-h2, .el-h3) + div > :first-child:not(hr) {
+  margin-block-start: 0 !important;
+}
+/* Lists/paragraphs before a heading shouldn't add their own bottom gap */
+.markdown-reading-view .markdown-rendered div:has(+ div:is(.el-h1, .el-h2, .el-h3)) > :is(ul, ol, p) {
+  margin-block-end: 0 !important;
+}

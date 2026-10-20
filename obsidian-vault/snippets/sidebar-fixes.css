@@ -1,0 +1,23 @@
+/* File explorer: Obsidian already indents nested rows with an inline negative
+   margin + larger padding (full-width highlight). Baseline also indents the
+   children container, so the indent got applied twice. Zero the container. */
+body {
+  --nav-item-children-margin-start: 0px;
+  --nav-item-children-padding-start: 0px;
+}
+
+/* Sidebar toggle: only the icon itself is clickable, so its wrapper can't
+   cover the ribbon actions or the rest of the sidebar header. */
+.sidebar-toggle-button {
+  pointer-events: none;
+  height: var(--header-height);
+  flex: 0 0 auto;
+}
+.sidebar-toggle-button .clickable-icon {
+  pointer-events: auto;
+}
+.workspace-ribbon.mod-left .side-dock-actions,
+.workspace-ribbon.mod-left .side-dock-settings {
+  position: relative;
+  z-index: 2;
+}

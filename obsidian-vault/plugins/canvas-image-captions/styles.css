@@ -1,0 +1,88 @@
+/* Image + note joined into one rounded card */
+.canvas-node.neo-captioned-image .canvas-node-container {
+  border-bottom-width: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  box-shadow: none;
+}
+.canvas-node.neo-captioned-image .canvas-node-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.canvas-node.neo-caption .canvas-node-container {
+  border-top-width: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  box-shadow: none;
+}
+/* Note: no inner boxes, padding or line highlight, editing or not */
+.canvas-node.neo-caption .canvas-node-content,
+.canvas-node.neo-caption .canvas-node-content :is(
+  .markdown-embed-content, .markdown-preview-view, .markdown-preview-sizer,
+  .markdown-source-view, .cm-editor, .cm-scroller, .cm-sizer,
+  .cm-contentContainer, .cm-content, .cm-line
+) {
+  padding: 0 !important;
+  margin: 0 !important;
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  outline: none !important;
+  max-width: none !important;
+  min-height: 0 !important;
+}
+.canvas-node.neo-caption .canvas-node-content :is(.cm-line, .vim-motions-cursorline)::before,
+.canvas-node.neo-caption .canvas-node-content .cm-line::after {
+  display: none !important;
+}
+.canvas-node.neo-caption .canvas-node-content .vim-motions-cursorline,
+.canvas-node.neo-caption .canvas-node-content .vim-motions-cursorline-layer {
+  background: transparent !important;
+}
+/* One line of text per grid step, half a step above and below */
+.canvas-node.neo-caption .canvas-node-content :is(.markdown-preview-sizer, .cm-content) {
+  padding: 10px 12px !important;
+}
+.canvas-node.neo-caption .canvas-node-content :is(p, .cm-line) {
+  margin: 0 !important;
+  line-height: 20px;
+}
+/* Centre the text vertically: every wrapper fills the card and centres its child */
+.canvas-node.neo-caption .canvas-node-content {
+  display: flex !important;
+  flex-direction: column !important;
+}
+/* (display left to Obsidian below, so whichever read/edit view it hides stays hidden) */
+.canvas-node.neo-caption .canvas-node-content :is(
+  .markdown-embed-content, .markdown-preview-view, .markdown-source-view, .cm-editor
+) {
+  flex-direction: column !important;
+}
+.canvas-node.neo-caption.is-editing .canvas-node-content .markdown-preview-view {
+  display: none !important;
+}
+.canvas-node.neo-caption .canvas-node-content,
+.canvas-node.neo-caption .canvas-node-content :is(
+  .markdown-embed-content, .markdown-preview-view, .markdown-source-view, .cm-editor
+) {
+  justify-content: safe center !important;
+  height: 100% !important;
+  overflow: hidden !important;
+}
+.canvas-node.neo-caption .canvas-node-content :is(.markdown-preview-sizer, .cm-scroller) {
+  flex: 0 0 auto !important;
+  height: auto !important;
+}
+/* Leftovers from the block-embeds snippet and reading-view spacers */
+.canvas-node.neo-caption .canvas-node-content::before,
+.canvas-node.neo-caption .canvas-node-content::after,
+.canvas-node.neo-caption .canvas-node-content :is(
+  .markdown-preview-pusher, .mod-header, .mod-footer, .markdown-embed-link
+) {
+  display: none !important;
+}
+.canvas-node.neo-caption .canvas-node-content .markdown-preview-sizer > div > :is(p, ul, ol, h1, h2, h3, h4, h5, h6) {
+  margin-block: 0 !important;
+}

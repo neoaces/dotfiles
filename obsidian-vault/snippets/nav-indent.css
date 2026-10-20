@@ -1,0 +1,15 @@
+/* File explorer: indent folder contents under their parent and draw indentation guides */
+body {
+  --nav-indentation-guide-width: 1px;
+  --nav-indentation-guide-color: var(--background-modifier-border);
+  --nav-item-children-margin-start: 16px;
+  --nav-item-children-padding-start: 8px;
+}
+.nav-folder-children {
+  border-inline-start: var(--nav-indentation-guide-width) solid var(--nav-indentation-guide-color);
+}
+.nav-folder.mod-root > .nav-folder-children {
+  margin-inline-start: 0;
+  padding-inline-start: 0;
+  border-inline-start: none;
+}

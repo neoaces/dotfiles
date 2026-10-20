@@ -1,0 +1,118 @@
+/* Block references (![[note#^block]]): compact, inline-looking, no left bar */
+.markdown-source-view.mod-cm6 .cm-embed-block.markdown-embed,
+.markdown-embed.inline-embed,
+.markdown-embed {
+  --embed-padding: 0;
+  --embed-border-left: none;
+  --embed-border-start: none;
+  --embed-border-right: none;
+  --embed-border-end: none;
+  --embed-border-top: none;
+  --embed-border-bottom: none;
+  /* transparent borders give outside spacing that CodeMirror counts in the block height;
+     margins on embed widgets get ignored */
+  border: none !important;
+  border-block: 10px solid transparent !important;
+  background: none !important;
+  position: relative;
+  isolation: isolate;
+  border-radius: 8px !important;
+  margin: 0 !important;
+  padding: 6px 14px !important;
+  overflow: visible !important;
+}
+
+/* the visible background lives on a pseudo-element so the rounded corners stay intact */
+.markdown-embed::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: var(--embed-background);
+  border-radius: 8px;
+}
+
+.markdown-embed .markdown-embed-content,
+.markdown-embed .markdown-preview-view,
+.markdown-embed .markdown-preview-sizer,
+.markdown-embed .markdown-preview-section {
+  padding: 0 !important;
+  margin: 0 !important;
+  min-height: 0 !important;
+}
+.markdown-embed .markdown-preview-section > div > :is(p, ul, ol, h1, h2, h3, h4, h5, h6),
+.markdown-embed ul,
+.markdown-embed ol,
+.markdown-embed p {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+.markdown-embed ul,
+.markdown-embed ol {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+.markdown-embed li {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* Expand icon: tiny indicator, only fully visible on hover */
+.markdown-embed .markdown-embed-link {
+  top: 10px;
+  inset-inline-end: 16px;
+  padding: 2px;
+  opacity: 0.35;
+  --icon-size: 12px;
+}
+.markdown-embed:hover .markdown-embed-link {
+  opacity: 0.8;
+}
+
+/* Don't let the embed's scroll container clip hanging bullets */
+.markdown-embed .markdown-embed-content,
+.inline-embed > .markdown-embed-content {
+  overflow: visible !important;
+}
+
+/* Line the top-level bullets up with the task checkboxes above (tweak the offset to taste) */
+.markdown-embed {
+  --embed-bullet-shift: 27px;
+}
+.markdown-embed .markdown-preview-section > div > ul,
+.markdown-embed .markdown-preview-section > div > ol {
+  margin-inline-start: calc(-1 * var(--embed-bullet-shift)) !important;
+}
+
+/* Heading directly after an embed: drop its extra top padding/margin */
+.cm-embed-block.markdown-embed + .cm-line.HyperMD-header,
+.cm-embed-block.markdown-embed + .cm-line {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+.cm-embed-block.markdown-embed {
+  margin-bottom: 0 !important;
+  border-bottom-width: 4px !important;
+}
+
+/* Baseline's file margins (32px) leak into embeds as dead space above and below the content */
+.markdown-embed .markdown-preview-pusher,
+.markdown-embed .markdown-preview-sizer::before,
+.markdown-embed .markdown-preview-sizer::after,
+.markdown-embed .markdown-preview-view::before,
+.markdown-embed .markdown-preview-view::after,
+.markdown-embed .markdown-embed-content::before,
+.markdown-embed .markdown-embed-content::after,
+.markdown-embed .mod-header,
+.markdown-embed .mod-footer {
+  display: none !important;
+  height: 0 !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.markdown-embed .markdown-preview-sizer {
+  padding-block: 0 !important;
+  margin-block: 0 !important;
+  min-height: 0 !important;
+}

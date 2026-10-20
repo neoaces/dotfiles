@@ -23,6 +23,8 @@
 # so zsh reads its .zshrc from the synced config/zsh folder.
 # Bash: init/link also append a line to ~/.bashrc that sources
 # $CONFIG_DIR/bash/.bashrc (the synced file).
+# Obsidian: init/link also symlink the vault's .obsidian/{plugins,snippets}
+# (vault at $OBSIDIAN_VAULT, default ~/neonoted) to $CONFIG_DIR/obsidian-vault.
 
 set -euo pipefail
 
@@ -76,6 +78,32 @@ cmd_bash() {
     printf '\n# Synced bashrc (dotfiles-sync.sh)\n%s\n' "$line" >> "$bashrc"
     c_green "Added source line to $bashrc -> \$HOME/.config/bash/.bashrc"
   fi
+}
+
+OBSIDIAN_VAULT="${OBSIDIAN_VAULT:-$HOME/neonoted}"
+
+cmd_obsidian() {
+  local dir="$OBSIDIAN_VAULT/.obsidian" src
+  if [[ ! -d "$OBSIDIAN_VAULT" ]]; then
+    c_yellow "No vault at $OBSIDIAN_VAULT — skipping Obsidian links."
+    return
+  fi
+  mkdir -p "$dir"
+  for sub in plugins snippets; do
+    src="$HOME/.config/obsidian-vault/$sub"
+    mkdir -p "$DOTFILES_DIR/obsidian-vault/$sub"
+    if [[ -L "$dir/$sub" ]]; then
+      c_yellow "Obsidian $sub already linked"
+      continue
+    fi
+    if [[ -e "$dir/$sub" ]]; then
+      local backup="$dir/$sub.bak.$(date +%Y%m%d%H%M%S)"
+      mv "$dir/$sub" "$backup"
+      c_yellow "Existing $dir/$sub backed up to $backup"
+    fi
+    ln -s "$src" "$dir/$sub"
+    c_green "Linked $dir/$sub -> $src"
+  done
 }
 
 TREE_SITTER_VERSION="${TREE_SITTER_VERSION:-0.26.1}"
@@ -135,6 +163,7 @@ cmd_init() {
   cmd_link
   cmd_zsh
   cmd_bash
+  cmd_obsidian
   cmd_deps
   c_green "Init complete."
 }
@@ -176,7 +205,7 @@ cmd_status() {
 case "${1:-}" in
   init)   shift; cmd_init "$@" ;;
   deps)   cmd_deps ;;
-  link)   cmd_link; cmd_zsh; cmd_bash ;;
+  link)   cmd_link; cmd_zsh; cmd_bash; cmd_obsidian ;;
   pull)   cmd_pull ;;
   push)   shift; cmd_push "$@" ;;
   sync)   shift; cmd_sync "$@" ;;
@@ -188,7 +217,7 @@ Usage: $0 <command> [args]
 Commands:
   init <remote-url>     First-time setup: clone repo + create symlink
   deps                  Install nvim build deps (cc, tree-sitter, Rust)
-  link                  (Re)create the ~/.config symlink
+  link                  (Re)create the ~/.config symlink (+ zsh/bash/Obsidian links)
   pull                  Pull remote changes (rebase, autostash)
   push [message]        Commit local changes and push
   sync [message]        pull then push — the everyday command

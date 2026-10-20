@@ -1,0 +1,58 @@
+{
+  "version": "1.2.0",
+  "showConfig": true,
+  "colorChoice": "transparent",
+  "standardColor": "#ADD8E6",
+  "showGroundShadows": true,
+  "standardScale": 0.5,
+  "modelPosX": 0,
+  "modelPosY": 0,
+  "modelPosZ": 0,
+  "modelRotX": 0,
+  "modelRotY": 0,
+  "modelRotZ": 0,
+  "standardEmbedHeight": 300,
+  "standardEmbedWidthPercentage": 100,
+  "alignment": "center",
+  "autoRotate": true,
+  "dampedOrbit": true,
+  "camPosX": 0,
+  "camPosY": 5,
+  "camPosZ": 10,
+  "orthographicCam": false,
+  "cameraType": "Perspective",
+  "autoShowGUI": false,
+  "columnsAmount": 3,
+  "rowHeight": 200,
+  "gapX": 10,
+  "gapY": 10,
+  "scissor": true,
+  "stlWireframe": false,
+  "stlColor": "#606060",
+  "snapshotFolder": "",
+  "snapshotAutoProperty": false,
+  "snapshotOverwrite": false,
+  "lightSettings": [
+    {
+      "dropdownValue": "directional",
+      "position": [
+        5,
+        10,
+        5
+      ],
+      "targetPosition": [
+        0,
+        0,
+        0
+      ],
+      "intensity": 1,
+      "color": "#FFFFFF",
+      "castShadows": true
+    },
+    {
+      "dropdownValue": "ambient",
+      "intensity": 0.5,
+      "color": "#FFFFFF"
+    }
+  ]
+}

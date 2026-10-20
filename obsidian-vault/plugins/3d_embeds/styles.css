@@ -1,0 +1,241 @@
+.inputKeybind {
+    width: 50px;
+}
+
+.ThreeDEmbed_Position_Inputs input {
+    width: 30%;
+}
+
+.json-error-container::before {
+    content: attr(data-error-line);
+    display: block;
+    padding: 7px;
+    background-color: var(--background-secondary);
+    border: 1px solid var(--background-modifier-border);
+    color: #b71c1c;
+    font-family: var(--font-monospace);
+    font-size: 0.95em;
+    font-weight: 500;
+    padding: 12px 14px;
+    border-radius: 8px;
+    white-space: pre-wrap;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.light-setting {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid var(--background-modifier-border);
+    border-radius: 8px;
+    background-color: var(--background-primary);
+    transition: background-color 500ms ease;
+}
+
+.light-setting:hover {
+    background-color: var(--background-secondary);
+}
+
+.light-setting summary {
+    /* padding-bottom: 0.75em; */
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    list-style: none;
+}
+
+.light-setting details[open] summary {
+    padding-bottom: 0.73em;
+}
+
+.light-setting summary::-webkit-details-marker {
+    display: none;
+}
+
+.light-setting summary::before {
+    content: "▶";
+    font-size: 0.7em;
+    transition: transform 0.3s ease;
+    margin-left: 0.25em;
+    color: var(--text-muted);
+}
+
+.light-setting details[open] summary::before {
+    transform: rotate(90deg);
+}
+
+.light-setting .ThreeDEmbed_Remove_Button {
+    color: var(--font-text-theme);
+    background-color: rgba(255, 0, 0, 0.5);
+    margin-left: auto;
+}
+
+.position-group {
+    margin-bottom: 5px;
+    display: flex;
+    gap: 5px;
+}
+
+.position-group input {
+    width: 30%;
+}
+
+@media (max-width: 600px) {
+    .position-group {
+        flex-direction: column;
+    }
+
+    .position-group input {
+        width: 100%;
+    }
+}
+
+/*Settings For GUI*/
+.ThreeD_embed_sidebar {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: auto;
+    height: 100%;
+    background-color: var(--background-secondary);
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 5px;
+    grid-template-areas: "options" "footer";
+}
+
+.ThreeD_embed_sidebar_footer {
+    height: auto;
+    align-self: end;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-area: footer;
+    row-gap: 3px;
+}
+
+.ThreeD_embed_sidebar_options {
+    height: auto;
+    align-self: start;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-area: options;
+    justify-items: start;
+    row-gap: 3px;
+}
+
+.ThreeD_embed_seperator {
+    border: none;
+    border-top: var(--background-primary);
+    margin: 20px 0;
+    width: 100%;
+}
+
+.ThreeD_embed_colorInput {
+    justify-self: center;
+    margin-bottom: 5px;
+}
+
+.ThreeD_embed_gridAxis,
+.ThreeD_embed_radioButton {
+    width: 100%;
+}
+
+.ThreeD_embed_gridAxis.active,
+.ThreeD_embed_radioButton.active {
+    background-color: green !important;
+}
+
+.radioParent {
+    position: absolute !important;
+    bottom: 10px;
+    left: 0px;
+    z-index: 100;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+button.ThreeDEmbed_Codeblock_Remove,
+button.ThreeDEmbed_Codeblock_Copy,
+button.ThreeDEmbed_Codeblock_Export {
+    background: none;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.ThreeDEmbed_Codeblock_Remove {
+    padding: var(--size-2-2) var(--size-2-3);
+    position: absolute;
+    bottom: var(--size-2-2);
+    inset-inline-end: var(--size-2-2);
+    display: flex;
+    opacity: 0;
+    color: var(--text-muted) !important;
+    border-radius: var(--radius-s);
+    cursor: var(--cursor);
+}
+
+.cm-lang-3D:hover .ThreeDEmbed_Codeblock_Remove, .cm-lang-3D-grid:hover .ThreeDEmbed_Codeblock_Remove {
+    opacity: 1;
+}
+
+button.ThreeDEmbed_Codeblock_Remove:hover {
+    background-color: rgba(129, 129, 129, 0.2) !important;
+}
+
+.ThreeDEmbed_Codeblock_Copy {
+    padding: var(--size-2-2) var(--size-2-3);
+    position: absolute;
+    top: calc(var(--size-2-2) + 30px);
+    inset-inline-end: var(--size-2-2);
+    display: flex;
+    opacity: 0;
+    color: var(--text-muted) !important;
+    border-radius: var(--radius-s);
+    cursor: var(--cursor);
+    content: var(--clipboard-list);
+}
+
+.ThreeDEmbed_Codeblock_Export {
+    padding: var(--size-2-2) var(--size-2-3);
+    position: absolute;
+    top: calc(var(--size-2-2) + 60px);
+    inset-inline-end: var(--size-2-2);
+    display: flex;
+    opacity: 0;
+    color: var(--text-muted) !important;
+    border-radius: var(--radius-s);
+    cursor: var(--cursor);
+    content: var(--clipboard-list);
+}
+
+.cm-lang-3D:hover .ThreeDEmbed_Codeblock_Copy, .cm-lang-3D-grid:hover .ThreeDEmbed_Codeblock_Copy, 
+.cm-lang-3D:hover .ThreeDEmbed_Codeblock_Export, .cm-lang-3D-grid:hover .ThreeDEmbed_Codeblock_Export {
+    opacity: 1;
+}
+
+button.ThreeDEmbed_Codeblock_Copy:hover, button.ThreeDEmbed_Codeblock_Export:hover {
+    background-color: rgba(129, 129, 129, 0.2) !important;
+}
+
+.ThreeDEmbed_DirectView_container {
+    overflow: hidden !important;
+}
+
+.ThreeDEmbed_DirectView_wrapper {
+    height: 97%;
+}
+
+.ThreeDEmbed_modal_content {
+    padding: 10px;
+}
+
+.ThreeDEmbed_grid_container {
+    display: grid;
+    grid-template-columns: repeat(var(--3d-columns), 1fr);
+    gap: var(--3d-gap);
+}
+
+.ThreeDEmbed_embed_wrapper {
+    display: flex !important;
+    justify-content: var(--3d-align, center);
+    width: 100%;
+}

@@ -1,0 +1,164 @@
+/* Tighter spacing around Tasks plugin group headings (e.g. "Milestones", "Todo") */
+.tasks-group-heading,
+.markdown-rendered .tasks-group-heading,
+.markdown-preview-view .tasks-group-heading {
+  margin-top: 1.1em !important;
+  margin-bottom: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+.tasks-group-heading + ul,
+.tasks-group-heading + .contains-task-list,
+.tasks-group-heading + .plugin-tasks-query-result {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Task list: tighter spacing around the list, not between tasks */
+ul.plugin-tasks-query-result,
+.plugin-tasks-query-result ul.contains-task-list,
+.plugin-tasks-query-result > ul {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* "Filter by description" box: font + spacing */
+.plugin-tasks-toolbar {
+  justify-content: flex-start !important;
+  gap: 8px !important;
+  margin-bottom: 0 !important;
+}
+.plugin-tasks-toolbar label input {
+  font-family: var(--font-text) !important;
+  font-size: var(--font-ui-small) !important;
+  border-radius: 999px !important;
+  border: 1px solid var(--background-modifier-border) !important;
+}
+
+/* Space above the first task / below the last one in each group */
+ul.plugin-tasks-query-result > li:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+ul.plugin-tasks-query-result > li:last-child {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+
+
+/* Toolbar: filter box, copy button and task count share one row and one style */
+.plugin-tasks-toolbar label input,
+.plugin-tasks-toolbar button {
+  height: 32px !important;
+  box-sizing: border-box !important;
+  border: 1px solid var(--background-modifier-border) !important;
+  border-radius: 999px !important;
+  background: var(--background-primary) !important;
+  box-shadow: none !important;
+}
+.plugin-tasks-toolbar label input {
+  padding-left: 34px !important;
+}
+.plugin-tasks-toolbar label svg {
+  margin-left: 8px !important;
+}
+
+.block-language-tasks > div {
+  padding-top: 0.5em !important;
+  display: flex !important;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.block-language-tasks > div > .plugin-tasks-toolbar {
+  order: 0;
+  flex: 0 0 auto;
+}
+.block-language-tasks > div > .task-count {
+  order: 1;
+  margin: 0 0 0 8px !important;
+  height: 32px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  padding: 0 14px;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 999px;
+  background: var(--background-primary);
+  color: var(--text-muted);
+  font-size: var(--font-ui-small);
+}
+.block-language-tasks > div > :not(.plugin-tasks-toolbar):not(.task-count) {
+  order: 2;
+  flex: 0 0 100%;
+}
+
+/* Space between the end of the task block and whatever follows it */
+.block-language-tasks > div {
+  margin-bottom: 0.6em !important;
+}
+
+/* Group headings as small tinted pill labels.
+   The h4 stays a full-width row; the text inside it is the pill. */
+.tasks-group-heading,
+.markdown-rendered .tasks-group-heading,
+.markdown-preview-view .tasks-group-heading {
+  display: flex !important;
+  align-items: center;
+  margin-top: 1.1em !important;
+  margin-bottom: 0.5em !important;
+  padding: 0 !important;
+  border: none !important;
+  background: none !important;
+}
+.tasks-group-heading p {
+  display: block !important;
+  width: fit-content;
+  margin: 0 !important;
+  padding: 3px 12px !important;
+  border-radius: 999px;
+  background: var(--background-secondary) !important;
+  color: var(--text-muted) !important;
+  font-family: var(--font-interface) !important;
+  font-size: var(--font-ui-smaller) !important;
+  font-weight: 500 !important;
+  line-height: 1.4 !important;
+  letter-spacing: 0.01em;
+}
+
+/* Checkboxes sit slightly high next to the text; nudge them down */
+.plugin-tasks-query-result .task-list-item-checkbox {
+  position: relative;
+  top: 3px;
+}
+
+/* Inside an embed (![[Note#Tasks heading]]) the block's own bottom margin just adds dead space */
+.markdown-embed .block-language-tasks > div {
+  margin-bottom: 0 !important;
+}
+.markdown-embed .markdown-preview-section > div:last-child {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* Note: the Tasks container is targeted as `.block-language-tasks > div` rather than
+   `:has(> .plugin-tasks-toolbar)`. An unscoped :has() forces Chromium to re-check every
+   element on each DOM change, which made file dragging lag badly. */
+/* Whole Tasks block (toolbar + groups + tasks) sits on one rounded backdrop, like block embeds.
+   The visible background lives on a pseudo-element so the corners stay intact. */
+.block-language-tasks > div {
+  position: relative;
+  isolation: isolate;
+  padding: 12px 14px 14px !important;
+  border-radius: 8px;
+}
+.block-language-tasks > div::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: var(--embed-background, var(--background-secondary));
+  border-radius: 8px;
+}

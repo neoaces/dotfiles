@@ -1,0 +1,40 @@
+/* Canvas cards use the theme's fonts: body text for content, title font for labels */
+.canvas-node-content,
+.canvas-node-content .markdown-rendered,
+.canvas-node-content .markdown-preview-view,
+.canvas-node-content .cm-editor {
+  font-family: var(--font-text);
+}
+.canvas-node-content h1 { font-family: var(--h1-font); }
+.canvas-node-content h2 { font-family: var(--h2-font); }
+.canvas-node-content h3 { font-family: var(--h3-font); }
+.canvas-node-content h4 { font-family: var(--h4-font); }
+.canvas-node-content h5 { font-family: var(--h5-font); }
+.canvas-node-content h6 { font-family: var(--h6-font); }
+.canvas-node-label,
+.canvas-group-label {
+  font-family: var(--inline-title-font);
+}
+.canvas-node-label {
+  font-size: 1.15em;
+  line-height: 1.1;
+  top: calc(-1px * var(--zoom-multiplier));
+}
+.canvas-group-label { font-size: 1.7em; }
+/* No gutter (line numbers, signs, folds) inside canvas cards */
+.canvas-node-content .cm-gutters,
+.canvas-node-content .cm-gutter {
+  display: none !important;
+  width: 0 !important;
+  margin: 0 !important;
+}
+.canvas-node-content .cm-sizer,
+.canvas-node-content .cm-contentContainer {
+  margin-inline: 0 !important;
+  padding-inline: 0 !important;
+  max-width: none !important;
+}
+.canvas-node-content .cm-content {
+  margin-left: 0 !important;
+  padding-inline: 0 !important;
+}

@@ -1,0 +1,10 @@
+/* Live Preview tables: collapse the empty column-handle strip above the table at rest,
+   restore it while the table is hovered so the handles can be grabbed */
+.markdown-source-view.mod-cm6 .cm-table-widget {
+  padding-top: 2px;
+}
+.markdown-source-view.mod-cm6 .cm-table-widget:hover,
+.markdown-source-view.mod-cm6 .cm-table-widget:focus-within,
+.markdown-source-view.mod-cm6 .cm-table-widget.is-dragging {
+  padding-top: var(--table-drag-handle-size);
+}

@@ -1,0 +1,9 @@
+{
+  "id": "canvas-group-fit",
+  "name": "Canvas Group Fit",
+  "version": "1.0.0",
+  "minAppVersion": "1.4.0",
+  "description": "Double-click a group's resize corner to fit it to the cards inside.",
+  "author": "local",
+  "isDesktopOnly": false
+}

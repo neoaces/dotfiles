@@ -1,0 +1,9 @@
+{
+  "id": "canvas-image-captions",
+  "name": "Canvas Image Captions",
+  "version": "1.0.0",
+  "minAppVersion": "1.4.0",
+  "description": "Attach a note below an image on the canvas, joined into one rounded card and sized in grid steps.",
+  "author": "local",
+  "isDesktopOnly": false
+}

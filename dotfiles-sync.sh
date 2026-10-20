@@ -90,11 +90,16 @@ cmd_obsidian() {
   fi
   mkdir -p "$dir"
   for sub in plugins snippets; do
-    src="$HOME/.config/obsidian-vault/$sub"
+    # Relative, so the link stays valid if the vault itself is synced to a
+    # machine with a different $HOME (e.g. /home/x vs /Users/x)
+    src="../../.config/obsidian-vault/$sub"
     mkdir -p "$DOTFILES_DIR/obsidian-vault/$sub"
     if [[ -L "$dir/$sub" ]]; then
-      c_yellow "Obsidian $sub already linked"
-      continue
+      if [[ "$(readlink "$dir/$sub")" == "$src" && -d "$dir/$sub" ]]; then
+        c_yellow "Obsidian $sub already linked"
+        continue
+      fi
+      rm "$dir/$sub"
     fi
     if [[ -e "$dir/$sub" ]]; then
       local backup="$dir/$sub.bak.$(date +%Y%m%d%H%M%S)"

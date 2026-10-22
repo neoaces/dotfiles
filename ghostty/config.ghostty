@@ -1,4 +1,5 @@
-background-opacity = 0.97
+background-opacity = 0.96
+background-blur = 20
 # theme = Miasma
 theme = Powder
 # background = #1e1c19

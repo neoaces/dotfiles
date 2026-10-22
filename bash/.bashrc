@@ -83,7 +83,7 @@ export PATH="$HOME/.cargo/bin:$PATH"
 [ -f "$HOME/.local/bin/env" ] && . "$HOME/.local/bin/env"
 
 # --- Aliases (mirrors zshrc) -------------------------------------------------
-alias acsh="ssh anzlechavez@sdl0-robot-serpens; clear"
+alias acsh="clear; ssh anzlechavez@sdl0-robot-serpens"
 alias cdrr="cd ~/Development/chemdroid/real-robot"
 alias nrr="nvim ~/Development/chemdroid/real-robot"
 alias zrc="source $BASHRC_FILE"         # in bash, reloads this bashrc

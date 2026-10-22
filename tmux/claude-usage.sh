@@ -26,6 +26,9 @@ if [ "$1" = --ansi ]; then
   e=$'\033' l=$'\ue0b6' r=$'\ue0b4'
   printf '%s' "$e[38;2;${bg}m$l$e[48;2;${bg};38;2;12;16;16;1m 󰚩 5h ${fu}%$e[22m${reset} $e[1m· 7d ${su}% $e[0m$e[38;2;${bg}m$r$e[0m"
 else
-  printf '#[bg=%s,fg=#0c1010,bold] 󰚩 5h %s%%#[nobold]%s #[bold]· 7d %s%% #[default] ' \
-    "$hex" "$fu" "$reset" "$su"
+  # black pill normally, amber over 70%
+  pbg=black pfg=white
+  ((high > 70)) && pbg=yellow pfg=black
+  printf '#[fg=%s]#[bg=%s,fg=%s,bold] 󰚩 5h %s%%#[nobold]%s #[bold]· 7d %s%% #[nobold]' \
+    "$pbg" "$pbg" "$pfg" "$fu" "$reset" "$su"
 fi

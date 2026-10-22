@@ -1,7 +1,7 @@
-# Over ssh, label the prompt block "SSH" instead of "PROMPT" (variant of the main config)
+# Over ssh, use the "SSH" + user@host variant of the main config
 if [[ -n $SSH_CONNECTION ]]; then
     mkdir -p ~/.cache
-    sed 's/ 󰆍 PROMPT / 󰌘 SSH /' ~/.config/starship.toml > ~/.cache/starship-ssh.toml
+    sed -f ~/.config/starship-ssh.sed ~/.config/starship.toml > ~/.cache/starship-ssh.toml
     export STARSHIP_CONFIG=~/.cache/starship-ssh.toml
 fi
 

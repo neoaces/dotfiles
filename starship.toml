@@ -12,8 +12,7 @@ $git_status\
 [ ](bg:black)[](fg:black)\
 $fill\
 $cmd_duration\
-[](fg:red)\
-[ ](fg:black bg:red)\
+[](fg:bright-black)\
 $username\
 [](fg:green bg:bright-black)\
 $os\
@@ -57,7 +56,7 @@ diverged = " ⇕⇡${ahead_count}⇣${behind_count}"
 
 [git_state]
 format = "[ \\($state( $progress_current/$progress_total)\\)]($style)"
-style = "fg:cyan bg:black"
+style = "bold fg:bright-white bg:black"
 
 [cmd_duration]
 min_time = 1000

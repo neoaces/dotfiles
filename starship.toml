@@ -16,7 +16,7 @@ $cmd_duration\
 [ ](fg:black bg:red)\
 $username\
 [](fg:green bg:bright-black)\
-[󰌽 ](fg:black bg:green)\
+$os\
 $hostname\
 $line_break\
 [❯](bold fg:bright-white) """
@@ -76,3 +76,17 @@ ssh_only = false
 trim_at = "."
 format = "[ $hostname ]($style)"
 style = "fg:bright-white bg:bright-black"
+
+# OS icon in the green pill on the right
+[os]
+disabled = false
+format = "[$symbol]($style)"
+style = "fg:black bg:green"
+
+[os.symbols]
+Macos = "󰀵 "
+Ubuntu = "󰕈 "
+Arch = "󰣇 "
+Debian = "󰣚 "
+Fedora = "󰣛 "
+Linux = "󰌽 "

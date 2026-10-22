@@ -9,9 +9,10 @@ $directory\
 $git_branch\
 $git_state\
 $git_status\
+[ ](bg:black)[](fg:black)\
 $fill\
 $cmd_duration\
-[](fg:red bg:black)\
+[](fg:red)\
 [ ](fg:black bg:red)\
 $username\
 [](fg:green bg:bright-black)\
@@ -28,7 +29,6 @@ error_symbol = "[ 󰆍 ERROR ](bold fg:black bg:red)[](fg:red bg:black)"
 
 [fill]
 symbol = " "
-style = "bg:black"
 
 [directory]
 truncation_length = 5
@@ -63,7 +63,7 @@ style = "fg:cyan bg:black"
 min_time = 1000
 show_milliseconds = false
 format = "[ $duration ]($style)"
-style = "bold fg:bright-white bg:black"
+style = "bold fg:bright-white"
 
 [username]
 show_always = true

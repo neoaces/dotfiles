@@ -26,7 +26,8 @@ conda() {
 
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
-alias acsh="clear; ssh anzlechavez@sdl0-robot-serpens"
+alias acsh="clear; ssh -t anzlechavez@sdl0-robot-serpens 'tmux new -A -s rr -c ~/Development/chemdroid/real-robot'"
+alias acssh="clear; ssh anzlechavez@sdl0-robot-serpens"
 alias cdrr="cd ~/Development/chemdroid/real-robot"
 alias nrr="nvim ~/Development/chemdroid/real-robot"
 alias zrc="source $ZDOTDIR/.zshrc"

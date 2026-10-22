@@ -1,3 +1,10 @@
+# Over ssh, label the prompt block "SSH" instead of "PROMPT" (variant of the main config)
+if [[ -n $SSH_CONNECTION ]]; then
+    mkdir -p ~/.cache
+    sed 's/ 󰆍 PROMPT / 󰌘 SSH /' ~/.config/starship.toml > ~/.cache/starship-ssh.toml
+    export STARSHIP_CONFIG=~/.cache/starship-ssh.toml
+fi
+
 # Cached starship init (delete ~/.starship-init.zsh after upgrading starship)
 [[ -f ~/.starship-init.zsh ]] || starship init zsh --print-full-init > ~/.starship-init.zsh
 source ~/.starship-init.zsh

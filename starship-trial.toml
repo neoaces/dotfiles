@@ -1,0 +1,78 @@
+add_newline = true
+command_timeout = 1000
+
+format = """
+$character\
+[](fg:bright-black bg:black)\
+$directory\
+[](fg:bright-black bg:black)\
+$git_branch\
+$git_state\
+$git_status\
+$fill\
+$cmd_duration\
+[](fg:red bg:black)\
+[ ](fg:black bg:red)\
+$username\
+[](fg:green bg:bright-black)\
+[󰌽 ](fg:black bg:green)\
+$hostname\
+$line_break\
+[❯](bold fg:bright-white) """
+
+# light "PROMPT" block, then a slanted black gap before the directory
+[character]
+format = "$symbol"
+success_symbol = "[ 󰆍 PROMPT ](bold fg:bright-white bg:#0047ab)[](fg:#0047ab bg:black)"
+error_symbol = "[ 󰆍 ERROR ](bold fg:black bg:red)[](fg:red bg:black)"
+
+[fill]
+symbol = " "
+style = "bg:black"
+
+[directory]
+truncation_length = 5
+format = "[ 󰉋 $path ]($style)[$read_only]($read_only_style)"
+style = "fg:bright-white bg:bright-black"
+read_only = " 🔒"
+read_only_style = "fg:bright-white bg:bright-black"
+
+[git_branch]
+format = "[ 󰘬 $branch]($style)"
+style = "fg:white bg:black"
+
+[git_status]
+format = "[$all_status$ahead_behind]($style)"
+style = "fg:white bg:black"
+conflicted = " ="
+untracked = " ?"
+modified = " !"
+staged = " +"
+renamed = " »"
+deleted = " ✘"
+stashed = " ≡"
+ahead = " ⇡${count}"
+behind = " ⇣${count}"
+diverged = " ⇕⇡${ahead_count}⇣${behind_count}"
+
+[git_state]
+format = "[ \\($state( $progress_current/$progress_total)\\)]($style)"
+style = "fg:cyan bg:black"
+
+[cmd_duration]
+min_time = 1000
+show_milliseconds = false
+format = "[ $duration ]($style)"
+style = "bold fg:bright-white bg:black"
+
+[username]
+show_always = true
+format = "[ $user ]($style)"
+style_user = "fg:bright-white bg:bright-black"
+style_root = "bold fg:red bg:bright-black"
+
+[hostname]
+ssh_only = false
+trim_at = "."
+format = "[ $hostname ]($style)"
+style = "fg:bright-white bg:bright-black"

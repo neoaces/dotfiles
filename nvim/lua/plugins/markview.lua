@@ -41,22 +41,20 @@ return {
 
         -- Normal is transparent, so markview derives its backgrounds from a
         -- Catppuccin fallback (#1E1E2E) and tints everything purple. Rebuild its
-        -- groups against miasma's real bg; markview never overwrites a set group,
-        -- so clear them first. Then swap inline code text for miasma's pale sand.
+        -- groups against Powder's real (terminal) bg; markview never overwrites a
+        -- set group, so clear them first. Inline code text comes from @markup.raw.
         local function inline_code_hl()
             local normal = vim.api.nvim_get_hl(0, { name = "Normal" })
-            vim.api.nvim_set_hl(0, "Normal", vim.tbl_extend("force", normal, { bg = "#1e1c19" }))
+            vim.api.nvim_set_hl(0, "Normal", vim.tbl_extend("force", normal, { bg = "#0c1010" }))
             for _, group in ipairs(vim.fn.getcompletion("Markview", "highlight")) do
                 vim.api.nvim_set_hl(0, group, {})
             end
             require("markview.highlights").setup()
             vim.api.nvim_set_hl(0, "Normal", normal)
 
-            local hl = vim.api.nvim_get_hl(0, { name = "MarkviewInlineCode", link = false })
-            vim.api.nvim_set_hl(0, "MarkviewInlineCode", { fg = "#d6cfa8", bg = hl.bg })
             -- Light grey backdrop behind task text (open and done)
-            vim.api.nvim_set_hl(0, "MarkviewTask", { bg = "#3a3a3a" })
-            vim.api.nvim_set_hl(0, "MarkviewTaskDone", { bg = "#3a3a3a", strikethrough = true, fg = "#7a7a7a" })
+            vim.api.nvim_set_hl(0, "MarkviewTask", { bg = "#24262e" })
+            vim.api.nvim_set_hl(0, "MarkviewTaskDone", { bg = "#24262e", strikethrough = true, fg = "#5d6070" })
         end
         vim.api.nvim_create_autocmd("ColorScheme", {
             callback = function() vim.schedule(inline_code_hl) end,

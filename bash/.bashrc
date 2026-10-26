@@ -51,6 +51,7 @@ if command -v starship >/dev/null 2>&1; then
         export STARSHIP_CONFIG=~/.cache/starship-ssh.toml
     fi
     eval "$(starship init bash)"
+    source ~/.config/starship-fit.sh
 else
     PS1='\u@\h:\w\$ '
 fi
@@ -86,6 +87,7 @@ export PATH="$HOME/.cargo/bin:$PATH"
 alias acsh="clear; ssh -t anzlechavez@sdl0-robot-serpens 'tmux new -A -s rr -c ~/Development/chemdroid/real-robot'"
 alias acssh="clear; ssh anzlechavez@sdl0-robot-serpens"
 alias cdrr="cd ~/Development/chemdroid/real-robot"
+alias cdpw="cd ~/Development/chemdroid/real-robot/src/chemdroid_real_robot/powder_weighing"
 alias nrr="nvim ~/Development/chemdroid/real-robot"
 alias zrc="source $BASHRC_FILE"         # in bash, reloads this bashrc
 alias srs="source $BASHRC_FILE"

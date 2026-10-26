@@ -8,6 +8,7 @@ fi
 # Cached starship init (delete ~/.starship-init.zsh after upgrading starship)
 [[ -f ~/.starship-init.zsh ]] || starship init zsh --print-full-init > ~/.starship-init.zsh
 source ~/.starship-init.zsh
+source ~/.config/starship-fit.sh
 
 # conda: lazy-loaded on first use (eager `conda init` cost ~0.8s per shell)
 conda() {
@@ -29,6 +30,7 @@ export PATH="$HOME/.cargo/bin:$PATH"
 alias acsh="clear; ssh -t anzlechavez@sdl0-robot-serpens 'tmux new -A -s rr -c ~/Development/chemdroid/real-robot'"
 alias acssh="clear; ssh anzlechavez@sdl0-robot-serpens"
 alias cdrr="cd ~/Development/chemdroid/real-robot"
+alias cdpw="cd ~/Development/chemdroid/real-robot/src/chemdroid_real_robot/powder_weighing"
 alias nrr="nvim ~/Development/chemdroid/real-robot"
 alias zrc="source $ZDOTDIR/.zshrc"
 alias sink="~/.config/dotfiles-sync.sh sync"

@@ -35,6 +35,13 @@ format = "[ 󰉋 $path ]($style)[$read_only]($read_only_style)"
 style = "fg:bright-white bg:bright-black"
 read_only = " 🔒"
 read_only_style = "fg:bright-white bg:bright-black"
+# substitutions only see the full path, not the repo-truncated one
+truncate_to_repo = false
+
+# applied in order, so the longer path goes first
+[directory.substitutions]
+"~/Development/chemdroid/real-robot/src/chemdroid_real_robot/powder_weighing" = "cdroid/powder_weighing"
+"~/Development/chemdroid" = "cdroid"
 
 [git_branch]
 format = "[ 󰘬 $branch]($style)"

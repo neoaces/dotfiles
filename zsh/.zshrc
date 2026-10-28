@@ -6,9 +6,12 @@ if [[ -n $SSH_CONNECTION ]]; then
 fi
 
 # Cached starship init (delete ~/.starship-init.zsh after upgrading starship)
-[[ -f ~/.starship-init.zsh ]] || starship init zsh --print-full-init > ~/.starship-init.zsh
-source ~/.starship-init.zsh
-source ~/.config/starship-fit.sh
+if (( $+commands[starship] )); then
+    # -s: an empty cache (written while starship wasn't on PATH) is regenerated
+    [[ -s ~/.starship-init.zsh ]] || starship init zsh --print-full-init > ~/.starship-init.zsh
+    source ~/.starship-init.zsh
+    source ~/.config/starship-fit.sh
+fi
 
 # conda: lazy-loaded on first use (eager `conda init` cost ~0.8s per shell)
 conda() {
@@ -50,3 +53,9 @@ google() {
 
 # Old dotfiles layout (repo at ~/dotfiles/config) — `sink` migrates it to ~/dotfiles
 [ -d "$HOME/dotfiles/config/.git" ] && echo "dotfiles: old ~/dotfiles/config layout detected — run 'sink' to migrate to ~/dotfiles"
+
+# Completion (dump kept out of the synced folder)
+autoload -Uz compinit && compinit -d ~/.cache/zcompdump
+
+# Powder colours for the line editor, completion, ls/grep and plugins — keep last
+source $ZDOTDIR/powder.zsh

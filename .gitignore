@@ -77,3 +77,6 @@ Code/agent-host/
 
 # --- Excluded apps ---
 StereoLabs/
+
+# --- Zed local databases ---
+zed/prompts/

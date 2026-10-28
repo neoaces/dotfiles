@@ -2,17 +2,50 @@
 size = 14
 
 [font.normal]
-family = "Input Nerd Font Mono"
+family = "InputSub Nerd Font Mono"
 style = "Regular"
 
 [font.bold]
-family = "Input Nerd Font Mono"
+family = "InputSub Nerd Font Mono"
 style = "Bold"
 
 [font.italic]
-family = "Input Nerd Font Mono"
+family = "InputSub Nerd Font Mono"
 style = "Italic"
 
 [font.bold_italic]
-family = "Input Nerd Font Mono"
+family = "InputSub Nerd Font Mono"
 style = "Bold Italic"
+
+# Powder — same palette as ghostty/themes/Powder
+[colors.primary]
+background = "#0c1010"
+foreground = "#cfd3dd"
+
+[colors.cursor]
+cursor = "#6b97f2"
+text = "#0c1010"
+
+[colors.selection]
+background = "#1a302d"
+text = "#dde1ea"
+
+[colors.normal]
+black = "#1a1b21"
+red = "#fb7185"
+green = "#a3e635"
+yellow = "#fbbf24"
+blue = "#6b97f2"
+magenta = "#a78bfa"
+cyan = "#2dd4bf"
+white = "#b6bac8"
+
+[colors.bright]
+black = "#5d6070"
+red = "#fda4af"
+green = "#bef264"
+yellow = "#fcd34d"
+blue = "#9dbbf7"
+magenta = "#c4b5fd"
+cyan = "#5eead4"
+white = "#dde1ea"

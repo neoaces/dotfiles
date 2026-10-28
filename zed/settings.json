@@ -1,0 +1,55 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "ssh_connections": [
+    {
+      "host": "sdl0-robot-serpens",
+      "username": "anzlechavez",
+      "args": [],
+      "projects": [
+        {
+          "paths": [
+            "/home/anzlechavez"
+          ]
+        },
+        {
+          "paths": [
+            "/home/anzlechavez/Development/chemdroid/real-robot/src/chemdroid_real_robot/powder_weighing/./"
+          ]
+        }
+      ]
+    }
+  ],
+  "icon_theme": "Zed (Default)",
+  "telemetry": {
+    "diagnostics": true,
+    "metrics": true,
+    "anthropic_retention": false
+  },
+  "session": {
+    "trust_all_worktrees": true
+  },
+  "vim_mode": true,
+  "agent_servers": {
+    "claude-acp": {
+      "type": "registry"
+    }
+  },
+  "ui_font_size": 16,
+  "buffer_font_size": 15,
+  "buffer_font_family": "InputSub Nerd Font Mono",
+  "terminal": {
+    "font_family": "InputSub Nerd Font Mono",
+  },
+  "theme": {
+    "mode": "dark",
+    "light": "One Light",
+    "dark": "Powder",
+  },
+}

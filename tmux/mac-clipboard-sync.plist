@@ -7,7 +7,7 @@
   <array>
     <string>/bin/bash</string>
     <string>-c</string>
-    <string>export PATH=/opt/homebrew/bin:/usr/local/bin:$PATH; exec "$HOME/dotfiles/config/tmux/mac-clipboard-sync.sh"</string>
+    <string>export PATH=/opt/homebrew/bin:/usr/local/bin:$PATH; exec "$HOME/.config/tmux/mac-clipboard-sync.sh"</string>
   </array>
   <key>RunAtLoad</key><true/>
   <key>KeepAlive</key><true/>

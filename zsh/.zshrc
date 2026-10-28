@@ -36,10 +36,10 @@ alias zrc="source $ZDOTDIR/.zshrc"
 alias sink="~/.config/dotfiles-sync.sh sync"
 alias srs="source $ZDOTDIR/.zshrc"
 alias nzsh="nvim $ZDOTDIR/.zshrc"
-alias cdot="cd ~/dotfiles/config"
-alias ndot="nvim ~/dotfiles/config"
-alias cdvim="cd ~/dotfiles/config/nvim"
-alias nnvim="nvim ~/dotfiles/config/nvim"
+alias cdot="cd ~/dotfiles"
+alias ndot="nvim ~/dotfiles"
+alias cdvim="cd ~/dotfiles/nvim"
+alias nnvim="nvim ~/dotfiles/nvim"
 alias psst="pbpaste"
 alias nv="nvim ."
 alias aider-oss="/home/neoaces/Development/ai/aider.sh"   # aider + local gpt-oss:20b via Ollama
@@ -47,3 +47,6 @@ google() {
   local query="${*// /+}"
   open "https://www.google.com/search?q=${query}"
 }
+
+# Old dotfiles layout (repo at ~/dotfiles/config) — `sink` migrates it to ~/dotfiles
+[ -d "$HOME/dotfiles/config/.git" ] && echo "dotfiles: old ~/dotfiles/config layout detected — run 'sink' to migrate to ~/dotfiles"

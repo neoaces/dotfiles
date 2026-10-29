@@ -34,17 +34,27 @@ export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 alias acsh="clear; ssh -t anzlechavez@sdl0-robot-serpens 'tmux new -A -s rr -c ~/Development/chemdroid/real-robot'"
 alias acssh="clear; ssh anzlechavez@sdl0-robot-serpens"
-alias cdrr="cd ~/Development/chemdroid/real-robot"
-alias cdpw="cd ~/Development/chemdroid/real-robot/src/chemdroid_real_robot/powder_weighing"
-alias nrr="nvim ~/Development/chemdroid/real-robot"
 alias zrc="source $ZDOTDIR/.zshrc"
 alias sink="~/.config/dotfiles-sync.sh sync"
 alias srs="source $ZDOTDIR/.zshrc"
 alias nzsh="nvim $ZDOTDIR/.zshrc"
-alias cdot="cd ~/dotfiles"
-alias ndot="nvim ~/dotfiles"
-alias cdvim="cd ~/dotfiles/nvim"
-alias nnvim="nvim ~/dotfiles/nvim"
+
+# Directory aliases: cd<key> to cd, n<key> to open in nvim, cl<key> to start claude there
+typeset -A alias_dirs=(
+  rr  $HOME/Development/chemdroid/real-robot
+  pw  $HOME/Development/chemdroid/real-robot/src/chemdroid_real_robot/powder_weighing
+  dot $HOME/dotfiles
+  ob  $HOME/dotfiles/obsidian-vault
+  nv  $HOME/dotfiles/nvim
+)
+for key dir in ${(kv)alias_dirs}; do
+  alias cd$key="cd $dir"
+  alias n$key="nvim $dir"
+  alias cl$key="(cd $dir && claude)"
+done
+alias cdot=cddot   # muscle memory
+unset key dir
+
 alias psst="pbpaste"
 alias nv="nvim ."
 alias aider-oss="/home/neoaces/Development/ai/aider.sh"   # aider + local gpt-oss:20b via Ollama

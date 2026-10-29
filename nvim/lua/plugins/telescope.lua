@@ -17,5 +17,7 @@ return {
         { '<C-t>gci', '<cmd>Telescope lsp_incoming_calls<cr>', desc = 'Telescope: incoming calls' },
         { '<C-t>gco', '<cmd>Telescope lsp_outgoing_calls<cr>', desc = 'Telescope: outgoing calls' },
         { '<C-t>d', '<cmd>Telescope diagnostics bufnr=0<cr>', desc = 'Telescope: buffer diagnostics' },
+        { '<C-t>g', '<cmd>Telescope live_grep<cr>', desc = 'Telescope: live grep' },
+        { '<C-t>s', '<cmd>Telescope lsp_dynamic_workspace_symbols<cr>', desc = 'Telescope: dynamic workspace symbols' },
     },
 }

@@ -43,7 +43,7 @@ local function open_pad(win)
         winbar = "",
     }
     for name, value in pairs(opts) do
-        vim.api.nvim_set_option_value(name, value, { scope = "local", win = pad })
+        vim.wo[pad][name] = value -- Like :set, so it outlasts a buffer swap in the pad
     end
     return pad
 end

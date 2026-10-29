@@ -53,8 +53,10 @@
   "ui_font_size": 16,
   "buffer_font_size": 15,
   "buffer_font_family": "InputSub Nerd Font Mono",
+  "buffer_font_fallbacks": ["BlexMono Nerd Font Mono"],
   "terminal": {
     "font_family": "InputSub Nerd Font Mono",
+    "font_fallbacks": ["BlexMono Nerd Font Mono"],
   },
   "theme": {
     "mode": "dark",

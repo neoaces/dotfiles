@@ -63,7 +63,7 @@
       {
         "symbol": "+",
         "name": "Milestones",
-        "nextStatusSymbol": "=",
+        "nextStatusSymbol": "x",
         "availableAsCommand": false,
         "type": "TODO"
       }

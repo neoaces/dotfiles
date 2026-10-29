@@ -1,0 +1,5 @@
+/* Baseline paints popout windows with rgb(var(--mono-rgb-100)), the contrast
+   color (white in dark mode, black in light), and its titlebar is transparent */
+body.is-popout-window {
+  background-color: var(--background-secondary);
+}

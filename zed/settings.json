@@ -38,6 +38,13 @@
     "trust_all_worktrees": true
   },
   "vim_mode": true,
+  "agent": {
+    "threads_sidebar": {
+      "position": "right"
+    },
+    "favorite_models": [],
+    "model_parameters": []
+  },
   "agent_servers": {
     "claude-acp": {
       "type": "registry"

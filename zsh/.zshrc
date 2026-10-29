@@ -36,6 +36,7 @@ alias acsh="clear; ssh -t anzlechavez@sdl0-robot-serpens 'tmux new -A -s rr -c ~
 alias acssh="clear; ssh anzlechavez@sdl0-robot-serpens"
 alias zrc="source $ZDOTDIR/.zshrc"
 alias sink="~/.config/dotfiles-sync.sh sync"
+alias lynk="~/.config/dotfiles-sync.sh link"
 alias srs="source $ZDOTDIR/.zshrc"
 alias nzsh="nvim $ZDOTDIR/.zshrc"
 

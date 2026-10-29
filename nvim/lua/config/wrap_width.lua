@@ -4,7 +4,7 @@
 -- text. The split line between the two marks the wrap column.
 local M = {}
 
-local width = 80
+local width = 100
 local pads = {} -- markdown window -> its padding window
 local pending = false
 

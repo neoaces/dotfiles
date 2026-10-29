@@ -1,0 +1,9 @@
+{
+  "id": "fold-on-open",
+  "name": "Fold on open",
+  "version": "1.0.0",
+  "minAppVersion": "1.0.0",
+  "description": "Folds every heading of a note with `fold: true` in its frontmatter each time it's opened.",
+  "author": "Anzle Chavez",
+  "isDesktopOnly": false
+}

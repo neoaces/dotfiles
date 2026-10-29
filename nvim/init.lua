@@ -19,7 +19,7 @@ vim.keymap.set({ "n", "x" }, "j", "v:count == 0 ? 'gj' : 'j'", { expr = true, si
 vim.keymap.set({ "n", "x" }, "k", "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
 
 -- MARKDOWN
-require("config.wrap_width").setup()  -- Display-only wrap at 80 columns
+require("config.wrap_width").setup()  -- Display-only wrap at 100 columns
 
 -- FOLDING
 vim.g.markdown_folding = 1      -- Fold markdown by heading (built-in ftplugin)

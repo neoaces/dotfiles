@@ -1,12 +1,12 @@
-background-opacity = 0.96
-background-blur = 20
+background-opacity = 0.98
+background-blur = 30
 # theme = Miasma
 theme = Powder
 # background = #1e1c19
 font-family = "InputSub Nerd Font Mono"
 font-family = "Input Nerd Font Mono"
 font-size = 14
-window-padding-x = 10
-window-padding-y = 10
+window-padding-x = 12
+window-padding-y = 12
 custom-shader = shaders/cursor.glsl
 adjust-cell-height = 8%

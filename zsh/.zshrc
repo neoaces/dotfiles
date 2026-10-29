@@ -28,6 +28,8 @@ conda() {
     conda "$@"
 }
 
+# Homebrew Python ahead of /usr/bin; libexec/bin adds unversioned python and pip
+export PATH="/opt/homebrew/opt/python/libexec/bin:/opt/homebrew/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 alias acsh="clear; ssh -t anzlechavez@sdl0-robot-serpens 'tmux new -A -s rr -c ~/Development/chemdroid/real-robot'"

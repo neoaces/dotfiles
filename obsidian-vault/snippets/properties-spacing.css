@@ -1,0 +1,5 @@
+/* Less space between a note's Properties and what follows (Obsidian's default is 2rem).
+   Tweak the value to taste. */
+.metadata-container {
+  margin-block-end: 0.5rem !important;
+}

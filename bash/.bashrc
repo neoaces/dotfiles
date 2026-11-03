@@ -43,6 +43,8 @@ if ! shopt -oq posix; then
 fi
 
 # --- Prompt ------------------------------------------------------------------
+# rtprio > 0 (pwsh login): shown as an RT pill in the prompt
+case $(ulimit -r 2>/dev/null) in ''|0) unset STARSHIP_RTPRIO ;; *) export STARSHIP_RTPRIO=$(ulimit -r) ;; esac
 if command -v starship >/dev/null 2>&1; then
     # Over ssh, use the "SSH" + user@host variant of the main config
     if [ -n "$SSH_CONNECTION" ]; then

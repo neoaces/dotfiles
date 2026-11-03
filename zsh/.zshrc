@@ -5,6 +5,9 @@ if [[ -n $SSH_CONNECTION ]]; then
     export STARSHIP_CONFIG=~/.cache/starship-ssh.toml
 fi
 
+# rtprio > 0 (pwsh login): shown as an RT pill in the prompt
+case $(ulimit -r 2>/dev/null) in ''|0) unset STARSHIP_RTPRIO ;; *) export STARSHIP_RTPRIO=$(ulimit -r) ;; esac
+
 # Cached starship init (delete ~/.starship-init.zsh after upgrading starship)
 if (( $+commands[starship] )); then
     # -s: an empty cache (written while starship wasn't on PATH) is regenerated
@@ -42,6 +45,17 @@ alias sink="~/.config/dotfiles-sync.sh sync"
 alias lynk="~/.config/dotfiles-sync.sh link"
 alias srs="source $ZDOTDIR/.zshrc"
 alias nzsh="nvim $ZDOTDIR/.zshrc"
+alias brc="source $ZDOTDIR/.zshrc"
+alias nbash="nvim ~/.config/bash/.bashrc"
+alias cdvim=cdnv
+alias nnvim=nnv
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+# Notify when a long command finishes: sleep 10; alert
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
 # Directory aliases: cd<key> to cd, n<key> to open in nvim, cl<key> to start claude there
 typeset -A alias_dirs=(
@@ -59,7 +73,13 @@ done
 alias cdot=cddot   # muscle memory
 unset key dir
 
-alias psst="pbpaste"
+if (( $+commands[pbpaste] )); then
+  alias psst="pbpaste"
+elif (( $+commands[wl-paste] )); then
+  alias psst="wl-paste"
+else
+  alias psst="xclip -selection clipboard -o"
+fi
 alias nv="nvim ."
 alias aider-oss="/home/neoaces/Development/ai/aider.sh"   # aider + local gpt-oss:20b via Ollama
 google() {

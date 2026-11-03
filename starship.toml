@@ -3,6 +3,7 @@ command_timeout = 1000
 
 format = """
 $character\
+${env_var.STARSHIP_RTPRIO}\
 [](fg:bright-black bg:black)\
 $directory\
 [](fg:bright-black bg:black)\
@@ -25,6 +26,11 @@ $line_break\
 format = "$symbol"
 success_symbol = "[ 󰆍 PROMPT ](bold fg:bright-white bg:#0047ab)[](fg:#0047ab bg:black)"
 error_symbol = "[ 󰆍 ERROR ](bold fg:black bg:red)[](fg:red bg:black)"
+
+# real-time priority (pwsh login, for dsh.sh); set by the rc files
+[env_var.STARSHIP_RTPRIO]
+format = "[ 󱐋 RT$env_value ]($style)"
+style = "bold fg:yellow bg:black"
 
 [fill]
 symbol = " "

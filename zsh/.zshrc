@@ -34,6 +34,7 @@ export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 alias acsh="clear; ssh -t anzlechavez@sdl0-robot-serpens 'tmux new -A -s rr -c ~/Development/chemdroid/real-robot'"
 alias acssh="clear; ssh anzlechavez@sdl0-robot-serpens"
+alias pwsh="clear; ssh -t anzlechavez@sdl0-robot-serpens 'cd ~/Development/chemdroid/real-robot && exec \$SHELL -l'"   # PAM login: rtprio 50 for dsh.sh
 alias zrc="source $ZDOTDIR/.zshrc"
 alias sink="~/.config/dotfiles-sync.sh sync"
 alias lynk="~/.config/dotfiles-sync.sh link"

@@ -86,7 +86,9 @@ export PATH="$HOME/.cargo/bin:$PATH"
 # --- Aliases (mirrors zshrc) -------------------------------------------------
 alias acsh="clear; ssh -t anzlechavez@sdl0-robot-serpens 'tmux new -A -s rr -c ~/Development/chemdroid/real-robot'"
 alias acssh="clear; ssh anzlechavez@sdl0-robot-serpens"
-alias pwsh="clear; ssh -t anzlechavez@sdl0-robot-serpens 'cd ~/Development/chemdroid/real-robot && exec \$SHELL -l'"   # PAM login: rtprio 50 for dsh.sh
+# Tailscale SSH skips PAM, so hop to OpenSSH on localhost: rtprio 50 + memlock for dsh.sh
+unalias pwsh 2>/dev/null
+pwsh() { clear; ssh -t anzlechavez@sdl0-robot-serpens "ssh -t localhost 'cd ~/Development/chemdroid/real-robot && exec \$SHELL -l'"; }
 alias cdrr="cd ~/Development/chemdroid/real-robot"
 alias cdpw="cd ~/Development/chemdroid/real-robot/src/chemdroid_real_robot/powder_weighing"
 alias nrr="nvim ~/Development/chemdroid/real-robot"

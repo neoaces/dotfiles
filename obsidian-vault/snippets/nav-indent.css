@@ -1,15 +1,12 @@
-/* File explorer: indent folder contents under their parent and draw indentation guides */
+/* File explorer: indent folder contents under their parent and draw indentation guides.
+   Obsidian indents each row by measuring where its .tree-item-children container sits,
+   so these container margins ARE the indent: zeroing them anywhere flattens the tree
+   and stacks every guide line in one spot.
+   The margin puts each guide line under its parent folder's chevron (Baseline rows have
+   32px of start padding and the chevron is centred 12px before the text). */
 body {
   --nav-indentation-guide-width: 1px;
   --nav-indentation-guide-color: var(--background-modifier-border);
-  --nav-item-children-margin-start: 16px;
-  --nav-item-children-padding-start: 8px;
-}
-.nav-folder-children {
-  border-inline-start: var(--nav-indentation-guide-width) solid var(--nav-indentation-guide-color);
-}
-.nav-folder.mod-root > .nav-folder-children {
-  margin-inline-start: 0;
-  padding-inline-start: 0;
-  border-inline-start: none;
+  --nav-item-children-margin-start: calc(20px - var(--nav-indentation-guide-width) / 2);
+  --nav-item-children-padding-start: 4px;
 }

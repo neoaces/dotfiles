@@ -1,0 +1,736 @@
+\:q
+sors
+cdot
+sink sync
+sink
+fm
+ls
+gcc
+clang
+ls
+cd Development
+ls
+mkdir neorl-pend
+cd neorl-pend
+ls
+cd ../
+ls
+rm -rf neorl-pend
+mkdir rl-pend
+cd rl-pend
+ls
+git init
+nvim .
+tmux -h
+man tmux
+acsh
+ls
+czsh
+sor
+sors
+google best markdown extension nvim
+czsh
+sors
+google best markdown extension nvim
+nvim
+cdot
+nvim
+acsh
+nvim .
+nvim
+cd Documents/neonoted
+ls
+nvim .
+nvim .
+nvim .
+cdot
+cd rl/
+nvim .
+nv
+czsh
+nv
+srs
+srs
+sors
+nv
+cdot
+cdot
+nv
+cdot
+cvim
+nv
+cvim
+nv
+cvim
+cvim
+nv
+cvim
+claude
+ls
+nv
+nv
+nv
+nv
+nv
+nv
+nv
+nv
+nv
+nv
+nv
+nv
+nv
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+. "$HOME/.cargo/env"
+czsh
+sors
+czsh
+sors
+srs
+cdot
+nvim
+nvim
+cdot
+cdot
+cdot
+cdot
+cdot
+claude
+cdot
+cdot
+cd dotfiles
+claude
+brew install tree-sitter-cli
+nv
+srs
+nv
+claude
+fg
+cdot
+claude
+claude
+brew install imagemagick
+cd dotfiles/config/
+ls
+claude
+q_{âƒ¨ƒ·} 
+claude
+tmux
+acdh
+acsh
+acsh
+acsh
+cash
+acsh
+ls
+cd Documents/neonoted
+ls
+cd rl
+cd ..
+claude
+sink
+nv
+cd Documents/neonoted
+claude
+sink
+cd '/Users/neoaces/Documents/neonoted/SDL0/Meeting Notes'
+ls
+claude
+acsh
+cd Documents/neonoted
+cd rl
+ls
+nvim notes.md
+nvim -r notes.md
+nvim notes.md
+nvim notes.md
+nv
+nv
+nv
+nv
+nv
+nv
+nv
+nv
+nv
+sink
+acsh
+claude
+cd dotfiles
+cd config
+cd ..
+cd ..
+sink
+cd dotfiles/config
+claude
+cd ~/Documents/neonoted
+claude
+cluade
+claude
+sink
+ls
+claude
+sink
+nv
+nv
+nv
+nv
+nv
+cdrr
+srs
+ls
+cd Development
+cd chemdroid/real-robot
+ls
+nv README.md
+\:q
+nv
+nvim README.md
+nvim README.md
+nvim README.md
+acshg
+acsh
+cdot
+ndot
+cd dotfiles
+cd config
+claude
+claude
+acsh
+tmux
+cluade
+claude
+cd dotfiles/config
+claude
+claude
+tmux attach
+acsh
+fsearch
+acsh
+git clone https://github.com/zeusinsight/FinderSearch.git\
+cd FinderSearch\
+./scripts/build.sh\
+open dist/FinderSearch.app
+cargo build --release && ./target/release/fsearch install   # -> ~/.local/bin/fsearch\
+fsearch fsearch main              # find files by name\
+fsearch 'ext:rs grep:apply_dir'   # search inside files
+cd ../Development/
+ls
+git clone git@github.com:noahdunnagan/fsearch.git
+cd fsearch
+cargo build --release && ./target/release/fsearch install   # -> ~/.local/bin/fsearch\
+fsearch fsearch main              # find files by name\
+fsearch 'ext:rs grep:apply_dir'   # search inside files
+claude
+./target/release/fsearch install
+claude
+claude
+./target/release/fsearch install
+pkill fsearch
+./target/release/fsearch install
+fsearch
+fsearch powder
+fsearch serve
+fsearch powder
+fsearch
+acsh
+acsh
+acsh
+acsh
+caffeinate -d
+ls
+acsh
+infocmp -x xterm-ghostty | ssh anzlechavez@sdl0-robot-serpens -- tic -x -\
+
+acsh
+acsh
+acsh
+acsh
+acsh
+brew install pngpaste
+ssh-copy-id anzlechavez@sdl0-robot-serpens
+ssh -v\
+                                                                                                         âƒ´‚     anzlechavez@sdl0-robot-serpens
+ssh -v anzlechavez@sdl0-robot-serpens
+ssh-copy-id anzlechavez@sdl0-robot-serpens
+ssh -v anzlechavez@sdl0-robot-serpens
+ssh anzlechavez@sdl0-robot-serpens true
+sink
+sink
+git pull
+cd dotfiles/config
+ls
+cd tmux
+./mac-clipboard-sync.sh
+./mac-clipboard-sync.sh
+./mac-clipboard-sync.sh
+cp ~/dotfiles/config/tmux/mac-clipboard-sync.plist ~/Library/LaunchAgents/local.clipboard-sync.plist\
+launchctl load ~/Library/LaunchAgents/local.clipboard-sync.plist
+acsh
+brew tap Artzainnn/tap && brew install --cask claudeusagebar
+brew trust --cask artzainnn/tap/claudeusagebar
+brew tap Artzainnn/tap && brew install --cask claudeusagebar
+acsh
+tmux kill-session -q
+tmux kill-session -a
+acsh
+acsh
+open https://claude.ai/artifact/WxqNxEV3J3ZshZC7Yf1d7Q https://claude.ai/artifact/RgqYGuqzopE6Cpa3JC36v3 https://claude.ai/artifact/JWj5UZAkqd4tXtmGtx2HJu https://claude.ai/artifact/7yGqZjmwEMsyKNt4ABFTgJ https://claude.ai/artifact/K3LLUYnghZQyuXMYpWovbk
+acsh
+acsh
+caffeinate -d
+acsh
+sink
+ls
+acsh
+acsh
+acsh
+acsh
+acsh
+sink
+./dotfiles.sh link
+cd neonoted
+sink
+./dotfiles.sh link
+cd dotfiles/config/
+ls
+./dotfiles-sync.sh pull
+./dotfiles-sync.sh link
+ls -ld ~/.config ~/neonoted\
+ls -l ~/neonoted/.obsidian
+acsh
+acsh
+acsh
+acsh
+35;151;16M35;149;17M35;142;20M35;125;26M35;102;32M35;94;34M35;86;37M35;82;38M35;80;38M35;119;33M35;97;2M35;95;4M35;92;8M35;87;17M35;85;25M35;85;30M35;116;40M
+acshj
+acsh
+export STARSHIP_CONFIG=~/.config/starship-trial.toml
+export STARSHIP_CONFIG=~/.config/starship-trial.toml
+export STARSHIP_CONFIG=~/.config/starship-trial.toml
+export STARSHIP_CONFIG=~/.config/starship-trial.toml
+export STARSHIP_CONFIG=~/.config/starship-trial.toml
+ls
+ls
+export STARSHIP_CONFIG=~/.config/starship-trial.toml
+export STARSHIP_CONFIG=~/.config/starship-trial.toml
+ls
+acsh
+sink
+sink
+export STARSHIP_CONFIG=~/.config/starship-trial.toml
+ls
+cd ..
+ls
+cd ..
+ls
+cd Development/chemdroid/
+ls
+sink
+ls
+acsh
+sink
+acsh
+sink
+acsh
+sink
+acsh
+caffeinate -d
+sink
+ls
+starship theme
+starship
+cdot
+claude
+sink
+acsh
+acsh
+sink
+acsh
+exec zsh
+acsh
+acsh
+claude
+sink
+srs
+acsh
+acsh
+acsh
+sink
+srs
+acsh
+ls
+acsh
+acsh
+acsh
+brew install --cask nikitabobko/tap/aerospace
+defaults write com.apple.dock autohide-time-modifier -float 0.15; killall Dock\
+
+brew install --cask crmne/tap/spotifast\
+
+claude
+\:q
+nvim
+nvim
+rm ~/.config                      # removes only the symlink\
+ln -s ~/dotfiles ~/.config\
+rm -rf ~/dotfiles/config          # stray dir; only has a new .zsh_history\
+rm ~/Library/Application\ Support/com.mitchellh.ghostty/config.ghostty   # blank template; avoids confusion
+acsh
+rm ~/.config
+ln -s ~/dotfiles ~/.config
+rm -rf ~/dotfiles/config
+rm ~/Library/Application\ Support/com.mitchellh.ghostty/config.ghostty
+claude
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc && source ~/.zshrc
+ls
+acsh
+cladue
+claude
+cd dotfiles
+ls
+ls
+cd ..
+ls
+cd dotfiles
+./dotfiles-sync.sh link
+starship
+tmux
+brew install tmux
+tmux
+srs
+acsh
+brew install --cask crmne/tap/spotifast\
+
+acsh
+acsh
+curl -sS https://starship.rs/install.sh | sh
+curl -sS https://starship.rs/install.sh | sh
+curl -sS https://starship.rs/install.sh | sh
+mkdir /usr/local/bin
+sudo mkdir /usr/local/bin
+curl -sS https://starship.rs/install.sh | sh
+curl -sS https://starship.rs/install.sh | sh
+claude
+tmux
+git clone git@github.com:ac-rad/chemdroid.git
+ls
+cd Development
+git clone git@github.com:ac-rad/chemdroid.git
+cd chemdroid
+ls
+bash chemdroid.sh
+claude
+bash chemdroid.sh
+claude
+sink
+ls
+ls -la
+ls
+brew install syncthing
+brew services start syncthing
+syncthing
+cd ~/Development/contexts && ./scripts/build-app.sh && open build/Contexts.app
+cd ~/Development/contexts && ./scripts/build-app.sh && open build/Contexts.app
+cd ~/dotfiles/
+ls
+claude
+cd ~/neonoted
+claude
+cd ~/Development/contexts
+cd ~/Development/contexts && ./scripts/build-app.sh && open build/Contexts.app
+osascript -e 'quit app "Contexts"'; open ~/Development/contexts/build/Contexts.app
+claude
+caffeinate d
+caffeinate -d
+caffeinate -h
+man caffeinate
+cd ~/dotfiles
+claude
+nv
+\:q
+ls ~/dotfiles
+ls
+cd ~/Development/contexts
+ls
+claude
+nv
+nv
+nv
+nv
+nv
+cdpw
+nv
+nvim
+cd ~/Development/chemdroid
+ls
+./chemdroid.sh
+claude
+python3 -m pip install --user pyyaml\
+bash chemdroid.sh
+python3 -m pip install --user pyyaml\
+bash chemdroid.sh
+python3 -m pip install --user pyyaml\
+bash chemdroid.sh
+ls
+cd real-robot
+git status
+nvim
+claude
+srs
+zsh
+google
+google show references lsp
+cd ~/Development/contexts
+claude
+claude
+which python
+which python3
+claude
+cdot
+ndot
+ndot
+which python3
+brew update
+brew update python
+brew update python3
+brew install python
+cdpw
+nvim
+export PATH="/opt/homebrew/opt/python/libexec/bin:/opt/homebrew/bin:$PATH"
+nvim
+nvim
+git fetch
+nvim
+tmxu
+tmux attach
+tmux
+cdpw
+nvim
+ndot
+cdot
+claude
+git status
+git add -a
+git add -A
+git commit -m "Shell changes"
+git config --global user.name "Anzle Chavez"
+git config --global user.email "anzlemchavez@gmail.com\
+"
+git commit --amend --reset-author
+curl -LsSf https://astral.sh/uv/install.sh | sh
+ls
+mv check_dashboard.sh compile.sh
+./compile.sh
+./compile.sh
+./compile.sh "$HERE/dashboard"
+uvx
+uvx pyright
+clear
+./compile.sh 
+cat ./compile.sh
+cat ./compile.sh
+./compile.sh 
+./compile.sh
+./compile.sh
+./compile.sh
+sink
+./compile.sh
+./compile.sh
+git stauts
+git status
+git add -A
+git commit -m "Helper script to check errors"
+./compile.sh
+./compile.sh
+./compile.sh
+git add -A
+git commit -m "Moved shared python files to common/"
+git status
+git status
+claude
+git status
+git diff
+git diff CLAUDE.md
+git status
+git diff docs/api-layout.md
+git add -A
+git commit -m "Unified build script"
+claude
+./compile.sh
+clear
+git add -A | git commit -m "Removed __init__.py"
+ls
+git status
+git add -a
+git add -A ; git commit -m "Removed __init__.py"
+claude
+tree
+brew install tree
+tree
+acsh
+exit
+cd ~/Development/contexts
+ls
+claude
+claude
+\:q
+claude
+sink
+brew install ripgrep
+git status
+nvim
+tmux attach
+link
+lynk
+linc
+~/dotfiles/dotfiles-sync.sh link
+clob
+cldot
+sknk
+sink
+srs
+lynk
+cldot
+sink
+git rm --cached .claude/worktrees/bashrc-lynk
+sink
+cldot
+sink
+cldot
+\:q
+exit
+cdot
+claude
+cdob
+claude
+cdob
+srs
+cdob
+clob
+claude
+ls
+cd plugins
+ls
+cd ..
+ls -la
+claude
+tmux
+exit
+acsh
+claude
+cldot
+claude
+cdpw
+git diff
+git status
+git diff dashboard/app.py
+git diff arm_monitor.py
+git diff dashboard/arm_monitor.py
+git status
+git diff dashboard/motion/worker.py
+git add -A
+git commit -m "Docs changes and renamed singularity warning"
+ls
+git status
+claude
+J=~/.claude/projects/-Users-neoaces-Development-chemdroid-real-robot-src-chemdroid-real-robot-powder-weighing/9ef6307c-1257-41c4-b775-f35ca723e2c4/subagents/workflows/wf_82a2a426-0e3/journal.jsonl\
+while true; do clear; grep -o '"label":"[^"]*","phase":"[^"]*"' "$J"; echo "finished: $(grep -c '"type":"result"' "$J") of 9"; sleep 10; done
+J=~/.claude/projects/-Users-neoaces-Development-chemdroid-real-robot-src-chemdroid-real-robot-powder-weighing/9ef6307c-1257-41c4-b775-f35ca723e2c4/subagents/workflows/wf_82a2a426-0e3/journal.jsonl\
+while true; do clear; grep -o '"label":"[^"]*","phase":"[^"]*"' "$J"; echo "finished: $(grep -c '"type":"result"' "$J") of 9"; sleep 10; done
+claude
+ls
+ghostty
+ls
+cd Development/chemdroid
+ls
+cd real-robot
+git status
+git status
+pkill Contexts.app
+ls
+cd ~/Contexts
+ls
+cd ../Development
+ls
+cd contexts
+ls
+cd build
+ls
+open Contexts.app
+claude
+git status
+git fetch
+git status
+git pull
+git config pull.rebase false
+git pull
+git status
+git push
+git status
+nvim
+clnv
+sink
+srs
+clnv
+claude
+clnv
+clnv
+nvim
+\:q
+nvim .
+nvim
+nvim
+cat dsh.sh
+touch __init__.py
+ls
+git status
+git diff CHANGELOG.md
+git add CHANGELOG.md dsh.sh
+git commit -m "Added docs-only mode"
+git add -A
+git commit
+git diff dashboard/README.md
+claude
+cdpw
+claude
+\:q
+nvim
+claude
+nvoim
+nvim
+claude
+nvim
+obsidian
+srs
+nvim
+nvm
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+claude
+brew update
+brew upgrade
+ls
+acsh
+/Volumes/Rectangle\ Pro\ 3.97/Open\ Gatekeeper\ friendly ; exit;
+/Volumes/Rectangle\ Pro\ 3.97/Open\ Gatekeeper\ friendly ; exit;
+claude
+cdot
+claude
+cd ~/Development
+ls
+cd contexts
+claude
+claude
+sudo powermetrics --samplers smc |grep -i "CPU die temperature"

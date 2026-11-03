@@ -3,3 +3,13 @@
 .metadata-container {
   margin-block-end: 0.5rem !important;
 }
+
+/* The "Properties" label and its chevron in a lighter grey
+   (Obsidian uses --text-normal for the label, and the accent for the chevron while collapsed) */
+.metadata-properties-title {
+  color: var(--text-muted) !important;
+}
+.metadata-properties-heading {
+  --collapse-icon-color: var(--text-muted);
+  --collapse-icon-color-collapsed: var(--text-muted);
+}

@@ -1,10 +1,4 @@
-/* File explorer: Obsidian already indents nested rows with an inline negative
-   margin + larger padding (full-width highlight). Baseline also indents the
-   children container, so the indent got applied twice. Zero the container. */
-body {
-  --nav-item-children-margin-start: 0px;
-  --nav-item-children-padding-start: 0px;
-}
+/* File explorer indentation lives in nav-indent.css. */
 
 /* Sidebar toggle: only the icon itself is clickable, so its wrapper can't
    cover the ribbon actions or the rest of the sidebar header. */

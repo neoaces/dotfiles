@@ -7,6 +7,10 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "buffer_font_weight": 300.0,
+  "project_panel": {
+    "dock": "left"
+  },
   "preferred_line_length": 100,
   "soft_wrap": "bounded",
   "ssh_connections": [
@@ -47,14 +51,22 @@
   },
   "agent_servers": {
     "claude-acp": {
+      "default_config_options": {
+        "mode": "auto",
+        "model": "opus",
+        "effort": "high",
+        "ultracode": true,
+        "fast": false
+      },
       "type": "registry"
     }
   },
   "ui_font_size": 16,
-  "buffer_font_size": 15,
+  "buffer_font_size": 14.0,
   "buffer_font_family": "InputSub Nerd Font Mono",
   "buffer_font_fallbacks": ["BlexMono Nerd Font Mono"],
   "terminal": {
+    "font_size": 14.0,
     "font_family": "InputSub Nerd Font Mono",
     "font_fallbacks": ["BlexMono Nerd Font Mono"],
   },

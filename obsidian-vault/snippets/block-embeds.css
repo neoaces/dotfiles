@@ -17,9 +17,32 @@
   position: relative;
   isolation: isolate;
   border-radius: 8px !important;
-  margin: 0 !important;
-  padding: 6px 14px !important;
+  /* How far the box reaches past the text column on each side, so the checkboxes get
+     breathing room inside the box while staying aligned with the page's checkboxes.
+     It has to be real width (negative margin): Obsidian gives editor widgets
+     `contain: paint`, which clips anything drawn outside the element's own box. */
+  --embed-outset: 7px;
+  margin: 0 calc(-1 * var(--embed-outset)) !important;
+  /* horizontal padding lives on the title and the preview view instead (see below) */
+  padding: 6px 0 !important;
   overflow: visible !important;
+}
+/* In the editor the embed is a direct child of .cm-content, and Obsidian zeroes those
+   margins with `.cm-content > * { margin: 0 !important }`; this outranks it. */
+.markdown-source-view.mod-cm6 .cm-content > .markdown-embed {
+  margin-inline: calc(-1 * var(--embed-outset)) !important;
+}
+/* Canvas cards and hover popovers have hard edges; keep their box inside them */
+.canvas-node-content.markdown-embed,
+.hover-popover > .markdown-embed {
+  --embed-outset: 0px;
+}
+/* The preview view is a scroll container (overflow-y: auto), so anything hanging past its
+   edge gets clipped. Padding inside it, rather than on the embed, gives hanging checkboxes
+   and bullets room to sit inside the clip box. The outset is added back so the text
+   stays on the page's column. */
+.markdown-embed .markdown-embed-content > .markdown-preview-view {
+  padding-inline: calc(14px + var(--embed-outset, 0px)) !important;
 }
 
 /* the visible background lives on a pseudo-element so the rounded corners stay intact */
@@ -69,15 +92,52 @@
   opacity: 0.8;
 }
 
+/* Note embeds (![[note]]): light grey title + expand icon pinned together in the top-right
+   corner, so they don't take a line of their own. Both are vertically centred on the
+   embed's first line. (Block/heading embeds have an empty, hidden title.) */
+.markdown-embed {
+  --embed-header-top: 8px;
+  --embed-header-height: 30px;
+}
+.inline-embed > .markdown-embed-title {
+  position: absolute;
+  top: var(--embed-header-top);
+  /* the icon's end offset (16px) + its width (13px icon + 2px padding each side) + a gap */
+  inset-inline-end: calc(16px + 17px + 2px);
+  z-index: 1;
+  display: block;
+  max-width: 40%;
+  height: var(--embed-header-height);
+  line-height: var(--embed-header-height);
+  padding: 0 !important;
+  overflow: hidden;
+  color: var(--text-faint);
+  font-size: var(--font-ui-small);
+}
+.inline-embed > .markdown-embed-title:not(:empty) ~ .markdown-embed-link {
+  top: var(--embed-header-top);
+  height: var(--embed-header-height);
+  padding-block: 0;
+  opacity: 1;
+  color: var(--text-faint);
+  --icon-size: 13px;
+}
+.inline-embed > .markdown-embed-title:not(:empty) ~ .markdown-embed-link:hover {
+  color: var(--text-muted);
+}
+
 /* Don't let the embed's scroll container clip hanging bullets */
 .markdown-embed .markdown-embed-content,
 .inline-embed > .markdown-embed-content {
   overflow: visible !important;
 }
 
-/* Line the top-level bullets up with the task checkboxes above (tweak the offset to taste) */
+/* Line the embed's top-level checkboxes up with the note's own checkboxes (~7px in from
+   the text column). Top-level items are indented 3ch and a checkbox hangs 1.5x its size
+   before the text; past ~14px the checkbox runs off the preview view's left edge and is
+   clipped (hidden). */
 .markdown-embed {
-  --embed-bullet-shift: 27px;
+  --embed-bullet-shift: 13px;
 }
 .markdown-embed .markdown-preview-section > div > ul,
 .markdown-embed .markdown-preview-section > div > ol {

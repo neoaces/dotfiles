@@ -1,11 +1,11 @@
--- Soft-wraps markdown at a readable width without touching the file. Neovim
--- always wraps at the window edge, so a markdown window that spans the screen
+-- Soft-wraps file buffers at a readable width without touching the file. Neovim
+-- always wraps at the window edge, so a file window that spans the screen
 -- gets an empty padding window on its right, sized to leave `width` columns for
 -- text. The split line between the two marks the wrap column.
 local M = {}
 
 local width = 100
-local pads = {} -- markdown window -> its padding window
+local pads = {} -- file window -> its padding window
 local pending = false
 
 local function is_pad(win)
@@ -57,7 +57,9 @@ local function update(win)
         pads[win], pad = nil, nil
     end
 
-    if vim.bo[vim.api.nvim_win_get_buf(win)].filetype ~= "markdown" then
+    -- Real files only; plugin and special buffers (trees, pickers, terminals,
+    -- help, oil's acwrite) keep the full width
+    if vim.bo[vim.api.nvim_win_get_buf(win)].buftype ~= "" then
         return close_pad(win)
     end
 
@@ -110,7 +112,7 @@ function M.setup()
         { callback = schedule }
     )
 
-    -- Close the pad first so :q on the markdown window quits as usual. If the
+    -- Close the pad first so :q on the owner window quits as usual. If the
     -- quit is refused (unsaved changes), the next refresh brings it back.
     vim.api.nvim_create_autocmd("QuitPre", {
         callback = function()
@@ -119,7 +121,7 @@ function M.setup()
         end,
     })
 
-    -- The pad is never a place to edit; send focus back to its markdown window
+    -- The pad is never a place to edit; send focus back to its owner window
     vim.api.nvim_create_autocmd("WinEnter", {
         callback = function()
             local win = vim.api.nvim_get_current_win()

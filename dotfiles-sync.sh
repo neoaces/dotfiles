@@ -27,6 +27,8 @@
 # $CONFIG_DIR/bash/.bashrc (the synced file).
 # Obsidian: init/link also symlink the vault's .obsidian/{plugins,snippets}
 # (vault at $OBSIDIAN_VAULT, default ~/neonoted) to $CONFIG_DIR/obsidian-vault.
+# Pi: init/link also symlink ~/.pi/agent/{settings.json,extensions} to
+# $CONFIG_DIR/pi (auth, sessions, and installs stay local).
 
 set -euo pipefail
 
@@ -153,6 +155,31 @@ cmd_obsidian() {
   done
 }
 
+# Pi coding agent: share settings + extensions; auth.json, sessions/ and
+# install/ stay machine-local in ~/.pi/agent
+cmd_pi() {
+  local dir="$HOME/.pi/agent" item src
+  [[ -d "$DOTFILES_DIR/pi" ]] || return 0
+  mkdir -p "$dir"
+  for item in settings.json extensions; do
+    [[ -e "$DOTFILES_DIR/pi/$item" ]] || continue
+    src="../../.config/pi/$item"
+    if [[ -L "$dir/$item" ]]; then
+      if [[ "$(readlink "$dir/$item")" == "$src" ]]; then
+        c_yellow "Pi $item already linked"
+        continue
+      fi
+      rm "$dir/$item"
+    elif [[ -e "$dir/$item" ]]; then
+      local backup="$dir/$item.bak.$(date +%Y%m%d%H%M%S)"
+      mv "$dir/$item" "$backup"
+      c_yellow "Existing $dir/$item backed up to $backup"
+    fi
+    ln -s "$src" "$dir/$item"
+    c_green "Linked $dir/$item -> $src"
+  done
+}
+
 TREE_SITTER_VERSION="${TREE_SITTER_VERSION:-0.26.1}"
 
 # Neovim build deps: nvim-treesitter (main) compiles parsers with the
@@ -212,6 +239,7 @@ cmd_init() {
   cmd_zsh
   cmd_bash
   cmd_obsidian
+  cmd_pi
   cmd_deps
   c_green "Init complete."
 }
@@ -262,13 +290,13 @@ cmd_status() {
 case "${1:-}" in
   init)   shift; cmd_init "$@" ;;
   deps)   cmd_deps ;;
-  link)   cmd_migrate; cmd_link; cmd_zsh; cmd_bash; cmd_obsidian ;;
+  link)   cmd_migrate; cmd_link; cmd_zsh; cmd_bash; cmd_obsidian; cmd_pi ;;
   pull)   cmd_migrate; cmd_pull ;;
   push)   shift; cmd_migrate; cmd_push "$@" ;;
   sync)   shift; cmd_migrate; cmd_sync "$@" ;;
   status) cmd_status ;;
   migrate) cmd_migrate ;;
-  _post-pull) shift; cmd_migrate; cmd_link; cmd_zsh; cmd_bash; cmd_obsidian; cmd_push "$@" ;;
+  _post-pull) shift; cmd_migrate; cmd_link; cmd_zsh; cmd_bash; cmd_obsidian; cmd_pi; cmd_push "$@" ;;
   *)
     cat <<EOF
 Usage: $0 <command> [args]
@@ -276,7 +304,7 @@ Usage: $0 <command> [args]
 Commands:
   init <remote-url>     First-time setup: clone repo + create symlink
   deps                  Install nvim build deps (cc, tree-sitter, Rust)
-  link                  (Re)create the ~/.config symlink (+ zsh/bash/Obsidian links)
+  link                  (Re)create the ~/.config symlink (+ zsh/bash/Obsidian/pi links)
   pull                  Pull remote changes (rebase, autostash)
   push [message]        Commit local changes and push
   sync [message]        pull then push — the everyday command

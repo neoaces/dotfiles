@@ -1,16 +1,19 @@
 // Claude plan usage from Anthropic's rate-limit response headers.
 // Writes ~/.cache/claude-usage ("5h_used 5h_reset 7d_used 7d_reset", shared with
-// tmux/claude-usage.sh and ~/.claude/statusline.sh) and replaces pi's footer
-// with a single "5h N% · 7d N%" line.
+// tmux/claude-usage.sh and ~/.claude/statusline.sh) and replaces pi's footer with:
+//   ~/cwd (branch) • session
+//   5h N% · 7d N%                         model • effort
 import { readFileSync, writeFileSync } from "node:fs";
 import { homedir } from "node:os";
+import { truncateToWidth, visibleWidth } from "@earendil-works/pi-tui";
 
-const CACHE = `${homedir()}/.cache/claude-usage`;
+const HOME = homedir();
+const CACHE = `${HOME}/.cache/claude-usage`;
 const H = "anthropic-ratelimit-unified-";
 let last = "";
 let redraw = () => {};
 
-function text() {
+function usage() {
   const [fu, fr, su, sr] = last.split(" ").map(Number);
   if (!sr) return "";
   const now = Date.now() / 1000;
@@ -20,11 +23,34 @@ function text() {
 export default function (pi: any) {
   pi.on("session_start", (_e: any, ctx: any) => {
     try { last = readFileSync(CACHE, "utf8").trim(); } catch {}
-    ctx.ui.setFooter((tui: any, theme: any) => {
+    ctx.ui.setFooter((tui: any, theme: any, data: any) => {
       redraw = () => tui.requestRender();
-      return { invalidate() {}, render: () => [theme.fg("dim", text())] };
+      const unsub = data.onBranchChange(redraw);
+      return {
+        dispose: unsub,
+        invalidate() {},
+        render(width: number) {
+          const cwd = ctx.sessionManager.getCwd();
+          let top = cwd === HOME ? "~" : cwd.startsWith(HOME + "/") ? "~" + cwd.slice(HOME.length) : cwd;
+          const branch = data.getGitBranch(), name = ctx.sessionManager.getSessionName();
+          if (branch) top += ` (${branch})`;
+          if (name) top += ` • ${name}`;
+
+          const left = usage();
+          const m = ctx.model;
+          const right = m ? (m.reasoning ? `${m.id} • ${ctx.thinkingLevel || "off"}` : m.id) : "";
+          const pad = Math.max(2, width - visibleWidth(left) - visibleWidth(right));
+          return [
+            truncateToWidth(theme.fg("dim", top), width),
+            truncateToWidth(theme.fg("dim", left + " ".repeat(pad) + right), width),
+          ];
+        },
+      };
     });
   });
+
+  pi.on("model_select", () => redraw());
+  pi.on("thinking_level_select", () => redraw());
 
   pi.on("after_provider_response", (e: any) => {
     const h = e.headers ?? {};

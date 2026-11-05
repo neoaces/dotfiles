@@ -1,0 +1,9 @@
+# Built-in default theme, but with a distinct primary selection/cursor
+inherits = "default"
+
+# secondary selections stay dim, primary stands out
+"ui.selection" = { bg = "#3b2a55" }
+"ui.selection.primary" = { bg = "#7a3fd1" }
+
+"ui.cursor" = { fg = "black", bg = "gray" }
+"ui.cursor.primary" = { fg = "black", bg = "#ffd75f" }

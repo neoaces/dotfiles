@@ -79,12 +79,12 @@
 "ui.text.inactive" = "muted"
 "ui.text.directory" = "blue"
 "ui.cursor" = { fg = "bg", bg = "blue" }
-"ui.cursor.primary" = { fg = "bg", bg = "blue" }
+"ui.cursor.primary" = { fg = "bg", bg = "green" }
 "ui.cursor.match" = { fg = "yellow", bg = "overlay", modifiers = ["bold"] }
 "ui.cursorline.primary" = { bg = "surface" }
 "ui.cursorcolumn.primary" = { bg = "surface" }
 "ui.selection" = { bg = "selection" }
-"ui.selection.primary" = { bg = "selection" }
+"ui.selection.primary" = { bg = "selection_primary" }
 "ui.highlight" = { bg = "overlay" }
 "ui.linenr" = "muted"
 "ui.linenr.selected" = { fg = "blue", modifiers = ["bold"] }
@@ -124,6 +124,7 @@ text = "#b6bac8"
 fg = "#cfd3dd"
 bright = "#dde1ea"
 selection = "#1a302d"
+selection_primary = "#34480f" # dark lime, primary selection
 cobalt = "#0047ab"
 
 red = "#fb7185"

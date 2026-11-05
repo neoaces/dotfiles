@@ -1,0 +1,141 @@
+# Powder — Helix port of the Ghostty theme (ghostty/themes/Powder), matching
+# nvim/colors/powder.lua. Background left unset so Ghostty's own Powder
+# background and blur show through.
+
+# Syntax
+"attribute" = "cyan_br"
+"comment" = { fg = "muted", modifiers = ["italic"] }
+"constant" = "yellow"
+"constant.numeric" = "yellow"
+"constant.builtin" = "yellow"
+"constant.character" = "green"
+"constant.character.escape" = "cyan_br"
+"string" = "green"
+"string.regexp" = "cyan_br"
+"string.special" = "cyan_br"
+"variable" = "fg"
+"variable.builtin" = "red_br"
+"variable.parameter" = "fg"
+"variable.other.member" = "blue_br"
+"type" = "cyan"
+"type.builtin" = "cyan"
+"constructor" = "cyan"
+"function" = "blue"
+"function.builtin" = "cyan_br"
+"function.macro" = "magenta_br"
+"keyword" = "magenta"
+"keyword.control.exception" = "red"
+"keyword.directive" = "magenta_br"
+"keyword.control.import" = "magenta_br"
+"label" = "magenta"
+"namespace" = "text"
+"operator" = "text"
+"punctuation" = "subtle"
+"special" = "cyan_br"
+"tag" = "blue"
+"tag.attribute" = "cyan_br"
+
+# Markup
+"markup.heading" = { fg = "blue", modifiers = ["bold"] }
+"markup.heading.1" = { fg = "blue", modifiers = ["bold"] }
+"markup.heading.2" = { fg = "cyan", modifiers = ["bold"] }
+"markup.heading.3" = { fg = "green", modifiers = ["bold"] }
+"markup.heading.4" = { fg = "yellow", modifiers = ["bold"] }
+"markup.heading.5" = { fg = "magenta", modifiers = ["bold"] }
+"markup.heading.6" = { fg = "red_br", modifiers = ["bold"] }
+"markup.bold" = { modifiers = ["bold"] }
+"markup.italic" = { modifiers = ["italic"] }
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+"markup.list" = "blue"
+"markup.list.checked" = "green"
+"markup.list.unchecked" = "muted"
+"markup.link.url" = { fg = "cyan", modifiers = ["underlined"] }
+"markup.link.label" = "blue_br"
+"markup.link.text" = "blue_br"
+"markup.quote" = { fg = "subtle", modifiers = ["italic"] }
+"markup.raw" = "cyan_br"
+
+# Diff / VCS
+"diff.plus" = "green"
+"diff.minus" = "red"
+"diff.delta" = "blue"
+
+# Diagnostics
+"error" = "red"
+"warning" = "yellow"
+"info" = "blue"
+"hint" = "cyan"
+"diagnostic.error" = { underline = { color = "red", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "yellow", style = "curl" } }
+"diagnostic.info" = { underline = { color = "blue", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "cyan", style = "curl" } }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+"diagnostic.deprecated" = { modifiers = ["crossed_out"] }
+
+# UI
+"ui.background" = { fg = "fg" }
+"ui.text" = "fg"
+"ui.text.focus" = { fg = "bright", modifiers = ["bold"] }
+"ui.text.inactive" = "muted"
+"ui.text.directory" = "blue"
+"ui.cursor" = { fg = "bg", bg = "blue" }
+"ui.cursor.primary" = { fg = "bg", bg = "blue" }
+"ui.cursor.match" = { fg = "yellow", bg = "overlay", modifiers = ["bold"] }
+"ui.cursorline.primary" = { bg = "surface" }
+"ui.cursorcolumn.primary" = { bg = "surface" }
+"ui.selection" = { bg = "selection" }
+"ui.selection.primary" = { bg = "selection" }
+"ui.highlight" = { bg = "overlay" }
+"ui.linenr" = "muted"
+"ui.linenr.selected" = { fg = "blue", modifiers = ["bold"] }
+"ui.gutter" = {}
+"ui.statusline" = { fg = "text" }
+"ui.statusline.inactive" = { fg = "muted" }
+"ui.statusline.normal" = { fg = "bright", bg = "cobalt", modifiers = ["bold"] }
+"ui.statusline.insert" = { fg = "bg", bg = "green", modifiers = ["bold"] }
+"ui.statusline.select" = { fg = "bg", bg = "magenta", modifiers = ["bold"] }
+"ui.bufferline" = { fg = "muted" }
+"ui.bufferline.active" = { fg = "bright", bg = "cobalt", modifiers = ["bold"] }
+"ui.bufferline.background" = {}
+"ui.popup" = { fg = "fg", bg = "surface" }
+"ui.popup.info" = { fg = "fg", bg = "surface" }
+"ui.window" = "border"
+"ui.help" = { fg = "fg", bg = "surface" }
+"ui.menu" = { fg = "fg", bg = "surface" }
+"ui.menu.selected" = { fg = "bright", bg = "selection", modifiers = ["bold"] }
+"ui.menu.scroll" = { fg = "muted", bg = "surface" }
+"ui.picker.header" = { fg = "blue", modifiers = ["bold"] }
+"ui.virtual" = "border"
+"ui.virtual.whitespace" = "border"
+"ui.virtual.indent-guide" = "overlay"
+"ui.virtual.ruler" = { bg = "surface" }
+"ui.virtual.inlay-hint" = { fg = "muted", modifiers = ["italic"] }
+"ui.virtual.jump-label" = { fg = "yellow", modifiers = ["bold"] }
+"ui.virtual.wrap" = "border"
+
+[palette]
+bg = "#0c1010"
+surface = "#1a1b21"
+overlay = "#24262e"
+border = "#3a3e4a"
+muted = "#5d6070"
+subtle = "#8a8e9c"
+text = "#b6bac8"
+fg = "#cfd3dd"
+bright = "#dde1ea"
+selection = "#1a302d"
+cobalt = "#0047ab"
+
+red = "#fb7185"
+green = "#a3e635"
+yellow = "#fbbf24"
+blue = "#6b97f2"
+magenta = "#a78bfa"
+cyan = "#2dd4bf"
+
+red_br = "#fda4af"
+green_br = "#bef264"
+yellow_br = "#fcd34d"
+blue_br = "#9dbbf7"
+magenta_br = "#c4b5fd"
+cyan_br = "#5eead4"

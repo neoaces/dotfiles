@@ -57,7 +57,7 @@ alias l='ls -CF'
 # Notify when a long command finishes: sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
-# Directory aliases: cd<key> to cd, n<key> to open in nvim, cl<key> to start claude there
+# Directory aliases: cd<key> to cd, n<key> to open in nvim, pi<key> to start pi there
 typeset -A alias_dirs=(
   rr  $HOME/Development/chemdroid/real-robot
   pw  $HOME/Development/chemdroid/real-robot/src/chemdroid_real_robot/powder_weighing
@@ -68,7 +68,7 @@ typeset -A alias_dirs=(
 for key dir in ${(kv)alias_dirs}; do
   alias cd$key="cd $dir"
   alias n$key="nvim $dir"
-  alias cl$key="(cd $dir && claude)"
+  alias pi$key="(cd $dir && pi)"
 done
 alias cdot=cddot   # muscle memory
 unset key dir

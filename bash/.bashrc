@@ -106,6 +106,12 @@ alias ndot="nvim ~/dotfiles"
 alias cdvim="cd ~/dotfiles/nvim"
 alias nnvim="nvim ~/dotfiles/nvim"
 alias nv="nvim ."
+# pi<key> starts pi in that dir (matches zsh alias_dirs)
+alias pirr="(cd ~/Development/chemdroid/real-robot && pi)"
+alias pipw="(cd ~/Development/chemdroid/real-robot/src/chemdroid_real_robot/powder_weighing && pi)"
+alias pidot="(cd ~/dotfiles && pi)"
+alias piob="(cd ~/dotfiles/obsidian-vault && pi)"
+alias pinv="(cd ~/dotfiles/nvim && pi)"
 alias aider-oss="/home/neoaces/Development/ai/aider.sh"   # aider + local gpt-oss:20b via Ollama
 
 # pbpaste / open are macOS-only; fall back to Linux equivalents

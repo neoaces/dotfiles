@@ -1,4 +1,5 @@
 {
+  "$schema": "https://raw.githubusercontent.com/gotgenes/pi-packages/main/packages/pi-permission-system/schemas/permissions.schema.json",
   "permission": {
     "*": "allow",
     "path": {
@@ -10,7 +11,63 @@
     "bash": {
       "*": "ask",
       "rm -rf *": "deny",
-      "sudo *": "ask"
+      "sudo *": "ask",
+
+      "cd *": "allow",
+      "pwd": "allow",
+      "ls *": "allow",
+      "tree *": "allow",
+      "cat *": "allow",
+      "head *": "allow",
+      "tail *": "allow",
+      "wc *": "allow",
+      "stat *": "allow",
+      "du *": "allow",
+      "df *": "allow",
+      "find *": "allow",
+      "fd *": "allow",
+      "rg *": "allow",
+      "grep *": "allow",
+      "egrep *": "allow",
+      "fgrep *": "allow",
+      "which *": "allow",
+      "type *": "allow",
+      "realpath *": "allow",
+      "readlink *": "allow",
+      "basename *": "allow",
+      "dirname *": "allow",
+
+      "sort *": "allow",
+      "cut *": "allow",
+      "tr *": "allow",
+      "column *": "allow",
+      "diff *": "allow",
+      "cmp *": "allow",
+      "comm *": "allow",
+      "jq *": "allow",
+
+      "shasum *": "allow",
+      "md5 *": "allow",
+      "cksum *": "allow",
+      "strings *": "allow",
+      "xxd *": "allow",
+      "od *": "allow",
+
+      "git status *": "allow",
+      "git diff *": "allow",
+      "git log *": "allow",
+      "git show *": "allow",
+      "git blame *": "allow",
+      "git ls-files *": "allow",
+      "git branch": "allow",
+      "git remote -v": "allow",
+      "git rev-parse *": "allow",
+      "git stash list *": "allow",
+
+      "uv pip list *": "allow",
+      "uv tree *": "allow",
+      "python --version": "allow",
+      "python3 --version": "allow"
     },
     "external_directory": "ask"
   }

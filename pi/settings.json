@@ -21,6 +21,8 @@
     "npm:pi-btw"
   ],
   "extensionChangelogVersions": {
-    "{\"source\":\"npm:pi-web-access\",\"scope\":\"user\"}": "0.47.0"
+    "{\"source\":\"npm:pi-web-access\",\"scope\":\"user\"}": "0.47.0",
+    "{\"source\":\"npm:@gotgenes/pi-permission-system\",\"scope\":\"user\"}": "42.0.0",
+    "{\"source\":\"npm:pi-lens\",\"scope\":\"user\"}": "4.4.11"
   }
 }

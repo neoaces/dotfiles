@@ -1,0 +1,9 @@
+{
+  "id": "block-drag",
+  "name": "Block drag",
+  "version": "1.0.0",
+  "minAppVersion": "1.0.0",
+  "description": "Notion-style ⠿ handles for dragging list items (to-dos included) up and down, children and all.",
+  "author": "Anzle Chavez",
+  "isDesktopOnly": false
+}

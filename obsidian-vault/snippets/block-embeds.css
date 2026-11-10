@@ -39,10 +39,10 @@
 }
 /* The preview view is a scroll container (overflow-y: auto), so anything hanging past its
    edge gets clipped. Padding inside it, rather than on the embed, gives hanging checkboxes
-   and bullets room to sit inside the clip box. The outset is added back so the text
-   stays on the page's column. */
+   and bullets room to sit inside the clip box. It equals the outset, so headings and
+   paragraphs land exactly on the page's text column. */
 .markdown-embed .markdown-embed-content > .markdown-preview-view {
-  padding-inline: calc(14px + var(--embed-outset, 0px)) !important;
+  padding-inline: var(--embed-outset, 0px) !important;
 }
 
 /* the visible background lives on a pseudo-element so the rounded corners stay intact */
@@ -132,16 +132,31 @@
   overflow: visible !important;
 }
 
-/* Line the embed's top-level checkboxes up with the note's own checkboxes (~7px in from
-   the text column). Top-level items are indented 3ch and a checkbox hangs 1.5x its size
-   before the text; past ~14px the checkbox runs off the preview view's left edge and is
-   clipped (hidden). */
+/* Line the embed's lists up with the page's own (measured in Live Preview, from the text
+   column: checkbox 7.6px / task text 30px, bullet text 25px, one nesting level 33.8px).
+   Reading view puts bullet and task text at the same spot; the page puts task text
+   ~0.3em further in. So lists shift left by that much and task items step back right,
+   with a task item's own sub-list undoing the step.
+   --embed-bullet-shift places the checkboxes (positive moves them left); the task shift
+   then places the bullets relative to them. */
 .markdown-embed {
-  --embed-bullet-shift: 13px;
+  --embed-bullet-shift: -1.75px;
+  --embed-task-shift: 0.34em;
 }
 .markdown-embed .markdown-preview-section > div > ul,
 .markdown-embed .markdown-preview-section > div > ol {
-  margin-inline-start: calc(-1 * var(--embed-bullet-shift)) !important;
+  margin-inline-start: calc(-1 * var(--embed-bullet-shift) - var(--embed-task-shift)) !important;
+}
+/* (list items normally sit 3ch in: `.markdown-rendered ul > li`) */
+.markdown-embed li.task-list-item {
+  margin-inline-start: calc(3ch + var(--embed-task-shift));
+}
+.markdown-embed li.task-list-item > :is(ul, ol) {
+  margin-inline-start: calc(-1 * var(--embed-task-shift));
+}
+/* bullet dots sit ~0.59em before their text on the page (reading view uses 0.8em) */
+.markdown-embed .markdown-rendered .list-bullet {
+  margin-inline-start: -0.59em;
 }
 
 /* Heading directly after an embed: drop its extra top padding/margin */

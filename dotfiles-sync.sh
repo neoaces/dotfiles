@@ -27,7 +27,7 @@
 # $CONFIG_DIR/bash/.bashrc (the synced file).
 # Obsidian: init/link also symlink the vault's .obsidian/{plugins,snippets}
 # (vault at $OBSIDIAN_VAULT, default ~/neonoted) to $CONFIG_DIR/obsidian-vault.
-# Pi: init/link also symlink ~/.pi/agent/{settings.json,extensions} to
+# Pi: init/link also symlink ~/.pi/agent/{settings.json,extensions,AGENTS.md} to
 # $CONFIG_DIR/pi (auth, sessions, and installs stay local).
 
 set -euo pipefail
@@ -161,7 +161,7 @@ cmd_pi() {
   local dir="$HOME/.pi/agent" item src
   [[ -d "$DOTFILES_DIR/pi" ]] || return 0
   mkdir -p "$dir"
-  for item in settings.json extensions; do
+  for item in settings.json extensions AGENTS.md; do
     [[ -e "$DOTFILES_DIR/pi/$item" ]] || continue
     src="../../.config/pi/$item"
     if [[ -L "$dir/$item" ]]; then

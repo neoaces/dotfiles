@@ -1,10 +1,26 @@
 {
   "$schema": "https://pi.dev/schemas/settings.schema.json",
-  "fullscreenExitOutput": "resume-hint",
-  "lastChangelogVersion": "1.5.0",
+  "lastChangelogVersion": "1.5.1",
+  "defaultProvider": "anthropic",
+  "defaultModel": "claude-opus-5-5",
   "warnings": {
     "anthropicExtraUsage": false
   },
-  "defaultProvider": "anthropic",
-  "defaultModel": "claude-opus-5-5"
+  "fullscreenExitOutput": "resume-hint",
+  "terminal": {
+    "clearOnShrink": true
+  },
+  "packages": [
+    "npm:pi-ultracode",
+    "npm:@dietrichgebert/ponytail",
+    "npm:pi-web-access",
+    "npm:@gotgenes/pi-permission-system",
+    "npm:@plannotator/pi-extension",
+    "npm:@juicesharp/rpiv-ask-user-question",
+    "npm:pi-lens",
+    "npm:pi-btw"
+  ],
+  "extensionChangelogVersions": {
+    "{\"source\":\"npm:pi-web-access\",\"scope\":\"user\"}": "0.47.0"
+  }
 }

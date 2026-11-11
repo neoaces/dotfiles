@@ -1,11 +1,8 @@
 {
-<<<<<<< Updated upstream
   "$schema": "https://raw.githubusercontent.com/gotgenes/pi-packages/main/packages/pi-permission-system/schemas/permissions.schema.json",
-=======
   "debugLog": false,
   "permissionReviewLog": true,
   "yoloMode": true,
->>>>>>> Stashed changes
   "permission": {
     "*": "allow",
     "path": {
@@ -18,7 +15,6 @@
     "bash": {
       "*": "ask",
       "rm -rf *": "deny",
-<<<<<<< Updated upstream
       "sudo *": "ask",
 
       "cd *": "allow",
@@ -76,11 +72,6 @@
       "uv tree *": "allow",
       "python --version": "allow",
       "python3 --version": "allow"
-    },
-    "external_directory": "ask"
-=======
-      "sudo *": "ask"
     }
->>>>>>> Stashed changes
   }
 }

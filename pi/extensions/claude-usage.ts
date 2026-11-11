@@ -1,7 +1,6 @@
 // Claude plan usage from Anthropic's rate-limit response headers.
 // Writes ~/.cache/claude-usage ("5h_used 5h_reset 7d_used 7d_reset", shared with
 // tmux/claude-usage.sh and ~/.claude/statusline.sh) and replaces pi's footer with:
-//   ~/cwd (branch) • session
 //   5h N% · 7d N%                         model • effort
 import { readFileSync, writeFileSync } from "node:fs";
 import { homedir } from "node:os";
@@ -30,18 +29,11 @@ export default function (pi: any) {
         dispose: unsub,
         invalidate() {},
         render(width: number) {
-          const cwd = ctx.sessionManager.getCwd();
-          let top = cwd === HOME ? "~" : cwd.startsWith(HOME + "/") ? "~" + cwd.slice(HOME.length) : cwd;
-          const branch = data.getGitBranch(), name = ctx.sessionManager.getSessionName();
-          if (branch) top += ` (${branch})`;
-          if (name) top += ` • ${name}`;
-
           const left = usage();
           const m = ctx.model;
           const right = m ? (m.reasoning ? `${m.id} • ${ctx.thinkingLevel || "off"}` : m.id) : "";
           const pad = Math.max(2, width - visibleWidth(left) - visibleWidth(right));
           return [
-            truncateToWidth(theme.fg("dim", top), width),
             truncateToWidth(theme.fg("dim", left + " ".repeat(pad) + right), width),
           ];
         },

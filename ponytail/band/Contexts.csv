@@ -1,6 +1,0 @@
-key,started,project,name,cost_usd,turns,agent_minutes,tokens_total,tokens_output,reuse_pct,reused,new,callers_open,tests,level,model
-05fb3184-1793649911896,2026-11-02 15:05,Contexts,look at the /home/anzlechavez/Videos/Screencasts/Screencast\,1.90,2,5.2,2941184,23840,,,,,,import,claude-opus-5-5
-0a6feffd-1793219936716,2026-10-28 16:38,Contexts,what just caused the massive slowdown on my machine,0.19,1,0.3,132306,1195,,,,,,import,claude-opus-5-5
-61fac9a3-1793219936716,2026-10-28 16:38,Contexts,what just caused the massive slowdown on my machine,0.30,1,1.1,231651,2599,,,,,,import,claude-opus-5-5
-a256113c-1793214593472,2026-10-28 15:09,Contexts,did we do anything for the ubuntu checklist for Contexts? if,10.14,16,27.8,24806309,125543,,,,,,import,claude-opus-5-5
-ee1ae326-1793214593472,2026-10-28 15:09,Contexts,did we do anything for the ubuntu checklist for Contexts? if,0.89,3,2.3,1263490,9771,,,,,,import,claude-opus-5-5

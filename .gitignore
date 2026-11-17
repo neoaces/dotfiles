@@ -81,3 +81,6 @@ StereoLabs/
 # --- Zed local databases ---
 zed/prompts/
 pi/extensions/pi-permission-system/logs/
+
+# ponytail session ledger (regenerated per machine)
+ponytail/band/

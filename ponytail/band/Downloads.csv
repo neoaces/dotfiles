@@ -1,2 +1,0 @@
-key,started,project,name,cost_usd,turns,agent_minutes,tokens_total,tokens_output,reuse_pct,reused,new,callers_open,tests,level,model
-ea9aacbb-1790609200043,2026-09-28 11:26,Downloads,Can you install the 3dconnexion drivers,1.59,14,5.7,3511552,19848,,,,,,import,claude-sonnet-5

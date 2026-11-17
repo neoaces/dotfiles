@@ -1,2 +1,0 @@
-key,started,project,name,cost_usd,turns,agent_minutes,tokens_total,tokens_output,reuse_pct,reused,new,callers_open,tests,level,model
-d665cc2b-1792007813390,2026-10-14 15:56,tmux,"if i have a robotiq gripper on my ur3e, does the end effecto",0.06,1,0.2,41575,1015,,,,,,import,claude-sonnet-5-5

@@ -1,7 +1,7 @@
 // Claude plan usage from Anthropic's rate-limit response headers.
 // Writes ~/.cache/claude-usage ("5h_used 5h_reset 7d_used 7d_reset", shared with
 // tmux/claude-usage.sh and ~/.claude/statusline.sh) and replaces pi's footer with:
-//   5h N% · 7d N%                         model • effort
+//   5h N% · 7d N%              ponytail status  model • effort
 import { readFileSync, writeFileSync } from "node:fs";
 import { homedir } from "node:os";
 import { truncateToWidth, visibleWidth } from "@earendil-works/pi-tui";
@@ -31,11 +31,11 @@ export default function (pi: any) {
         render(width: number) {
           const left = usage();
           const m = ctx.model;
-          const right = m ? (m.reasoning ? `${m.id} • ${ctx.thinkingLevel || "off"}` : m.id) : "";
+          const model = m ? (m.reasoning ? `${m.id} • ${ctx.thinkingLevel || "off"}` : m.id) : "";
+          const pt = data.getExtensionStatuses().get("ponytail");
+          const right = (pt ? pt + "  " : "") + theme.fg("dim", model);
           const pad = Math.max(2, width - visibleWidth(left) - visibleWidth(right));
-          return [
-            truncateToWidth(theme.fg("dim", left + " ".repeat(pad) + right), width),
-          ];
+          return [truncateToWidth(theme.fg("dim", left + " ".repeat(pad)) + right, width)];
         },
       };
     });

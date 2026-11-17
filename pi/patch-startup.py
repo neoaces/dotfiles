@@ -3,7 +3,7 @@
 
 - Removes the "Pi can explain its own features..." onboarding line.
 - Removes the "Press ctrl+o to show full startup help" hint.
-- Shows loaded extensions on a single line: "[Extensions] a, b, c".
+- Shows skills/prompts/extensions as counts: "[Skills] 12".
 """
 import glob
 import os
@@ -18,18 +18,21 @@ PATCHES = [
     ("${withLogo(expandedInstructions())}\n\n${onboarding()}`", "${withLogo(expandedInstructions())}`"),
     # header: drop "Press ctrl+o to show full startup help" hint (must follow onboarding patch)
     ("${withLogo(compactInstructions())}\n${compactOnboarding()}`", "${withLogo(compactInstructions())}`"),
-    # extensions: header and names on one line, regardless of expansion
+    # skills/prompts/extensions: "[Header] count" instead of names
     (
-        'addLoadedSection("Extensions",()=>formatCompactList(extensionLabels),extList,"mdHeading")',
-        'this.loadedResourcesContainer.addChild(new ThemedText(()=>`${sectionHeader("Extensions")} ${theme.fg("dim",[...extensionLabels].sort((a,b)=>a.localeCompare(b)).join(", "))}`,0,0)),this.loadedResourcesContainer.addChild(new Spacer(1))',
+        'let sectionHeader=(name,color="mdHeading")=>theme.fg(color,`[${name}]`),',
+        'let sectionHeader=(name,color="mdHeading")=>theme.fg(color,`[${name}]`),addCount=(name,n)=>{this.loadedResourcesContainer.addChild(new ThemedText(()=>`${sectionHeader(name)} ${theme.fg("dim",String(n))}`,0,0)),this.loadedResourcesContainer.addChild(new Spacer(1))},',
     ),
+    ('addLoadedSection("Skills"', 'addCount("Skills",skills.length),!1&&addLoadedSection("Skills"'),
+    ('addLoadedSection("Prompts"', 'addCount("Prompts",templates.length),!1&&addLoadedSection("Prompts"'),
+    ('addLoadedSection("Extensions"', 'addCount("Extensions",extensions.length),!1&&addLoadedSection("Extensions"'),
     # unbundled dist (used by SDK imports)
     ("${compactOnboarding()}\\n\\n${onboarding()}`", "${compactOnboarding()}`"),
     ("${withLogo(expandedInstructions())}\\n\\n${onboarding()}`", "${withLogo(expandedInstructions())}`"),
     ("${withLogo(compactInstructions())}\\n${compactOnboarding()}`", "${withLogo(compactInstructions())}`"),
     (
-        'addLoadedSection("Extensions", extensionCompactList, extList, "mdHeading");',
-        'this.loadedResourcesContainer.addChild(new ThemedText(() => `${sectionHeader("Extensions")} ${theme.fg("dim", [...extensionLabels].sort((a, b) => a.localeCompare(b)).join(", "))}`, 0, 0));\n                this.loadedResourcesContainer.addChild(new Spacer(1));',
+        'const sectionHeader = (name, color = "mdHeading") => theme.fg(color, `[${name}]`);',
+        'const sectionHeader = (name, color = "mdHeading") => theme.fg(color, `[${name}]`);\n        const addCount = (name, n) => { this.loadedResourcesContainer.addChild(new ThemedText(() => `${sectionHeader(name)} ${theme.fg("dim", String(n))}`, 0, 0)); this.loadedResourcesContainer.addChild(new Spacer(1)); };',
     ),
 ]
 
@@ -39,7 +42,8 @@ for path in files:
     s = open(path).read()
     new = s
     for old, rep in PATCHES:
-        new = new.replace(old, rep)
+        if rep not in new:  # some replacements contain their pattern
+            new = new.replace(old, rep)
     if new != s:
         open(path, "w").write(new)
         hits += 1

@@ -35,6 +35,7 @@ conda() {
 export PATH="/opt/homebrew/opt/python/libexec/bin:/opt/homebrew/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
+export EDITOR=hx VISUAL=hx
 alias acsh="clear; ssh -t anzlechavez@sdl0-robot-serpens 'tmux new -A -s rr -c ~/Development/chemdroid/real-robot'"
 alias acssh="clear; ssh anzlechavez@sdl0-robot-serpens"
 # Tailscale SSH skips PAM, so hop to OpenSSH on localhost: rtprio 50 + memlock for dsh.sh

@@ -1,0 +1,8 @@
+[mgr]
+prepend_keymap = [
+	{ on = [ "M", "a" ], run = "plugin simple-tag -- toggle-tag --key=a", desc = "Toggle approved ✓" },
+	{ on = [ "M", "r" ], run = "plugin simple-tag -- toggle-tag --key=r", desc = "Toggle needs review !" },
+	{ on = [ "M", "i" ], run = "plugin simple-tag -- toggle-tag --key=i", desc = "Toggle ignore ⊘" },
+	{ on = [ "M", "c" ], run = "plugin simple-tag -- clear", desc = "Clear tags" },
+	{ on = [ "M", "f" ], run = "plugin simple-tag -- filter", desc = "Filter by tag" },
+]

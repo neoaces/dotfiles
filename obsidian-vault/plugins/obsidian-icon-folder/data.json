@@ -31,6 +31,5 @@
     "debugMode": false,
     "useInternalPlugins": false
   },
-  "SDL0": "LiBeaker",
-  "Agendas.md": "LiBookText"
+  "SDL0": "LiBeaker"
 }

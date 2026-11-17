@@ -1,0 +1,7 @@
+key,started,project,name,cost_usd,turns,agent_minutes,tokens_total,tokens_output,reuse_pct,reused,new,callers_open,tests,level,model
+543e439a-1792431092743,2026-10-19 13:31,neonoted,can you change the font for the canvas text and titles to th,2.73,15,9.8,5657729,50862,,,,,,import,claude-opus-5-5
+4263b9db-1792181335754,2026-10-16 16:08,neonoted,where is the bias feature derived from,0.53,4,1.7,848222,7638,,,,,,import,claude-opus-5-5
+8203c753-1791908504303,2026-10-13 12:21,neonoted,can you make the tasks view only reload when i click a butto,0.21,2,1.4,809073,5997,,,,,,import,claude-sonnet-5-5
+90794aba-1791987702124,2026-10-14 10:21,neonoted,[Image #1] there is something very wrong with the sidebar st,0.46,5,2.8,1814389,14944,,,,,,import,claude-sonnet-5-5
+b7f7c455-1792180905266,2026-10-16 16:01,neonoted,where is my agent that was profiling obsidian,0.51,3,2.2,1330913,6330,,,,,,import,claude-opus-5-5
+cf3f1b3b-1792183166318,2026-10-16 16:39,neonoted,lets do a full performance profile of the dashboard. this in,0.10,1,0.1,79502,526,,,,,,import,claude-opus-5-5

@@ -1,0 +1,2 @@
+key,started,project,name,cost_usd,turns,agent_minutes,tokens_total,tokens_output,reuse_pct,reused,new,callers_open,tests,level,model
+96ed370d-1792592645129,2026-10-21 10:24,.claude,i would like a user level one that applies to all projects,0.61,2,2.0,721500,9692,,,,,,import,claude-opus-5-5

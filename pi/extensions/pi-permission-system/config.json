@@ -16,7 +16,6 @@
       "*": "ask",
       "rm -rf *": "deny",
       "sudo *": "ask",
-
       "cd *": "allow",
       "pwd": "allow",
       "ls *": "allow",
@@ -40,7 +39,6 @@
       "readlink *": "allow",
       "basename *": "allow",
       "dirname *": "allow",
-
       "sort *": "allow",
       "cut *": "allow",
       "tr *": "allow",
@@ -49,14 +47,12 @@
       "cmp *": "allow",
       "comm *": "allow",
       "jq *": "allow",
-
       "shasum *": "allow",
       "md5 *": "allow",
       "cksum *": "allow",
       "strings *": "allow",
       "xxd *": "allow",
       "od *": "allow",
-
       "git status *": "allow",
       "git diff *": "allow",
       "git log *": "allow",
@@ -67,7 +63,6 @@
       "git remote -v": "allow",
       "git rev-parse *": "allow",
       "git stash list *": "allow",
-
       "uv pip list *": "allow",
       "uv tree *": "allow",
       "python --version": "allow",

@@ -1,0 +1,12 @@
+key,started,project,name,cost_usd,turns,agent_minutes,tokens_total,tokens_output,reuse_pct,reused,new,callers_open,tests,level,model
+07f4173e-1790604456534,2026-09-28 10:07,anzlechavez,"i have a dotfiles sync script that when used with ""sync"", it",0.44,1,2.9,1055694,10660,,,,,,import,claude-sonnet-5
+196357d5-1790779587642,2026-09-30 10:46,anzlechavez,why is shift insert pasting just a tilde,0.13,3,0.4,230533,1591,,,,,,import,claude-sonnet-5-5
+1c415d20-1790782824779,2026-09-30 11:40,anzlechavez,why can't i reach my zed remote camera at 192.168.1.84,0.07,1,0.3,75402,874,,,,,,import,claude-sonnet-5-5
+4daa3729-1790698761104,2026-09-29 12:19,anzlechavez,can you git ignore the .dsstore files in the dotfiles and re,0.12,1,0.4,228815,983,,,,,,import,claude-sonnet-5-5
+4e99cd6e-1791214181267,2026-10-05 11:29,anzlechavez,can you add a alias to both bashrc and zshrc in my dotfiles ,0.11,1,0.2,195973,774,,,,,,import,claude-sonnet-5-5
+6111a7a6-1790779355710,2026-09-30 10:42,anzlechavez,can you remove the older neovim,0.25,2,0.6,208217,1747,,,,,,import,claude-opus-5-5
+91fc8808-1790698761104,2026-09-29 12:19,anzlechavez,can you git ignore the .dsstore files in the dotfiles and re,0.24,4,0.9,517438,3564,,,,,,import,claude-sonnet-5-5
+a4842c43-1790779300841,2026-09-30 10:41,anzlechavez,"can you get me a newer version of neovim, theres a plugin er",0.14,1,0.3,115800,972,,,,,,import,claude-opus-5-5
+b3f9ad87-1790776818414,2026-09-30 10:00,anzlechavez,"can you update the bashrc to be similar to my zshrc, i want ",0.39,1,1.1,375804,4631,,,,,,import,claude-opus-5-5
+eaab0a2c-1790779200855,2026-09-30 10:40,anzlechavez,can you delete the software rendered ghostty,0.25,1,0.8,301087,2065,,,,,,import,claude-opus-5-5
+f8d56a06-1794260393692,2026-11-09 16:39,anzlechavez,why can't i see fable 5.2 which just released i can see it i,0.15,1,0.2,81727,737,,,,,,import,claude-opus-5-5

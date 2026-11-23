@@ -27,5 +27,6 @@
     "{\"source\":\"npm:@gotgenes/pi-permission-system\",\"scope\":\"user\"}": "42.0.2",
     "{\"source\":\"npm:pi-lens\",\"scope\":\"user\"}": "4.5.1",
     "{\"source\":\"npm:pi-subagents\",\"scope\":\"user\"}": "0.88.1"
-  }
+  },
+  "hideThinkingBlock": true
 }

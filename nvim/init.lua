@@ -1,3 +1,4 @@
+vim.o.termguicolors = true  -- powder is hex-only; tmux over SSH hides truecolor support
 vim.cmd.colorscheme("powder")  -- Before plugins load, so lualine/markview read it
 require("config.lazy")
 vim.o.number = true
@@ -17,6 +18,16 @@ vim.opt.breakindentopt = "list:-1"    -- Hang wrapped list items under their tex
 -- Move by screen line through wrapped text; a count (e.g. 5j) still moves by real lines
 vim.keymap.set({ "n", "x" }, "j", "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
 vim.keymap.set({ "n", "x" }, "k", "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
+
+-- Redo like Helix (replaces Vim's line-undo)
+vim.keymap.set("n", "U", "<C-r>")
+
+-- Clear search highlight like Helix's collapse (replaces repeat-f/t)
+vim.keymap.set("n", ";", "<cmd>noh<CR>")
+
+-- Keep the cursor centered on half-page jumps
+vim.keymap.set({ "n", "x" }, "<C-d>", "<C-d>zz")
+vim.keymap.set({ "n", "x" }, "<C-u>", "<C-u>zz")
 
 -- MARKDOWN
 require("config.wrap_width").setup()  -- Display-only wrap at 100 columns, all files

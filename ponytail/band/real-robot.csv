@@ -1,0 +1,268 @@
+key,started,project,name,cost_usd,turns,agent_minutes,tokens_total,tokens_output,reuse_pct,reused,new,callers_open,tests,level,model
+0120cc70-1791399551286,2026-10-07 14:59,real-robot,hello,2.12,4,9.1,3459993,28888,,,,,,import,claude-opus-5-5
+05280e7e-1793646349165,2026-11-02 14:05,real-robot,look at the recent worktree for the blending work. some ui c,1.15,1,2.5,1673736,13328,,,,,,import,claude-opus-5-5
+07f75531-1790002344250,2026-09-21 10:52,real-robot,'/home/anzlechavez/Downloads/design_points.csv' these are th,10.38,18,27.5,24374198,120110,,,,,,import,claude-sonnet-5
+080be2b5-1791898380831,2026-10-13 09:33,real-robot,would using urscript allow me to have a smaller minimum puls,2.25,21,11.9,10428684,68749,,,,,,import,claude-sonnet-5-5
+08a95928-1792526956802,2026-10-20 16:09,real-robot,can you show the formulas of how the losses are computed for,3.93,14,15.2,9664157,54316,,,,,,import,claude-opus-5-5
+0c85410e-1789757748962,2026-09-18 14:55,real-robot,what is this error,0.90,3,2.9,1261869,4678,,,,,,import,claude-sonnet-5
+0c8fe5e3-1789589067872,2026-09-16 16:04,real-robot,"i started doing it, but i wasn't sure of the units. can you ",2.45,5,10.1,4313034,36636,,,,,,import,claude-sonnet-5
+0cefa54d-1792088191540,2026-10-15 14:16,real-robot,[Image #1] make this fill vertically,0.72,7,3.2,3524778,17406,,,,,,import,claude-sonnet-5-5
+0fcf3ec0-1791909741914,2026-10-13 12:42,real-robot,"i am missing an agent, i started another agent with a second",0.24,5,0.9,770825,5486,,,,,,import,claude-sonnet-5-5
+11d32200-1791985579787,2026-10-14 09:46,real-robot,if i was to make my own robot arm and i wanted to create a u,0.07,1,0.2,44397,1774,,,,,,import,claude-sonnet-5-5
+133281f6-1792613722666,2026-10-21 16:15,real-robot,,20.98,1,21.6,8567975,133173,,,,,,import,claude-opus-5-5
+14cdc888-1792780815073,2026-10-23 14:40,real-robot,look at the pdfs you generated for me based on the analysis ,4.00,13,12.4,8709078,68261,,,,,,import,claude-opus-5-5
+15dfa850-1793647899504,2026-11-02 14:31,real-robot,Center loop,1.61,3,4.0,2179137,21850,,,,,,import,claude-opus-5-5
+17da577e-1792099836356,2026-10-15 17:30,real-robot,give me a button in the model tab that will call a readjust ,11.91,8,30.5,33147486,122527,,,,,,import,claude-opus-5-5
+187d62b8-1792001510070,2026-10-14 14:11,real-robot,will i be able to visualize the probability distribution for,0.14,4,0.7,432623,3825,,,,,,import,claude-sonnet-5-5
+18d36101-1792000576485,2026-10-14 13:56,real-robot,what is the a in the design plan,0.10,2,0.4,313219,1802,,,,,,import,claude-sonnet-5-5
+1bb06579-1790790722417,2026-09-30 13:52,real-robot,copy the home pose block under the nudge in the powder pouri,0.71,5,2.8,1562101,11890,,,,,,import,claude-sonnet-5-5
+1fe7892f-1791384219483,2026-10-07 10:43,real-robot,"we are going to do a bunch of smallish changes, read through",14.30,36,49.9,34575563,149634,,,,,,import,claude-opus-5-5
+2016904d-1790796174817,2026-09-30 15:22,real-robot,i have the script at cd ~/Development/chemdroid/real-robot,8.75,6,39.4,16393373,156531,,,,,,import,claude-opus-5-5
+203cc77b-1791984953930,2026-10-14 09:35,real-robot,what is the next step in the plan,0.21,2,0.6,276226,1545,,,,,,import,claude-opus-5-5
+241b6c54-1790098505037,2026-09-22 13:35,real-robot,"okay, now, lets add a way for me to refill the spatula. i wa",5.37,4,24.0,15083811,61842,,,,,,import,claude-sonnet-5
+24b4fdc7-1791986386226,2026-10-14 09:59,real-robot,lets continue on the current task,8.79,8,24.2,25999305,106800,,,,,,import,claude-opus-5-5
+28d49ae2-1791317968141,2026-10-06 16:19,real-robot,"can you increase the max homing speed to a larger amount, 0.",0.59,1,4.1,620212,7058,,,,,,import,claude-opus-5-5
+296b19b6-1791384287169,2026-10-07 10:44,real-robot,"give me a quick overview on how the vial tracking, scanning,",1.69,24,3.8,3082989,27607,,,,,,import,claude-sonnet-5-5
+29c56e84-1791854319131,2026-10-12 21:18,real-robot,how can i see the pdocs,0.10,4,0.5,374204,1321,,,,,,import,claude-sonnet-5-5
+2b243f8b-1793114472748,2026-10-27 11:21,real-robot,read through the dashboard code on nudges to prepare for a f,4.51,3,10.7,7347824,50000,,,,,,import,claude-opus-5-5
+2eda56fc-1790780419190,2026-09-30 11:00,real-robot,how do i decrease the pane size tmux,0.21,2,1.0,252587,1722,,,,,,import,claude-sonnet-5-5
+30d95075-1792440444430,2026-10-19 16:07,real-robot,motion error: refused: torque pulse stopped: 2.25 Nm never r,1.51,2,5.9,2493259,25256,,,,,,import,claude-opus-5-5
+3172ce61-1791994991501,2026-10-14 12:23,real-robot,"i saw that on my macbook, when a claude code prompt is runni",0.45,14,2.0,2046925,10917,,,,,,import,claude-sonnet-5-5
+32c7b05b-1792439464395,2026-10-19 15:51,real-robot,why does it wait so long to empty the scoop when it goes to ,3.57,3,8.2,6100864,25435,,,,,,import,claude-opus-5-5
+33b51217-1792075055098,2026-10-15 10:37,real-robot,can you read through the next phase of the plan to implement,26.76,11,49.0,94983530,190179,,,,,,import,claude-opus-5-5
+33f20040-1792512471516,2026-10-20 12:07,real-robot,what loss are we using to train the full hurdle model?,3.50,3,11.6,7821034,51118,,,,,,import,claude-opus-5-5
+35730fb7-1792448781428,2026-10-19 18:26,real-robot,update the deploy script to make it have colors for the INFO,26.84,6,56.9,70572870,218678,,,,,,import,claude-opus-5-5
+35ba7545-1793123684140,2026-10-27 13:54,real-robot,motion error: refused: tip-linear move to 'vial_scoop' (wayp,5.85,5,18.7,10614640,94686,,,,,,import,claude-opus-5-5
+360401fc-1791228835717,2026-10-05 15:33,real-robot,"when running a refill, go to home, turn the spatula 90deg cl",7.79,7,23.1,18937709,89404,,,,,,import,claude-opus-5-5
+394e3751-1790790412980,2026-09-30 13:46,real-robot,why is it still workgin,0.22,1,0.0,54550,94,,,,,,import,claude-sonnet-5
+39fd5c51-1790629558232,2026-09-28 17:05,real-robot,make one commit for the dashboard changes so far,0.14,1,0.3,186054,1213,,,,,,import,claude-sonnet-5-5
+3c3b3bc6-1791213896345,2026-10-05 11:24,real-robot,recap all we did for the powder pouring last week,0.35,3,0.8,538868,5067,,,,,,import,claude-sonnet-5-5
+3e1376fd-1791389881181,2026-10-07 12:18,real-robot,hello,32.86,10,80.4,83333450,208771,,,,,,import,claude-opus-5-5
+4243fa90-1793647683259,2026-11-02 14:28,real-robot,kill all sessions except this one,0.71,1,2.3,846917,9536,,,,,,import,claude-opus-5-5
+427e8e92-1790019175575,2026-09-21 15:32,real-robot,"why is the inital balance settle time almost 8 seconds, make",1.13,1,9.7,3055152,18591,,,,,,import,claude-sonnet-5
+42b70e79-1790783264901,2026-09-30 11:47,real-robot,change the ip for the wrist camera to 192.168.10.100,0.52,6,2.6,893811,5895,,,,,,import,claude-sonnet-5-5
+436b2250-1791556930484,2026-10-09 10:42,real-robot,can you give me a full summary of the work and theory that w,0.64,2,1.2,536837,7817,,,,,,import,claude-sonnet-5-5
+44614b6b-1792162145925,2026-10-16 10:49,real-robot,"following the ui styling we have so far, take the styling fr",1.84,1,9.4,3544605,29502,,,,,,import,claude-opus-5-5
+46b83c17-1790623402366,2026-09-28 15:23,real-robot,let us start a new feature. create a new branch called vial-,7.40,13,28.0,15157454,91955,,,,,,import,claude-opus-5-5
+4c6368d7-1793115786891,2026-10-27 11:43,real-robot,can you add the speed of the gripper as a box in the section,0.49,1,1.1,519325,4884,,,,,,import,claude-opus-5-5
+4cd8ffee-1789758331981,2026-09-18 15:05,real-robot,"i want a new motion primitive. instead of a linear motion, i",14.50,3,24.9,19715288,88095,,,,,,import,claude-opus-5
+4da6fe3c-1791854162946,2026-10-12 21:16,real-robot,can you forward my powder dashboard port to tailscale,0.08,1,0.4,205540,1166,,,,,,import,claude-sonnet-5-5
+51c75539-1789671308732,2026-09-17 14:55,real-robot,add the legend of the graphs to the top of the pngs that are,0.93,1,3.6,1758385,13769,,,,,,import,claude-sonnet-5
+5252c118-1792002802638,2026-10-14 14:33,real-robot,update the design doc with the progress we've done so far,0.35,3,1.7,1048804,10162,,,,,,import,claude-sonnet-5-5
+52a16f69-1793843603858,2026-11-04 20:53,real-robot,"pull and look at the new shaping funciton, do tests and rede",3.34,5,8.1,7161053,37864,,,,,,import,claude-opus-5-5
+56477545-1791901691071,2026-10-13 10:28,real-robot,"based on the current position of the tcp, what angle do i ne",0.29,5,1.5,1063047,7696,,,,,,import,claude-sonnet-5-5
+576d7ed0-1790800221576,2026-09-30 16:30,real-robot,make the full depth and camera script start maximized but no,0.34,2,1.1,672344,6310,,,,,,import,claude-sonnet-5-5
+59fa6e28-1790107264076,2026-09-22 16:01,real-robot,@/home/anzlechavez/Downloads/data_collection_spec.md can you,4.16,1,14.4,4404487,83855,,,,,,import,claude-opus-5-5
+5a18b2da-1793115740259,2026-10-27 11:42,real-robot,"based on the recent plan, note that the shaping functions ne",8.79,5,25.0,6472285,165664,,,,,,import,claude-opus-5-5
+5aa9eeeb-1792511562025,2026-10-20 11:52,real-robot,what loss are we using to train the full hurdle model?,3.33,3,11.2,7819098,49394,,,,,,import,claude-opus-5-5
+5aed07b1-1792442732016,2026-10-19 16:45,real-robot,motion error: refused: pulse 3 (3.25 Nm x 6 ms) travelled 0.,2.04,5,5.5,3194132,25339,,,,,,import,claude-opus-5-5
+5b3e9b65-1792091457663,2026-10-15 15:10,real-robot,i want a persistent popup on top of the dashboard when i red,17.91,9,40.0,61170730,180456,,,,,,import,claude-opus-5-5
+5c6fedad-1792097263976,2026-10-15 16:47,real-robot,make the refill button slowly transition colors. can you mak,9.55,2,31.5,26972818,114797,,,,,,import,claude-opus-5-5
+60216bbe-1789659725294,2026-09-17 11:42,real-robot,can you give me a input box to change the kalman gain. also ,2.83,1,7.0,2977027,19407,,,,,,import,claude-opus-5
+6105f10e-1792114581692,2026-10-15 21:36,real-robot,can you remake all the ui components in the style of kokonut,6.23,7,17.9,17436528,74118,,,,,,import,claude-opus-5-5
+6371e720-1789754159770,2026-09-18 13:55,real-robot,let's start doing some easier analysis. make a scripts folde,0.14,1,0.3,211819,1227,,,,,,import,claude-sonnet-5
+659c864f-1791320672064,2026-10-06 17:04,real-robot,"can you add a small summary section, nicely styled, to the t",2.01,5,12.7,5864308,32737,,,,,,import,claude-sonnet-5-5
+687a2377-1791227866313,2026-10-05 15:17,real-robot,we need to change the behaviour of the powder pouring i thin,2.37,3,8.9,3671211,35844,,,,,,import,claude-opus-5-5
+6e502599-1792107820282,2026-10-15 19:43,real-robot,"lets talk at a high level about the pour settles. right now,",1.50,4,4.0,2587563,17926,,,,,,import,claude-opus-5-5
+6e61bf10-1793649754763,2026-11-02 15:02,real-robot,"lets iterate a bit over the design system, i want to iterate",14.40,52,25.2,41092085,117277,,,,,,import,claude-opus-5-5
+6ee17339-1793644646877,2026-11-02 13:37,real-robot,"based on the shape runs, what is the maximum torque and freq",1.44,2,3.4,1570346,19158,,,,,,import,claude-opus-5-5
+717dc310-1789593166179,2026-09-16 17:12,real-robot,i have a streamlabs zed camera. i want to record the videos ,18.47,2,29.9,19182573,93208,,,,,,import,claude-opus-5
+7522836c-1791898380831,2026-10-13 09:33,real-robot,would using urscript allow me to have a smaller minimum puls,0.27,8,1.8,824536,9943,,,,,,import,claude-sonnet-5-5
+75d4d203-1790790233214,2026-09-30 13:43,real-robot,how can i map my caps lock to ctrl in ghostty,0.11,2,0.2,84202,1036,,,,,,import,claude-sonnet-5-5
+761d53dd-1790000746332,2026-09-21 10:25,real-robot,compare the recent runs from ex2 and ex1 for flour,0.46,2,1.6,790982,9514,,,,,,import,claude-sonnet-5
+76cd6889-1791214517786,2026-10-05 11:35,real-robot,"i want to simplify the vial code a lot more, read through th",34.64,15,85.6,107229080,326380,,,,,,import,claude-opus-5-5
+77760c9c-1792075187494,2026-10-15 10:39,real-robot,can we separate the dropdown for the model into one dropdown,0.18,3,0.8,631706,4173,,,,,,import,claude-sonnet-5-5
+77cc0467-1791920234087,2026-10-13 15:37,real-robot,lets continue the recent plan,2.80,2,8.5,6146920,38225,,,,,,import,claude-opus-5-5
+7b9bc123-1789502991152,2026-09-15 16:09,real-robot,lets talk higher level first. currently the implementation f,50.08,10,89.4,58089725,262014,,,,,,import,claude-opus-5
+7ce75d0e-1789744648012,2026-09-18 11:17,real-robot,Give me a summary markdown file that i can feed into claude ,1.57,1,6.1,2503321,10834,,,,,,import,claude-sonnet-5
+7ffd90bb-1792368965033,2026-10-18 20:16,real-robot,read through all the work that has been done for powder pour,12.48,6,23.0,17898046,36970,,,,,,import,claude-opus-5-5
+85ca14de-1789661555616,2026-09-17 12:12,real-robot,"Are you pulling data via a ""print on stable"" RS-232 mode (e.",0.20,1,0.3,175164,1434,,,,,,import,claude-sonnet-5
+86b4ddce-1789998988759,2026-09-21 09:56,real-robot,"flip the sign for the angle flick, its in the wrong directio",0.27,1,0.4,328969,1295,,,,,,import,claude-sonnet-5
+88a215bc-1791231679435,2026-10-05 16:21,real-robot,what is the homing limit,1.75,4,6.2,3408224,20183,,,,,,import,claude-opus-5-5
+8b521ca5-1792003134565,2026-10-14 14:38,real-robot,"change the content of the summary block for model-v1, for no",1.93,12,10.5,10540294,44779,,,,,,import,claude-sonnet-5-5
+8b8815f6-1792416709944,2026-10-19 09:31,real-robot,can you make the v1 algorithm a separate tab? move api near ,1.40,5,5.6,3363409,17322,,,,,,import,claude-opus-5-5
+8e710719-1793672613454,2026-11-02 21:23,real-robot,read through the plan for the camera renaming that i placed ,13.62,6,8.2,4689111,42660,,,,,,import,claude-opus-5-5
+946ded8b-1792106575607,2026-10-15 19:22,real-robot,is my work on powder weighing considered rl,0.59,4,1.8,805307,8733,,,,,,import,claude-opus-5-5
+96d08b6f-1793674282476,2026-11-02 21:51,real-robot,read through the plan for the camera renaming that i placed ,88.93,41,58.2,70053350,204230,,,,,,import,claude-opus-5-5
+974d5a43-1792180670254,2026-10-16 15:57,real-robot,"for the algorithm, the visuals show the drop is derived from",0.20,2,0.5,230022,1734,,,,,,import,claude-opus-5-5
+98d9a0a1-1792095815839,2026-10-15 16:23,real-robot,lets adjust the left column of the target pouring tab. [Imag,5.32,4,13.2,15800824,54255,,,,,,import,claude-opus-5-5
+99150f1f-1791991211448,2026-10-14 11:20,real-robot,why is my camera yellow again,1.29,7,7.3,5723999,35953,,,,,,import,claude-sonnet-5-5
+9a25555b-1790023121598,2026-09-21 16:38,real-robot,create concise atomic commits then show me before you push,1.25,4,0.8,2765313,3249,,,,,,import,claude-sonnet-5
+9aa4944f-1791317101612,2026-10-06 16:05,real-robot,can we do the behaviour where it rotates and clears the spoo,4.20,1,12.8,7617246,57765,,,,,,import,claude-opus-5-5
+9d3561c5-1792161429699,2026-10-16 10:37,real-robot,"when i connect to the dashboard via tailscale, it doesn't pr",0.88,1,3.6,1528583,12706,,,,,,import,claude-opus-5-5
+9ee8a74a-1791312178931,2026-10-06 14:42,real-robot,sum up what changes has been done to code today,0.39,3,0.8,580289,4874,,,,,,import,claude-sonnet-5-5
+a3be105b-1791225253080,2026-10-05 14:34,real-robot,give me an option in the refill page to set how fast it move,2.59,4,12.2,5427232,30833,,,,,,import,claude-opus-5-5
+a4a4b4ab-1791224574148,2026-10-05 14:22,real-robot,"what happened to my keyring, why isn't chrome opening and wh",0.27,3,0.9,377167,4400,,,,,,import,claude-sonnet-5-5
+a5a15114-1791560327523,2026-10-09 11:38,real-robot,can you make my claude code continue the refactoring when my,0.16,2,21.4,213939,1840,,,,,,import,claude-sonnet-5-5
+a7457cb6-1790713285747,2026-09-29 16:21,real-robot,how can i change the speed that the refill happens,0.14,1,0.2,204809,1125,,,,,,import,claude-sonnet-5-5
+a8ed2b5b-1793025750600,2026-10-26 10:42,real-robot,i want to generate a repeatable schedule of pours that i wil,26.86,18,64.4,67754436,268764,,,,,,import,claude-opus-5-5
+a90e0f70-1792607847640,2026-10-21 14:37,real-robot,linear v2 until 300 pulses what does this mean,4.76,11,18.3,7759977,103112,,,,,,import,claude-opus-5-5
+a95e08d4-1793723316440,2026-11-03 11:28,real-robot,can you look at the torque timing errors that keep popping u,1.03,2,2.5,1439213,13505,,,,,,import,claude-opus-5-5
+a9ec7bc5-1790276824478,2026-09-24 15:07,real-robot,refused: the Jacobian does not have unit-norm angular column,0.31,1,0.2,88813,773,,,,,,import,claude-sonnet-5
+aa76a751-1793112101692,2026-10-27 10:41,real-robot,can you figure out which joint is past the 180deg limit to g,0.66,2,1.4,768734,4855,,,,,,import,claude-opus-5-5
+aaefa983-1791920962452,2026-10-13 15:49,real-robot,lets start the next phase for the latest plan,7.66,5,18.0,18115409,84470,,,,,,import,claude-opus-5-5
+ab9f9bbb-1789673758805,2026-09-17 15:35,real-robot,"Make commits for all the changes to this branch, don't push ",1.18,2,7.2,3072075,21758,,,,,,import,claude-sonnet-5
+ad7ff40c-1789591100894,2026-09-16 16:38,real-robot,can you draft me a set of multiple commmits with messages th,0.56,2,3.2,1008432,12874,,,,,,import,claude-sonnet-5
+b1b5b09e-1790000274576,2026-09-21 10:17,real-robot,can you make the legend for the charts appear in the exporte,0.52,1,1.9,813240,3897,,,,,,import,claude-sonnet-5
+b304117a-1791322745721,2026-10-06 17:39,real-robot,don't return to the initial angle if the last pour was succe,0.78,3,7.5,1794784,12255,,,,,,import,claude-sonnet-5-5
+b32dbf0a-1793719258129,2026-11-03 10:20,real-robot,"concisely, can you explain what we are doing to the torque s",4.42,9,8.4,4179892,50937,,,,,,import,claude-opus-5-5
+b4c6d034-1791312961340,2026-10-06 14:56,real-robot,"i want to implement the newest plan, read through it now",2.76,1,11.5,3856727,47223,,,,,,import,claude-opus-5-5
+b51853d9-1789581759507,2026-09-16 14:02,real-robot,refused: roll to 20.0 deg could not be checked against the e,4.30,2,12.4,3134438,36864,,,,,,import,claude-opus-5
+b847d334-1790360230887,2026-09-25 14:17,real-robot,do a full audit of the code that are attached to this branch,23.30,7,23.8,30471972,63527,,,,,,import,claude-opus-5-5
+b9141fb0-1793728624912,2026-11-03 12:57,real-robot,i want to revamp the design system we have right now. look a,21.55,12,14.9,17094831,69824,,,,,,import,claude-opus-5-5
+b9b54734-1790276861447,2026-09-24 15:07,real-robot,"when i ask to move to home pose, when it is already at home ",3.17,5,13.6,6718123,76189,,,,,,import,claude-sonnet-5
+bc56f5be-1792162768059,2026-10-16 10:59,real-robot,"based on my current v1 algorithm for the powder pouring, ign",9.64,15,12.3,17990695,39976,,,,,,import,claude-opus-5-5
+bc686c53-1791227303964,2026-10-05 15:08,real-robot,the current implementation has a padding of some X cm from t,1.39,1,5.2,1926423,18367,,,,,,import,claude-opus-5-5
+bcd53d23-1790628994589,2026-09-28 16:56,real-robot,"in the refill tab, can you make the graphs fill the rest of ",0.32,3,1.2,622460,5353,,,,,,import,claude-sonnet-5-5
+be04bcb5-1793888723551,2026-11-05 09:25,real-robot,can you explain how the friction feedforward works in the po,0.54,1,0.7,289045,3732,,,,,,import,claude-opus-5-5
+be46a2f6-1789746659692,2026-09-18 11:50,real-robot,change the angle motion primitive again to include an initia,4.50,1,18.7,4917646,34551,,,,,,import,claude-opus-5
+be559777-1792183189750,2026-10-16 16:39,real-robot,"look at the initial prompt, i want you to return me a prompt",79.80,17,51.9,190802294,94071,,,,,,import,claude-opus-5-5
+c09d1220-1793111970675,2026-10-27 10:39,real-robot,Lq,6.21,1,13.5,10476769,86238,,,,,,import,claude-opus-5-5
+c15d119a-1792183189750,2026-10-16 16:39,real-robot,"look at the initial prompt, i want you to return me a prompt",3.68,4,7.1,5545823,24974,,,,,,import,claude-opus-5-5
+c172c858-1792684894826,2026-10-22 12:01,real-robot,what happened to my ultracode agent that was running the fas,45.01,42,82.1,102428494,515114,,,,,,import,claude-opus-5-5
+c2832284-1789664984039,2026-09-17 13:09,real-robot,what can i (don't change anything) change to only wait 1 sec,0.64,2,1.4,1099466,6783,,,,,,import,claude-sonnet-5
+c322510a-1789755017262,2026-09-18 14:10,real-robot,is the settle window a fixed count of N samples after a sett,2.66,3,27.3,5857637,43450,,,,,,import,claude-sonnet-5
+c4f3a9bf-1793210788827,2026-10-28 14:06,real-robot,look at the recent run that i did with the shape. it did the,16.40,16,41.1,45421057,177914,,,,,,import,claude-opus-5-5
+c722d869-1791232809207,2026-10-05 16:40,real-robot,give me an option in the dashboard to disable kalman (give a,1.25,1,5.2,1974711,14531,,,,,,import,claude-opus-5-5
+c8242c42-1793295189073,2026-10-29 13:33,real-robot,fix the conflicts in the dotfiles git repository,0.75,2,9.6,949029,9106,,,,,,import,claude-opus-5-5
+c86d1fa5-1791298781461,2026-10-06 10:59,real-robot,some dashboard changes.,3.93,3,13.4,8373669,49980,,,,,,import,claude-opus-5-5
+c9a21f28-1792162308189,2026-10-16 10:51,real-robot,is there a way for you to run a task when certain agents are,0.10,1,0.2,42816,756,,,,,,import,claude-opus-5-5
+ca59f609-1792607847640,2026-10-21 14:37,real-robot,linear v2 until 300 pulses what does this mean,4.76,11,18.3,7759977,103112,,,,,,import,claude-opus-5-5
+cf63f56a-1793210788827,2026-10-28 14:06,real-robot,look at the recent run that i did with the shape. it did the,0.25,1,0.2,154494,433,,,,,,import,claude-opus-5-5
+d0eb7c65-1791995662918,2026-10-14 12:34,real-robot,hi,0.04,1,0.0,40844,64,,,,,,import,claude-sonnet-5-5
+d13c61ac-1790107111920,2026-09-22 15:58,real-robot,@/home/anzlechavez/Downloads/data_collection_spec.md can you,0.52,1,2.0,1049098,8117,,,,,,import,claude-sonnet-5
+d23d6200-1791319135390,2026-10-06 16:38,real-robot,make sure that when the spatula locks for the first time int,2.85,6,25.5,7813290,44886,,,,,,import,claude-sonnet-5-5
+d3492a07-1793126724842,2026-10-27 14:45,real-robot,read through the recent plan to implement a new motion primi,68.74,15,80.2,94076166,360971,,,,,,import,claude-opus-5-5
+d3be7105-1791904955116,2026-10-13 11:22,real-robot,can you make the search bar look nicer for the docs,2.03,18,10.0,11660660,47658,,,,,,import,claude-sonnet-5-5
+d4c61396-1791401222963,2026-10-07 15:27,real-robot,hello,133.24,21,272.5,402403632,285086,,,,,,import,claude-opus-5-5
+d7725bfa-1790623158538,2026-09-28 15:19,real-robot,"before i start a new feature, open a pr for this branch. do ",0.17,2,0.5,274335,2437,,,,,,import,claude-sonnet-5-5
+d917c9ff-1792978905296,2026-10-25 21:41,real-robot,read through the work we did implementing the neural network,3.10,29,7.7,4032640,43424,,,,,,import,claude-opus-5-5
+d9ff8dd8-1791910033462,2026-10-13 12:47,real-robot,"read the recent plan created, ask any questions, read releva",12.79,18,30.3,31690431,155542,,,,,,import,claude-opus-5-5
+da6151ec-1790281956582,2026-09-24 16:32,real-robot,"can you stop this error from happening, it shows, then when ",1.31,2,9.5,2506163,13549,,,,,,import,claude-sonnet-5
+dc2f6242-1790016814465,2026-09-21 14:53,real-robot,"why does it take so long for the final settle, decrease the ",0.35,1,0.5,314875,2446,,,,,,import,claude-sonnet-5
+dcbea3e7-1792165210421,2026-10-16 11:40,real-robot,archive all the powder runs before v1,0.25,1,0.8,414339,2016,,,,,,import,claude-opus-5-5
+dcf56a84-1789660412989,2026-09-17 11:53,real-robot,give me a button in the dashboard under end effector pose th,4.75,2,13.0,4953798,37247,,,,,,import,claude-opus-5
+dd931e67-1792593170515,2026-10-21 10:32,real-robot,,0.51,1,1.5,534229,2869,,,,,,import,claude-opus-5-5
+dfc68b4c-1791904557617,2026-10-13 11:15,real-robot,can you add a percentage in the vial section (nicely formatt,0.71,7,4.9,3112296,16234,,,,,,import,claude-sonnet-5-5
+e028c6c7-1791309849150,2026-10-06 14:04,real-robot,lets make some changes to the algorithm that we are using fo,1.77,3,15.2,2310501,19521,,,,,,import,claude-opus-5-5
+e11e967f-1792178126091,2026-10-16 15:15,real-robot,update the deploy script to make it have colors for the INFO,0.21,1,0.7,179882,2739,,,,,,import,claude-opus-5-5
+e179f977-1792370698591,2026-10-18 20:44,real-robot,read through all the code for powder_weighing and read throu,179.02,7,160.9,420821857,298164,,,,,,import,claude-opus-5-5
+e25d6fa6-1791318582557,2026-10-06 16:29,real-robot,update the scene camera to use the remote camera on the same,0.94,3,4.9,2143811,18423,,,,,,import,claude-sonnet-5-5
+e386899a-1791316696002,2026-10-06 15:58,real-robot,"for the tolerance for weight pouring, give me the option to ",1.35,1,5.8,1616284,17664,,,,,,import,claude-opus-5-5
+e6a3e61b-1790184306676,2026-09-23 13:25,real-robot,can you see if any of the code in this repo needs to be comm,0.32,2,1.2,678859,3504,,,,,,import,claude-sonnet-5
+e83e6ed9-1792613034126,2026-10-21 16:03,real-robot,you are a senior software engineering reviewing this prompt ,2.02,3,7.8,2558229,44052,,,,,,import,claude-opus-5-5
+e84812e5-1790790450725,2026-09-30 13:47,real-robot,can you move all the chats to completed,0.08,1,0.1,42380,324,,,,,,import,claude-sonnet-5-5
+ecc7a5f2-1790793284053,2026-09-30 14:34,real-robot,look at the wrist camera in preparation to start vial tracki,6.52,7,27.7,10120250,134188,,,,,,import,claude-opus-5-5
+f004da11-1790606188932,2026-09-28 10:36,real-robot,collect all the changes and commit and push,0.23,1,1.0,399263,3096,,,,,,import,claude-sonnet-5
+f0747301-1793201032422,2026-10-28 11:23,real-robot,can you look at the one run i have with the shaping function,4.65,4,13.6,9008093,57372,,,,,,import,claude-opus-5-5
+f2d3dc84-1791398311077,2026-10-07 14:38,real-robot,"if the columns overflow in the target pouring tab, move the ",0.29,2,0.7,612143,3770,,,,,,import,claude-sonnet-5-5
+f428ac26-1793215680220,2026-10-28 15:28,real-robot,"look at the recent shaping runs, why is there always a sharp",14.84,15,48.6,36421350,183714,,,,,,import,claude-opus-5-5
+f4379b32-1790793191619,2026-09-30 14:33,real-robot,can you make tmux numbering start at 1,0.12,1,0.2,169230,796,,,,,,import,claude-sonnet-5-5
+f6a2bb98-1790799416387,2026-09-30 16:16,real-robot,overlay the script that estimates the spatula and the lip on,1.96,2,6.4,2304298,28542,,,,,,import,claude-opus-5-5
+f87ea478-1791985407995,2026-10-14 09:43,real-robot,can you commit the current work,0.28,1,0.7,264225,2041,,,,,,import,claude-opus-5-5
+f8f8f2c3-1792441512012,2026-10-19 16:25,real-robot,do we have an approximation as to how long the actual scoopi,4.15,3,11.2,7650221,39510,,,,,,import,claude-opus-5-5
+fccda77e-1789669386124,2026-09-17 14:23,real-robot,"based on a minimum of a 1.5mm linear distance to be nudged, ",1.46,3,7.8,3388140,34583,,,,,,import,claude-sonnet-5
+fe152819-1790626988303,2026-09-28 16:23,real-robot,give me a dashboard tab that is just for me to collect powde,5.90,5,21.8,11467429,75989,,,,,,import,claude-opus-5-5
+e6b62d2f-1789592247439,2026-09-16 16:57,real-robot,"make the scale for the mass plot show 5 decimal points, add ",0.23,1,1.8,499229,3664,,,,,,import,claude-sonnet-5
+2259d576-1792164950297,2026-10-16 11:35,real-robot,changes to the initialize and relevant manual processses,6.00,1,16.8,16884308,38505,,,,,,import,claude-opus-5-5
+1b758274-1793649637609,2026-11-02 15:00,real-robot,look at the recent run. the centering is not nearly strong e,39.26,26,79.1,122732648,410973,,,,,,import,claude-opus-5-5
+5f4c7606-1793655137912,2026-11-02 16:32,real-robot,kill all sessions minus the ones running,0.64,1,1.1,689801,2083,,,,,,import,claude-opus-5-5
+63daa338-1793199628856,2026-10-28 11:00,real-robot,can you get me a command to deploy the dashboard from the ne,5.32,4,13.4,12477709,54047,,,,,,import,claude-opus-5-5
+e3318449-1792177489036,2026-10-16 15:04,real-robot,look at the last error from teh log during characterizatoin,1.38,2,6.4,2428705,20717,,,,,,import,claude-opus-5-5
+f5dfde2f-1792171769328,2026-10-16 13:29,real-robot,how can i make the tphi prioritize higher torque and shorter,7.07,5,24.4,21116946,82814,,,,,,import,claude-opus-5-5
+0800f757-1792172109146,2026-10-16 13:35,real-robot,,0.17,1,0.5,218397,1297,,,,,,import,claude-opus-5-5
+0bc38bc7-1792423525289,2026-10-19 11:25,real-robot,why is the angle always so shallow? why isn't the algorithm ,7.08,4,19.7,19634773,89583,,,,,,import,claude-opus-5-5
+2985e74e-1792174749780,2026-10-16 14:19,real-robot,"the docs need to be a lot more visual, similar to what we di",50.71,7,38.0,110204180,94583,,,,,,import,claude-opus-5-5
+4d4b27e0-1792178017775,2026-10-16 15:13,real-robot,can you make me a presentation that basically mimics what we,3.37,3,11.4,4935357,67211,,,,,,import,claude-opus-5-5
+68f7cfa6-1792423331356,2026-10-19 11:22,real-robot,"i like that lime that we used for the new dropdown, can we a",2.12,6,6.4,3438427,31513,,,,,,import,claude-opus-5-5
+79bcedda-1792429180007,2026-10-19 12:59,real-robot,read through how the algorithm handles powder. how does this,11.65,4,38.1,24286985,78368,,,,,,import,claude-opus-5-5
+8fbb7a4f-1792166508935,2026-10-16 12:01,real-robot,do i need to rerun powder characterization?,4.09,2,17.4,11029522,49746,,,,,,import,claude-opus-5-5
+906d3791-1792165907617,2026-10-16 11:51,real-robot,fix it,1.06,3,4.2,2166656,14993,,,,,,import,claude-opus-5-5
+9cebf0ec-1792440495846,2026-10-19 16:08,real-robot,can you plot the torque from the wrist 2 on the graphs as we,7.46,5,15.5,17288612,47811,,,,,,import,claude-opus-5-5
+aa806a36-1792422569441,2026-10-19 11:09,real-robot,why is the movement from the scoop transition to the scoop p,1.56,2,5.1,3441874,20144,,,,,,import,claude-opus-5-5
+aaeaae93-1792437712558,2026-10-19 15:21,real-robot,"look at the last couple runs, it seems too attached to the f",5.52,2,25.0,15240112,72339,,,,,,import,claude-opus-5-5
+cf3d9bde-1792419957324,2026-10-19 10:25,real-robot,motion error: refused: pulse 7 (3 Nm x 6 ms) travelled 0.142,93.59,22,106.1,294051274,343017,,,,,,import,claude-opus-5-5
+e0fe37ef-1792172300314,2026-10-16 13:38,real-robot,can we change pdocs into mkdocs? match the styling from the ,25.97,9,27.7,56030635,77753,,,,,,import,claude-opus-5-5
+fcbd61e9-1792422011933,2026-10-19 11:00,real-robot,motion error: refused: torque pulse stopped: 1 Nm never reac,1.73,1,6.2,3274273,28212,,,,,,import,claude-opus-5-5
+88cef692-1790714654043,2026-09-29 16:44,real-robot,look at the current implementation for torque control. i thi,17.19,13,50.6,34604848,172342,,,,,,import,claude-opus-5-5
+a4ef0704-1790778342677,2026-09-30 10:25,real-robot,why is the ghostty shader so slow here? its so fast on my ma,0.59,2,2.2,729578,7930,,,,,,import,claude-opus-5-5
+02868c61-1791914166451,2026-10-13 13:56,real-robot,add the refill checkbox to the general tab pulse train as we,14.43,23,38.3,43715315,173533,,,,,,import,claude-opus-5-5
+03808b85-1793640976435,2026-11-02 12:36,real-robot,read through the recent plan for the camera renaming. the on,0.73,1,1.4,913139,4706,,,,,,import,claude-opus-5-5
+050aa440-1792677636126,2026-10-22 10:00,real-robot,why can we just freeze the neural network and just train the,3.90,13,17.1,7008902,71671,,,,,,import,claude-opus-5-5
+1172bc3e-1792599962445,2026-10-21 12:26,real-robot,if i wanted to start training the neural network from the da,1.21,5,4.0,1889215,21473,,,,,,import,claude-opus-5-5
+133a2b3c-1793036591953,2026-10-26 13:43,real-robot,"for the CRPS scores evaluated for the model testing, which p",2.13,5,6.5,2819520,30906,,,,,,import,claude-opus-5-5
+153ba59c-1791908078428,2026-10-13 12:14,real-robot,lets iterate over ways of optimizing my current algorithm. r,0.71,1,9.9,783990,11282,,,,,,import,claude-opus-5-5
+16cce6e5-1792593922004,2026-10-21 10:45,real-robot,i would like to do some preanalysis on the pulses we have ru,15.51,9,53.0,37772744,259985,,,,,,import,claude-opus-5-5
+198aac36-1792086960677,2026-10-15 13:56,real-robot,"lets do docs changes for the repo, read through the docs, su",40.78,16,64.0,115953671,250315,,,,,,import,claude-opus-5-5
+1baaf1c8-1792088037217,2026-10-15 14:13,real-robot,"make commits for the code changes, don't take too much time",0.18,1,0.4,155461,1065,,,,,,import,claude-opus-5-5
+1c337b7b-1793033537683,2026-10-26 12:52,real-robot,"when the width gets small like this, concatenate the compute",1.21,1,6.0,1332584,20808,,,,,,import,claude-opus-5-5
+1ca5ac07-1793028216576,2026-10-26 11:23,real-robot,can you figure out why my system keeps telling me that it fa,0.59,2,1.4,583670,5733,,,,,,import,claude-opus-5-5
+1d8bf12b-1794284983552,2026-11-09 23:29,real-robot,lets do some research for proper ux work with the dashboard.,0.63,1,0.4,131909,718,,,,,,import,claude-fable-5-2
+1f2f68e0-1791314067907,2026-10-06 15:14,real-robot,"split the readme into markdown files, the full one is too lo",2.36,1,7.3,2280602,52747,,,,,,import,claude-opus-5-5
+1f3d09b6-1793030280944,2026-10-26 11:58,real-robot,can you fix the docs error i renamed the script to dsh.sh,0.58,2,1.4,490529,2926,,,,,,import,claude-opus-5-5
+3151ec7b-1792595102013,2026-10-21 11:05,real-robot,Drop models particle belief explanation,1.57,12,4.3,1943655,22111,,,,,,import,claude-opus-5-5
+399014dc-1793584951742,2026-11-01 21:02,real-robot,can you read through the work that we did on commanding torq,6.66,15,19.5,7344384,112604,,,,,,import,claude-opus-5-5
+3aec0680-1792164169383,2026-10-16 11:22,real-robot,Design system extraction from powder_weighing,2.98,1,8.0,3797403,47217,,,,,,import,claude-opus-5-5
+3fc85c3c-1792779762801,2026-10-23 14:22,real-robot,GLL loss calculation and training,1.04,5,2.6,1250144,13359,,,,,,import,claude-opus-5-5
+4d34ce9c-1792595102013,2026-10-21 11:05,real-robot,Drop models particle belief explanation,3.03,13,22.1,3970721,47246,,,,,,import,claude-opus-5-5
+52aac88b-1792084825565,2026-10-15 13:20,real-robot,"fix the calibration, it is reliant on so many values in the ",6.69,6,24.1,17695330,93444,,,,,,import,claude-opus-5-5
+5b50eccb-1793030145701,2026-10-26 11:55,real-robot,can you name the current folder in the starship bar cdroid/p,0.56,1,1.2,576471,5896,,,,,,import,claude-opus-5-5
+5bee76c6-1792512498606,2026-10-20 12:08,real-robot,lets discuss about the model that we are using. read through,66.32,47,117.2,131166933,369408,,,,,,import,claude-opus-5-5
+5ee6ec3c-1793028216576,2026-10-26 11:23,real-robot,can you figure out why my system keeps telling me that it fa,0.59,2,1.4,583670,5733,,,,,,import,claude-opus-5-5
+632b87c1-1791986547978,2026-10-14 10:02,real-robot,"make the top right pill pulse green if something connects, p",6.84,54,28.2,43070388,128104,,,,,,import,claude-sonnet-5-5
+63f13f1d-1792089709209,2026-10-15 14:41,real-robot,"can we make the state diagram more interactive, with the sta",2.21,4,11.5,4670543,33752,,,,,,import,claude-opus-5-5
+641389e2-1792114952127,2026-10-15 21:42,real-robot,can we do changes to the summary.md generation as well. make,23.44,9,39.6,82580107,175912,,,,,,import,claude-opus-5-5
+65d69b78-1793128451071,2026-10-27 15:14,real-robot,what is taking all the memory on my computer,0.56,2,2.2,583519,3665,,,,,,import,claude-opus-5-5
+70ea61e8-1793035881676,2026-10-26 13:31,real-robot,Model spread shrinkage vs linear v1,0.37,1,0.5,229338,2459,,,,,,import,claude-opus-5-5
+804a11bc-1792695643847,2026-10-22 15:00,real-robot,Training analysis fairness,15.48,5,38.0,43994199,181026,,,,,,import,claude-opus-5-5
+91dfb66c-1793034523993,2026-10-26 13:08,real-robot,Ensemble purpose for model B,0.74,2,1.3,672671,7456,,,,,,import,claude-opus-5-5
+93015c35-1793732615849,2026-11-03 14:03,real-robot,lets start on a different iteration of the shaping controlle,12.66,31,31.2,25804883,189542,,,,,,import,claude-opus-5-5
+944c53f3-1793040342702,2026-10-26 14:45,real-robot,i need a way to couple together what the pulses are predicti,43.15,19,58.4,98643635,281223,,,,,,import,claude-opus-5-5
+986bada4-1793847684031,2026-11-04 22:01,real-robot,look at the work that was just done to transfer the sawtooth,4.52,1,15.3,8414681,53293,,,,,,import,claude-opus-5-5
+9e7b3aa0-1792600598680,2026-10-21 12:36,real-robot,Feature set discussion,5.08,15,19.0,7889971,107567,,,,,,import,claude-opus-5-5
+a1777ff3-1792081038586,2026-10-15 12:17,real-robot,characterize: smallest 0.006 s is above the initial 0 s -- t,0.26,3,1.1,1097097,4863,,,,,,import,claude-sonnet-5-5
+a6926722-1791905727647,2026-10-13 11:35,real-robot,read through the current target pouring algorithm and releva,2.25,5,16.7,3860809,41941,,,,,,import,claude-opus-5-5
+abf46cf9-1792595102013,2026-10-21 11:05,real-robot,Drop models particle belief explanation,1.38,10,3.5,1682137,17350,,,,,,import,claude-opus-5-5
+adcb9c5d-1793281608405,2026-10-29 09:46,real-robot,"commit push and bump the version for the shape changes, and ",7.20,10,16.7,14089057,63981,,,,,,import,claude-opus-5-5
+b1d3bda5-1791986547978,2026-10-14 10:02,real-robot,"make the top right pill pulse green if something connects, p",3.41,40,15.2,21901059,73850,,,,,,import,claude-sonnet-5-5
+b342f95b-1791314660402,2026-10-06 15:24,real-robot,read through the code changes,0.87,3,2.4,1761481,5849,,,,,,import,claude-sonnet-5-5
+b42f45b4-1793034523993,2026-10-26 13:08,real-robot,Ensemble purpose for model B,1.82,12,5.5,2271024,32637,,,,,,import,claude-opus-5-5
+c4260c0b-1793033393457,2026-10-26 12:49,real-robot,can you look through the plan to implement model b? i am cur,5.43,5,12.2,11252392,63755,,,,,,import,claude-opus-5-5
+cbe6a54b-1793199496706,2026-10-28 10:58,real-robot,kill any claude sessions apart from this oen,0.42,1,0.5,258047,1526,,,,,,import,claude-opus-5-5
+d0ef2f3e-1792084842045,2026-10-15 13:20,real-robot,kill slack,0.08,1,0.2,149260,366,,,,,,import,claude-sonnet-5-5
+db32f932-1792525552130,2026-10-20 15:45,real-robot,what is the type of loss we are measuring for the log drop,0.43,2,0.8,518589,2994,,,,,,import,claude-opus-5-5
+dee96b21-1791916724300,2026-10-13 14:38,real-robot,[Image #1] can you change this impulse styling to match the ,0.14,1,0.4,312191,2316,,,,,,import,claude-sonnet-5-5
+e121f769-1794284983552,2026-11-09 23:29,real-robot,lets do some research for proper ux work with the dashboard.,61.24,32,89.8,42407939,538215,,,,,,import,claude-fable-5-2
+e29987d8-1791920471204,2026-10-13 15:41,real-robot,"from the latest plan, is there a systematic way to find the ",1.58,3,5.1,3194971,24218,,,,,,import,claude-opus-5-5
+ed2968e9-1792081486320,2026-10-15 12:24,real-robot,characterize: max duration 0.015 s is below the initial 0.01,0.15,2,0.5,441137,2234,,,,,,import,claude-sonnet-5-5
+ee031654-1793068127506,2026-10-26 22:28,real-robot,read through the recent plan to implement model b in the das,6.77,2,1.8,654469,10445,,,,,,import,claude-opus-5-5
+eee2b33f-1792600598680,2026-10-21 12:36,real-robot,Feature set discussion,7.44,14,28.8,10732515,163377,,,,,,import,claude-opus-5-5
+a6af9bcf-1793737529703,2026-11-03 15:25,real-robot,Dashboard V2 component migration,31.31,6,21.0,33274264,153172,,,,,,import,claude-opus-5-5
+195bdd54-1792176381402,2026-10-16 14:46,real-robot,"look at the current vial fitting, it is not robust in differ",4.56,6,14.8,13082515,53235,,,,,,import,claude-opus-5-5
+4632efd7-1792007272560,2026-10-14 15:47,real-robot,"lets start the next phase, read through the plan and let me ",16.63,8,37.4,41372900,194285,,,,,,import,claude-opus-5-5
+47e1b9c2-1792178431714,2026-10-16 15:20,real-robot,why are all the icons misaligned? /home/anzlechavez/.claude/,0.88,3,3.6,1538677,14106,,,,,,import,claude-opus-5-5
+6518e493-1791990187822,2026-10-14 11:03,real-robot,lets start on the next phase,25.80,19,66.0,83593777,301157,,,,,,import,claude-opus-5-5
+b1e79303-1792171598651,2026-10-16 13:26,real-robot,,0.62,1,5.0,1292249,7203,,,,,,import,claude-opus-5-5
+c22248df-1791989687466,2026-10-14 10:54,real-robot,can you add a bit more left margin to the text,0.49,10,2.2,2074650,11837,,,,,,import,claude-sonnet-5-5
+c2ad37d9-1792002847978,2026-10-14 14:34,real-robot,lets lay out the steps for the next phase,9.82,5,26.7,26866796,135949,,,,,,import,claude-opus-5-5
+c352a2a7-1792165997996,2026-10-16 11:53,real-robot,can you add a button to the version tree to collapse all,2.22,6,11.7,4911693,35988,,,,,,import,claude-opus-5-5
+d94c45f2-1792176286376,2026-10-16 14:44,real-robot,,0.26,1,1.5,430454,1583,,,,,,import,claude-opus-5-5
+fca1bbc0-1792007410991,2026-10-14 15:50,real-robot,i need to change the soft tap behavior for the refill. i nee,12.32,9,40.1,35692025,166139,,,,,,import,claude-opus-5-5
+0512662f-1790964551755,2026-10-02 14:09,real-robot,"for each target pouring run, can you put either SUCCESS, FAI",0.82,2,3.6,1082742,8580,,,,,,import,claude-opus-5-5
+2b686fa1-1790969203211,2026-10-02 15:26,real-robot,why couldn't we solve the torque problem with a torque stop?,0.27,1,0.4,96135,1874,,,,,,import,claude-opus-5-5
+4279cca5-1790885493420,2026-10-01 16:11,real-robot,now i want to make a hardcoded suite to fully test the scoop,8.05,4,19.9,11861243,70000,,,,,,import,claude-opus-5-5
+45c8f629-1790966258734,2026-10-02 14:37,real-robot,lets start doing a bunch of ui dashboard changes,9.57,5,26.8,21216962,124626,,,,,,import,claude-opus-5-5
+4adb4b87-1790887470367,2026-10-01 16:44,real-robot,can you find out why its doing that torque nudge issue again,1.84,9,8.3,3418511,32835,,,,,,import,claude-sonnet-5-5
+70aff003-1790868610190,2026-10-01 11:30,real-robot,i currently have a script that uses cv to fit an oval over t,5.00,7,22.9,7808382,92486,,,,,,import,claude-opus-5-5
+84efd623-1790872411526,2026-10-01 12:33,real-robot,"for the motion primitives, if you see that last powder run's",7.69,5,25.3,12050671,96316,,,,,,import,claude-opus-5-5
+93f36ff8-1790800659130,2026-09-30 16:37,real-robot,give me a button that will basically toggle between my scan ,0.57,4,2.4,1279289,11738,,,,,,import,claude-sonnet-5-5
+b2ef1a45-1790951839175,2026-10-02 10:37,real-robot,i need help debugging a bug. read through the most recent po,28.84,16,75.8,62008497,347656,,,,,,import,claude-opus-5-5
+bde730f3-1790879681608,2026-10-01 14:34,real-robot,why is the robot coasting after a couple torque nudges,8.89,17,36.1,18420520,120616,,,,,,import,claude-opus-5-5
+c26fcaa3-1790801403546,2026-09-30 16:50,real-robot,stash the changes and switch to the pour powder branch i wan,0.13,1,0.3,130561,1277,,,,,,import,claude-sonnet-5-5
+eeb18ef9-1791214324770,2026-10-05 11:32,real-robot,sync the python modules so i can run the wrist depth script,0.12,1,0.3,209441,939,,,,,,import,claude-sonnet-5-5
+fe6c0088-1790867599422,2026-10-01 11:13,real-robot,move the current changes from the powder branch and merge it,0.42,4,2.0,879462,5872,,,,,,import,claude-sonnet-5-5
+1d541262-1794847347820,2026-11-16 11:42,real-robot,"after that, can you serve the board over tailscale",1.16,9,1.4,791292,4707,,0,0,0,not run,off,claude-fable-5-2
+9814a8a4-1794848145386,2026-11-16 11:55,real-robot,read through my notes in obsidian and the code pertaining to,4.50,17,14.2,9858311,63160,,0,0,0,not run,full,claude-opus-5-5
+f421fb92-1794938689125,2026-11-17 13:04,real-robot,"consolidate all the changes and push to main, just a quick o",0.87,3,2.5,1150879,9998,,0,0,0,not run,full,claude-opus-5-5
+3e89835a-1794943787067,2026-11-17 14:29,real-robot,[@report.py](file:///home/anzlechavez/Development/chemdroid/,1.45,5,4.8,2099909,17921,,0,0,0,1914 passed,full,claude-opus-5-5
+49d96723-1795203767637,2026-11-20 14:42,real-robot,I want to generate a PDF artifact of the current functionali,4.70,9,11.3,9423961,60635,,0,0,0,not run,full,claude-opus-5-5

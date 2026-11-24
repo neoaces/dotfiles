@@ -88,6 +88,7 @@ export EDITOR=hx VISUAL=hx
 
 # --- Aliases (mirrors zshrc) -------------------------------------------------
 alias acsh="clear; ssh -t anzlechavez@sdl0-robot-serpens 'tmux new -A -s rr -c ~/Development/chemdroid/real-robot'"
+alias adsh="clear; ssh -t neoaces@sdl0-robot-adam 'tmux new -A -s rr -c ~/Development/chemdroid/real-robot'"
 alias accsh="clear; ssh -t anzlechavez@sdl0-robot-serpens 'tmux -CC new -A -s rr -c ~/Development/chemdroid/real-robot'"
 alias acssh="clear; ssh anzlechavez@sdl0-robot-serpens"
 # Tailscale SSH skips PAM, so hop to OpenSSH on localhost: rtprio 50 + memlock for dsh.sh

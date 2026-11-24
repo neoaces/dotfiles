@@ -26,12 +26,7 @@
     "{\"source\":\"npm:pi-web-access\",\"scope\":\"user\"}": "0.48.0",
     "{\"source\":\"npm:@gotgenes/pi-permission-system\",\"scope\":\"user\"}": "42.2.0",
     "{\"source\":\"npm:pi-lens\",\"scope\":\"user\"}": "4.5.1",
-<<<<<<< Updated upstream
-    "{\"source\":\"npm:pi-subagents\",\"scope\":\"user\"}": "0.88.1"
+    "{\"source\":\"npm:pi-subagents\",\"scope\":\"user\"}": "0.89.1"
   },
   "hideThinkingBlock": true
-=======
-    "{\"source\":\"npm:pi-subagents\",\"scope\":\"user\"}": "0.89.1"
-  }
->>>>>>> Stashed changes
 }

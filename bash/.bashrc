@@ -83,6 +83,7 @@ unset __conda_base
 # --- PATH --------------------------------------------------------------------
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/.pi/agent/bin:$PATH"
 export EDITOR=hx VISUAL=hx
 [ -f "$HOME/.local/bin/env" ] && . "$HOME/.local/bin/env"
 

@@ -42,8 +42,9 @@ alias adsh="clear; ssh -t neoaces@sdl0-robot-adam 'tmux new -A -s rr -c ~/Develo
 alias accsh="clear; ssh -t anzlechavez@sdl0-robot-serpens 'tmux -CC new -A -s rr -c ~/Development/chemdroid/real-robot'"
 alias acssh="clear; ssh anzlechavez@sdl0-robot-serpens"
 # Tailscale SSH skips PAM, so hop to OpenSSH on localhost: rtprio 50 + memlock for dsh.sh
-unalias pwsh 2>/dev/null
+unalias pwsh pdsh 2>/dev/null
 pwsh() { clear; ssh -t anzlechavez@sdl0-robot-serpens "ssh -t localhost 'cd ~/Development/chemdroid/real-robot/src/chemdroid_real_robot/powder_weighing && exec \$SHELL -l'"; }
+pdsh() { clear; ssh -t neoaces@sdl0-robot-adam "ssh -t localhost 'cd ~/Development/chemdroid/real-robot/src/chemdroid_real_robot/powder_weighing && exec \$SHELL -l'"; }
 alias zrc="source $ZDOTDIR/.zshrc"
 alias sink="~/.config/dotfiles-sync.sh sync"
 alias lynk="~/.config/dotfiles-sync.sh link"

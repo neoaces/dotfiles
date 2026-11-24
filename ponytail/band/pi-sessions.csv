@@ -179,5 +179,5 @@ key,started,project,name,cost_usd,turns,agent_minutes,tokens_total,tokens_output
 01a20e8f-1795540633440,2026-11-24 12:17,real-robot,```markdown,0.33,2,1.8,388812,4434,,0,0,0,,,claude-opus-5-5
 01a20e93-1795540883932,2026-11-24 12:21,real-robot,read through the code in powder_weighing and make a memory f,0.59,1,3.6,723866,8143,,0,0,0,passed,,claude-opus-5-5
 01a20e99-1795541240604,2026-11-24 12:27,real-robot,lets implement a couple dashboard changes:,2.22,2,20.0,5556894,27890,,0,0,0,11 passed,,claude-opus-5-5
-01a20eb1-1795542811992,2026-11-24 12:53,dotfiles,make me pdsh which does the same thing as pwsh as adsh did t,0.12,1,2.2,121666,1449,,0,0,0,,,claude-opus-5-5
 >>>>>>> Stashed changes
+01a20eb1-1795542811992,2026-11-24 12:53,dotfiles,make me pdsh which does the same thing as pwsh as adsh did t,0.17,2,2.5,209450,2291,,0,0,0,,,claude-opus-5-5
